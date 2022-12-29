@@ -2857,6 +2857,18 @@ img.lazy:not([src]) {
 	text-transform: capitalize;
 }
 
+.banner-sub{
+	margin-bottom: 10px;
+	color: #AEAEAE;
+}
+
+.banner-head{
+	font-size: 72px;
+	font-weight: 700;
+	line-height: 1.2;
+	font-family: 'Playfair Display', serif;
+}
+
 .slider-wrap::after {
 	content: "\0020";
 	display: block;
@@ -3444,7 +3456,7 @@ html[xmlns] .slider-wrap {
 #logo a.standard-logo {
 	display: -ms-flexbox;
 	display: flex;
-	padding: 12px 0;
+	padding: 20px 0;
 }
 
 #logo a.retina-logo { display: none; }
@@ -3571,8 +3583,8 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
 }
 
 .svg-trigger {
-	width: 30px;
-	height: 30px;
+	width: 42px;
+	height: 42px;
 	cursor: pointer;
 	-webkit-tap-highlight-color: transparent;
 	transition: transform 400ms;
@@ -4622,9 +4634,9 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
 		display: flex;
 		opacity: 1;
 		pointer-events: auto;
-		width: 30px;
-		height: 30px;
-		line-height: 30px;
+		width: 42px;
+		height: 42px;
+		line-height: 42px;
 	}
 
 	.overlay-menu .primary-menu > #overlay-menu-close {
@@ -6269,15 +6281,17 @@ body:not(.has-plugin-html5video) .video-wrap video {
 .flex-control-nav {
 	display: -ms-flexbox;
 	display: flex;
-	position: absolute;
-	align-items: center;
-	justify-content: center;
-	width: auto;
-	z-index: 10;
-	text-align: center;
-	top: 14px;
-	right: 10px;
-	margin: 0;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    z-index: 10;
+    text-align: center;
+    top: 72px;
+    right: 10px;
+    margin: 0;
+    gap: 16px;
 }
 
 .flex-control-nav li {
