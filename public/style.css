@@ -2863,6 +2863,7 @@ img.lazy:not([src]) {
 }
 
 .banner-head{
+	margin-bottom: 0;
 	font-size: 72px;
 	font-weight: 700;
 	line-height: 1.2;
