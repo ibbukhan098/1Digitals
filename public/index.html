@@ -25,17 +25,10 @@
   <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
   <link rel="stylesheet" href="style.css" type="text/css" />
 
-  <!-- One Page Module Specific Stylesheet -->
-  <link rel="stylesheet" href="one-page/onepage.css" type="text/css" />
-  <!-- / -->
-
   <link rel="stylesheet" href="css/dark.css" type="text/css" />
-  <link rel="stylesheet" href="one-page/css/et-line.css" type="text/css" />
   <link rel="stylesheet" href="css/animate.css" type="text/css" />
   <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
   <link rel="stylesheet" href="css/swiper.css" type="text/css" />
-
-  <link rel="stylesheet" href="one-page/css/fonts.css" type="text/css" />
 
   <link rel="stylesheet" href="css/custom.css" type="text/css" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -45,10 +38,90 @@
   <!-- Document Title
 	============================================= -->
   <title>1 Digitals</title>
+  <style>
+    @media (min-width: 992px) {
 
+      body.block-misc-cursor,
+      html.block-misc-cursor,
+      .block-misc-cursor a {
+        
+      }
+
+      .block-misc-cursor {
+        --cursor-bg: #111;
+      }
+
+      /* Cursor Styling */
+      .block-misc-cursor .cursor {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        border-radius: 100%;
+        z-index: 1000;
+        transition: transform .5s ease, opacity .2s ease;
+        user-select: none;
+        pointer-events: none;
+        transform: scale(0.8);
+        background-color: #F89939;
+      }
+
+      .block-misc-cursor .cursor::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        background-image: url('images/cursor.svg');
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 100%;
+        opacity: 0;
+      }
+
+      .block-misc-cursor .cursor.active {
+        opacity: 1;
+        transform: scale(12);
+      }
+
+      .block-misc-cursor .cursor.active::before {
+        opacity: 1;
+      }
+
+      .block-misc-cursor .cursor-follower {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: #608d9f;
+        opacity: .2;
+        border-radius: 100%;
+        z-index: 1000;
+        transition: transform .6s ease, opacity .4s ease;
+        user-select: none;
+        pointer-events: none;
+        transform: translate(14px, 14px);
+      }
+
+      .block-misc-cursor .cursor-follower.active {
+        opacity: 0.3;
+        transform: scale(0);
+
+      }
+
+      .block-misc-cursor .dark .cursor,
+      .block-misc-cursor .dark .cursor-follower {
+        --cursor-bg: #FFF;
+      }
+
+    }
+  </style>
 </head>
 
-<body class="stretched overlay-menu">
+<body class="stretched overlay-menu block-misc-cursor">
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
 
   <!-- Document Wrapper
 	============================================= -->
@@ -86,16 +159,15 @@
             <!-- Primary Navigation
 						============================================= -->
             <nav class="primary-menu row" data-easing="fadeInRight">
-
               <ul class="one-page-menu menu-container" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
                 <p class="menu-text w-100">Menu</p>
                 <li class="menu-item">
-                  <a href="#" class="menu-link" data-href="#wrapper">
+                  <a href="index.html" class="menu-link" data-href="#wrapper">
                     <div>Home</div>
                   </a>
                 </li>
-                <li class="menu-item">
-                  <a href="#" class="menu-link" data-href="#section-about">
+                <li class="menu-item current">
+                  <a href="aboutUs.html" class="menu-link" data-href="#section-about">
                     <div>About</div>
                   </a>
                 </li>
@@ -169,8 +241,8 @@
           <div class="container">
 
             <div class="">
-              <div class="fslider" data-easing="easeInOutExpo" data-arrows="false" data-pagination="true" data-speed="1100"
-                data-pause="4000" data-hover="false">
+              <div class="fslider" data-easing="easeInOutExpo" data-arrows="false" data-pagination="true"
+                data-speed="1100" data-pause="4000" data-hover="false">
                 <div class="flexslider">
                   <div class="slider-wrap">
                     <div class="slide">
@@ -205,7 +277,7 @@
         <!-- Slider Mouse Icon
 				============================================= -->
         <a href="#" data-scrollto="#content" data-offset="0" class="dark one-page-arrow"><img
-          class="infinite animated fadeInDown" src="images/mouse.svg" alt="Image"></a>
+            class="infinite animated fadeInDown" src="images/mouse.svg" alt="Image"></a>
 
       </div>
     </section><!-- #slider end -->
@@ -561,29 +633,55 @@
 	============================================= -->
   <script src="js/functions.js"></script>
 
-  <!-- Firebase -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+  <!-- Cursor Animation-->
   <script>
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "firebase/app";
-    import { getAnalytics } from "firebase/analytics";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
 
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    const firebaseConfig = {
-      apiKey: "AIzaSyDQ9pa7BC5VhiHrhT3l8EuZPGa7KerREME",
-      authDomain: "digitals-f04a8.firebaseapp.com",
-      projectId: "digitals-f04a8",
-      storageBucket: "digitals-f04a8.appspot.com",
-      messagingSenderId: "845957054631",
-      appId: "1:845957054631:web:ba0ba8cdcc2d297a831b82",
-      measurementId: "G-ZYEFZMFCGB"
-    };
+    var cursor = $(".cursor"),
+      follower = $(".cursor-follower"),
 
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
+      posX = 0,
+      posY = 0,
+      mouseX = 0,
+      mouseY = 0;
+
+    TweenMax.to({}, 0.016, {
+      repeat: -1,
+      onRepeat: function () {
+        posX += (mouseX - posX) / 9;
+        posY += (mouseY - posY) / 9;
+
+        TweenMax.set(follower, {
+          css: {
+            left: posX - 24,
+            top: posY - 24
+          }
+        });
+        TweenMax.set(cursor, {
+          css: {
+            left: mouseX - 3,
+            top: mouseY - 3
+          }
+        });
+      }
+    });
+
+    $(document).on("mousemove", function (e) {
+      mouseX = e.pageX;
+      mouseY = e.pageY;
+    });
+
+    $(".cursor-hover").on("mouseenter", function () {
+      cursor.addClass('active');
+      follower.addClass('active');
+    });
+
+    $(".cursor-hover").on("mouseleave", function () {
+      cursor.removeClass('active');
+      follower.removeClass('active');
+    });
+
   </script>
 
 </body>
