@@ -39,10 +39,88 @@
 	<!-- Document Title
 	============================================= -->
 	<title>About Us | 1Digitals</title>
+	<style>
+		@media (min-width: 992px) {
+
+			body.block-misc-cursor,
+			html.block-misc-cursor,
+			.block-misc-cursor a {}
+
+			.block-misc-cursor {
+				--cursor-bg: #111;
+			}
+
+			/* Cursor Styling */
+			.block-misc-cursor .cursor {
+				position: absolute;
+				width: 8px;
+				height: 8px;
+				border-radius: 100%;
+				z-index: 1000;
+				transition: transform .5s ease, opacity .2s ease;
+				user-select: none;
+				pointer-events: none;
+				transform: scale(0.8);
+				background-color: #F89939;
+			}
+
+			.block-misc-cursor .cursor::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				display: block;
+				background-image: url('images/cursor.svg');
+				background-position: center center;
+				background-size: cover;
+				background-repeat: no-repeat;
+				border-radius: 100%;
+				opacity: 0;
+			}
+
+			.block-misc-cursor .cursor.active {
+				opacity: 1;
+				transform: scale(12);
+			}
+
+			.block-misc-cursor .cursor.active::before {
+				opacity: 1;
+			}
+
+			.block-misc-cursor .cursor-follower {
+				position: absolute;
+				width: 48px;
+				height: 48px;
+				background-color: #608d9f;
+				opacity: .2;
+				border-radius: 100%;
+				z-index: 1000;
+				transition: transform .6s ease, opacity .4s ease;
+				user-select: none;
+				pointer-events: none;
+				transform: translate(14px, 14px);
+			}
+
+			.block-misc-cursor .cursor-follower.active {
+				opacity: 0.3;
+				transform: scale(0);
+
+			}
+
+			.block-misc-cursor .dark .cursor,
+			.block-misc-cursor .dark .cursor-follower {
+				--cursor-bg: #FFF;
+			}
+
+		}
+	</style>
 </head>
 
-<body class="stretched overlay-menu">
-
+<body class="stretched overlay-menu block-misc-cursor">
+	<div class="cursor"></div>
+	<div class="cursor-follower"></div>
 	<!-- Document Wrapper
 	============================================= -->
 	<div id="wrapper" class="clearfix">
@@ -50,7 +128,7 @@
 		<!-- Header
 		============================================= -->
 		<header id="header" class="transparent-header dark header-size-custom" data-sticky-shrink="false"
-			data-sticky-class="not-dark" data-sticky-offset="full" data-sticky-offset-negative="70">
+			data-sticky-class="not-dark" data-sticky-offset="full" data-sticky-offset-negative="250">
 			<div id="header-wrap">
 				<div class="container">
 					<div class="header-row">
@@ -84,17 +162,17 @@
 								data-offset="65">
 								<p class="menu-text w-100">Menu</p>
 								<li class="menu-item">
-									<a href="index.html" class="menu-link" data-href="#wrapper">
+									<a href="index.html" class="menu-link">
 										<div>Home</div>
 									</a>
 								</li>
 								<li class="menu-item current">
-									<a href="aboutUs.html" class="menu-link" data-href="#section-about">
+									<a href="aboutUs.html" class="menu-link">
 										<div>About</div>
 									</a>
 								</li>
 								<li class="menu-item">
-									<a href="#" class="menu-link" data-href="#section-services">
+									<a href="#" class="menu-link">
 										<div>Services</div>
 									</a>
 									<ul class="sub-menu-container" style="">
@@ -116,12 +194,12 @@
 									</ul>
 								</li>
 								<li class="menu-item">
-									<a href="#" class="menu-link" data-href="#section-contact">
+									<a href="#" class="menu-link">
 										<div>Contact</div>
 									</a>
 								</li>
 								<li class="menu-item">
-									<a href="#" class="menu-link" data-href="#section-careers">
+									<a href="#" class="menu-link">
 										<div>Careers</div>
 									</a>
 								</li>
@@ -155,55 +233,31 @@
 
 		<!-- Slider
 		============================================= -->
-		<section id="slider" class="slider-element min-vh-75 include-header">
-			<div class="slider-inner">
-
-				<div class="section dark parallax h-100 position-absolute p-0 m-0 border-0"
-					style="background-image: url('images/parallax/home/6.jpg');"
-					data-bottom-top="background-position:0px 0px;" data-top-bottom="background-position:0px -300px;">
-					<div class="vertical-middle">
-						<div class="container text-center">
-
-							<div class="emphasis-title">
-								<h1 class="fw-semibold ls4 text-uppercase bottommargin-sm" style="font-size: 48px;">
-									Discover <span class="nocolor d-none d-md-inline-block">/</span> Create <span
-										class="nocolor d-none d-md-inline-block">/</span> Design <span
-										class="nocolor d-none d-md-inline-block">/</span> Publish</h1>
-								<p class="lead">We are an Amazing bunch of Happy Creative People who Oozes Charm.</p>
-							</div>
-							<a href="#" class="button button-border button-light button-circle"
-								data-scrollto="#section-contact" data-easing="easeInOutExpo" data-speed="1250"
-								data-offset="70">Get in Touch</a>
-
-						</div>
+		<section id="slider" class="slider-element slider-parallax bg-blue include-header">
+			<div class="container">
+				<div class="row pt-5 pb-6 mb-0">
+					<div class="col-lg-6 d-flex align-self-center flex-column pt-6" data-animate="slideInLeft">
+						<h2 class="nott banner-head about-head">We build bridges <br> between companies <br> and customers</h2>
 					</div>
-
-					<div class="video-wrap">
-						<div class="video-overlay" style="background: rgba(0,0,0,0.8);"></div>
+					<div class="col-lg-6 d-flex align-self-center flex-column pb-4" data-animate="slideInRight">
+						<img src="images/about/About-us-banner.svg" alt="Hero Image"
+							style="z-index: 3; transform: translateY(45px);">
 					</div>
 				</div>
-
 			</div>
-		</section><!-- #slider end -->
+		</section>
 
 		<!-- Content
 		============================================= -->
 		<section id="content">
-			<div class="content-wrap py-0">
+			<div class="content-wrap">
 				<div class="container clearfix">
-					<div id="section-nextgen" class="page-section bottommargin-lg">
+					<div id="section-aboutcompany" class="page-section bottommargin-lg">
 						<div class="row clearfix">
-
-							<div class="col-lg-6 center">
-								<img src="images/about/aboutCompany.png" alt="NextGen Framework"
-									data-animate="fadeInLeft">
-							</div>
-
-							<div class="col-lg-6 center">
-								<div class="topmargin-lg d-none d-lg-block"></div>
+							<div class="col-lg-6 px-4">
 								<div class="emphasis-title bottommargin-sm">
-									<span class="before-heading">Plug into the</span>
-									<h2 style="font-size: 42px;" class="font-body ls1 fw-normal">NextGen Framework</h2>
+									<h3 class="main-heading">About Our Company <span
+											class="text-orange">1Digitals</span></h3>
 								</div>
 								<p style="color: #777;" class="lead">With many channels and many devices, brands today
 									create more content than ever before. Organizations face a lot of problems to
@@ -213,44 +267,39 @@
 									manually.</p>
 							</div>
 
-						</div>
-					</div>
-
-					<div id="section-stunning-graphics" class="page-section topmargin bottommargin-lg">
-						<div class="row clearfix">
-
-							<div class="col-lg-5">
-								<div class="topmargin-lg d-none d-lg-block"></div>
-								<div class="emphasis-title bottommargin-sm">
-									<span class="before-heading">Retina Ready &#x7E; 534 PPI</span>
-									<h2 style="font-size: 42px;" class="font-body ls1 fw-normal">Stunning Graphics</h2>
-								</div>
-								<p style="color: #777;" class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing
-									elit. Praesentium, vel! Eius pariatur nemo expedita.</p>
-								<a href="#" class="section-more-link">Learn More <i class="icon-angle-right"></i></a>
-							</div>
-
-							<div class="col-lg-7 center">
-								<img src="images/about/Mission.png" alt="Stunning Graphics"
+							<div class="col-lg-6 end px-4">
+								<img src="images/about/aboutCompany.png" alt="NextGen Framework"
 									data-animate="fadeInRight">
 							</div>
-
 						</div>
 					</div>
 
-					<div id="section-nextgen" class="page-section bottommargin-lg">
+					<div id="section-mission" class="page-section bottommargin-lg">
 						<div class="row clearfix">
-
-							<div class="col-lg-6 center">
-								<img src="images/about/story.png" alt="NextGen Framework"
-									data-animate="fadeInLeft">
+							<div class="col-lg-6 end px-4">
+								<img src="images/about/Mission.png" alt="NextGen Framework" data-animate="fadeInLeft">
 							</div>
-
-							<div class="col-lg-6 center">
-								<div class="topmargin-lg d-none d-lg-block"></div>
+							<div class="col-lg-6 px-4">
 								<div class="emphasis-title bottommargin-sm">
-									<span class="before-heading">Plug into the</span>
-									<h2 style="font-size: 42px;" class="font-body ls1 fw-normal">NextGen Framework</h2>
+									<h3 class="main-heading">Build Better for Best Economy is our <span
+											class="text-orange">Mission</span></h3>
+								</div>
+								<p style="color: #777;" class="lead">With many channels and many devices, brands today
+									create more content than ever before. Organizations face a lot of problems to
+									deliver rapidly adaptable experiences across web, mobile and any end-point in the
+									customer journey. Customers travel through their journeys quickly and organisations
+									need to keep up. Therefore, organisations need to be nimble as there is no time to
+									manually.</p>
+							</div>
+						</div>
+					</div>
+
+					<div id="section-aboutcompany" class="page-section bottommargin-lg">
+						<div class="row clearfix">
+							<div class="col-lg-6 px-4">
+								<div class="emphasis-title bottommargin-sm">
+									<h3 class="main-heading">About Our Company <span class="text-orange">Story</span>
+									</h3>
 								</div>
 								<p style="color: #777;" class="lead">With many channels and many devices, brands today
 									create more content than ever before. Organizations face a lot of problems to
@@ -260,171 +309,182 @@
 									manually.</p>
 							</div>
 
+							<div class="col-lg-6 end px-4">
+								<img src="images/about/story.png" alt="NextGen Framework" data-animate="fadeInRight">
+							</div>
 						</div>
 					</div>
 
-					<div id="section-secured-solutions" class="page-section section p-0 topmargin-sm"
-						style="background: url('demos/app-landing/images/section/iphone-3d-bg.png') no-repeat left bottom; background-size: 100% auto;"
-						data-height-xl="700" data-height-lg="700" data-height-md="450" data-height-sm="450"
-						data-height-xs="450">
+					<div id="section-about" class="page-section">
+
 						<div class="container clearfix">
-							<div class="row clearfix">
-								<div class="col-lg-5 offset-lg-6">
-									<div class="topmargin-lg d-none d-lg-block"></div>
-									<div class="topmargin-lg d-none d-lg-block"></div>
-									<img src="demos/app-landing/images/section/section-3-icon.png" alt="Image"
-										style="display: block;" class="bottommargin-sm">
-									<div class="emphasis-title bottommargin-sm">
-										<span class="before-heading">Privacy Protected</span>
-										<h2 style="font-size: 42px;" class="font-body ls1 fw-normal">Secured Solutions
-										</h2>
+							<h3 class="main-heading">Meet Our Amazing <span class="text-orange">Team</span>
+
+								<div class="row topmargin-lg mx-auto">
+
+									<div class="col-md-3 mb-5">
+
+										<div class="team" data-animate="slideInUp">
+											<div class="team-image">
+												<img src="images/about/founder.png" alt="John Doe">
+											</div>
+											<div class="team-desc team-desc-bg">
+												<div class="team-title">
+													<h4>John Doe</h4><span>CEO</span>
+												</div>
+											</div>
+										</div>
+
 									</div>
-									<p style="color: #777;" class="lead">Lorem ipsum dolor sit amet, consectetur
-										adipisicing elit. Praesentium, vel! Eius pariatur nemo expedita.</p>
-									<a href="#" class="section-more-link">Learn More <i
-											class="icon-angle-right"></i></a>
+
+									<div class="col-md-3 mb-5">
+
+										<div class="team" data-animate="slideInUp">
+											<div class="team-image">
+												<img src="images/about/CTO.png" alt="Josh Clark">
+											</div>
+											<div class="team-desc team-desc-bg">
+												<div class="team-title">
+													<h4>Mary Jane</h4><span>Co-Founder</span>
+												</div>
+											</div>
+										</div>
+
+									</div>
+
+									<div class="col-md-3 mb-5">
+
+										<div class="team" data-animate="slideInUp">
+											<div class="team-image">
+												<img src="images/about/VP.png" alt="Mary Jane">
+											</div>
+											<div class="team-desc team-desc-bg">
+												<div class="team-title">
+													<h4>Josh Clark</h4><span>Sales</span>
+												</div>
+											</div>
+										</div>
+
+									</div>
+
+									<div class="col-md-3 mb-5">
+
+										<div class="team" data-animate="slideInUp">
+											<div class="team-image">
+												<img src="images/about/HeadDesign.png" alt="Mary Jane">
+											</div>
+											<div class="team-desc team-desc-bg">
+												<div class="team-title">
+													<h4>Josh Clark</h4><span>Sales</span>
+												</div>
+											</div>
+										</div>
+
+									</div>
+
 								</div>
-							</div>
+								<div class="row d-flex justify-content-between">
+
+									<div class="col-md-3 mb-5">
+
+										<div class="team" data-animate="slideInUp">
+											<div class="team-image">
+												<img src="images/about/HeadMarketing.png" alt="John Doe">
+											</div>
+											<div class="team-desc team-desc-bg">
+												<div class="team-title">
+													<h4>John Doe</h4><span>CEO</span>
+												</div>
+											</div>
+										</div>
+
+									</div>
+
+									<div class="col-md-3 mb-5">
+
+										<div class="team" data-animate="slideInUp">
+											<div class="team-image">
+												<img src="images/about/HeadContent.png" alt="Josh Clark">
+											</div>
+											<div class="team-desc team-desc-bg">
+												<div class="team-title">
+													<h4>Mary Jane</h4><span>Co-Founder</span>
+												</div>
+											</div>
+										</div>
+
+									</div>
+
+									<div class="col-md-3 mb-5">
+
+										<div class="team" data-animate="slideInUp">
+											<div class="team-image">
+												<img src="images/about/VPFinance.png" alt="Mary Jane">
+											</div>
+											<div class="team-desc team-desc-bg">
+												<div class="team-title">
+													<h4>Josh Clark</h4><span>Sales</span>
+												</div>
+											</div>
+										</div>
+
+									</div>
+
+									<div class="col-md-3 mb-5">
+
+										<div class="team" data-animate="slideInUp">
+											<div class="team-image">
+												<img src="images/about/UI-UX.png" alt="Mary Jane">
+											</div>
+											<div class="team-desc team-desc-bg">
+												<div class="team-title">
+													<h4>Josh Clark</h4><span>Sales</span>
+												</div>
+											</div>
+										</div>
+
+									</div>
+
+								</div>
+
 						</div>
-						<div class="video-wrap" style="position: absolute; height: 100%; z-index: 1;">
-							<div class="video-overlay d-none d-lg-block"
-								style="background: url('demos/app-landing/images/section/iphone-3d.png') no-repeat left top; background-size: auto 100%;"
-								data-animate="fadeInLeft"></div>
-						</div>
+
 					</div>
 
-					<div id="section-blog" class="page-section">
-
-						<h2 class="text-center text-uppercase fw-light ls3 font-body">Recently From the Blog</h2>
-
-						<div class="section mb-0">
-							<div class="container clearfix">
-
-								<div class="row posts-md mt-5 col-mb-50 mb-0">
-
-									<div class="entry col-md-6">
-										<div class="grid-inner row align-items-center">
-											<div class="col-lg-6">
-												<div class="entry-image">
-													<a href="#"><img src="one-page/images/blog/1.jpg" alt="Paris"></a>
-												</div>
-											</div>
-											<div class="col-lg-6 mt-3 mt-lg-0">
-												<span class="before-heading fst-normal">Press &amp; Media</span>
-												<div class="entry-title nott">
-													<h3 class="fw-normal"><a href="#">Global Meetup Program is
-															Launching!</a></h3>
-												</div>
-												<div class="entry-content">
-													<a href="#" class="more-link">Read more <i
-															class="icon-angle-right"></i></a>
-												</div>
-											</div>
-										</div>
+					<div class="section-address">
+						<div class="container">
+							<h3 class="main-heading">We are in 2 Countries <br /> <span class="text-orange">Visit
+									Us</span> </h3>
+							<div class="row mt-4 col-mb-50">
+								<div class="col-lg-4 px-4" data-animate="fadeIn">
+									<div class="heading-block border-bottom-0" style="margin-bottom: 15px;">
+										<h4>1DIGITALS Soft Solutions India Pvt Ltd.,</h4>
 									</div>
-
-									<div class="entry col-md-6">
-										<div class="grid-inner row align-items-center">
-											<div class="col-lg-6">
-												<div class="entry-image">
-													<a href="#"><img src="one-page/images/blog/2.jpg" alt="Paris"></a>
-												</div>
-											</div>
-											<div class="col-lg-6 mt-3 mt-lg-0">
-												<span class="before-heading fst-normal">Inside Scoops</span>
-												<div class="entry-title nott">
-													<h3 class="fw-normal"><a href="#">The New YouTube Economy unfolds
-															itself</a></h3>
-												</div>
-												<div class="entry-content">
-													<a href="#" class="more-link">Read more <i
-															class="icon-angle-right"></i></a>
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="entry col-md-6">
-										<div class="grid-inner row align-items-center">
-											<div class="col-lg-6">
-												<div class="entry-image">
-													<a href="#"><img src="one-page/images/blog/3.jpg" alt="Paris"></a>
-												</div>
-											</div>
-											<div class="col-lg-6 mt-3 mt-lg-0">
-												<span class="before-heading fst-normal">Video Blog</span>
-												<div class="entry-title nott">
-													<h3 class="fw-normal"><a href="#">Kicking Off Design Party in
-															Style</a>
-													</h3>
-												</div>
-												<div class="entry-content">
-													<a href="#" class="more-link">Read more <i
-															class="icon-angle-right"></i></a>
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="entry col-md-6">
-										<div class="grid-inner row align-items-center">
-											<div class="col-lg-6">
-												<div class="entry-image">
-													<a href="#"><img src="one-page/images/blog/4.jpg" alt="Paris"></a>
-												</div>
-											</div>
-											<div class="col-lg-6 mt-3 mt-lg-0">
-												<span class="before-heading fst-normal">Inspiration</span>
-												<div class="entry-title nott">
-													<h3 class="fw-normal"><a href="#">Top Ten Signs You're a
-															Designer</a>
-													</h3>
-												</div>
-												<div class="entry-content">
-													<a href="#" class="more-link">Read more <i
-															class="icon-angle-right"></i></a>
-												</div>
-											</div>
-										</div>
-									</div>
-
+									<p>Image Incubation Center,
+										STPI Complex, 2nd Floor,
+										Solitaire Building, Madhapur, Hyderabad-81.</p>
+									<p class="number">+91 9012345678</p>
 								</div>
-
+								<div class="col-lg-4 px-4" data-animate="fadeIn" data-delay="200">
+									<div class="heading-block border-bottom-0" style="margin-bottom: 15px;">
+										<h4>1DIGITALS Soft Solutions India Pvt Ltd.,</h4>
+									</div>
+									<p>Image Incubation Center,
+										STPI Complex, 2nd Floor,
+										Solitaire Building, Madhapur, Hyderabad-81.</p>
+									<p class="number">+91 9012345678</p>
+								</div>
+								<div class="col-lg-4 px-4" data-animate="fadeIn" data-delay="400">
+									<div class="heading-block border-bottom-0" style="margin-bottom: 15px;">
+										<h4>1DIGITALS Soft Solutions India Pvt Ltd.,</h4>
+									</div>
+									<p>Image Incubation Center,
+										STPI Complex, 2nd Floor,
+										Solitaire Building, Madhapur, Hyderabad-81.</p>
+									<p class="number">+91 9012345678</p>
+								</div>
 							</div>
 						</div>
-
-						<div class="container topmargin-lg clearfix">
-
-							<div id="oc-clients" class="owl-carousel topmargin image-carousel carousel-widget"
-								data-margin="80" data-loop="true" data-nav="false" data-autoplay="5000"
-								data-pagi="false" data-items-xs="2" data-items-sm="3" data-items-md="4"
-								data-items-lg="5" data-items-xl="6">
-
-								<div class="oc-item"><a href="#"><img src="images/clients/1.png" alt="Clients"></a>
-								</div>
-								<div class="oc-item"><a href="#"><img src="images/clients/2.png" alt="Clients"></a>
-								</div>
-								<div class="oc-item"><a href="#"><img src="images/clients/3.png" alt="Clients"></a>
-								</div>
-								<div class="oc-item"><a href="#"><img src="images/clients/4.png" alt="Clients"></a>
-								</div>
-								<div class="oc-item"><a href="#"><img src="images/clients/5.png" alt="Clients"></a>
-								</div>
-								<div class="oc-item"><a href="#"><img src="images/clients/6.png" alt="Clients"></a>
-								</div>
-								<div class="oc-item"><a href="#"><img src="images/clients/7.png" alt="Clients"></a>
-								</div>
-								<div class="oc-item"><a href="#"><img src="images/clients/8.png" alt="Clients"></a>
-								</div>
-								<div class="oc-item"><a href="#"><img src="images/clients/9.png" alt="Clients"></a>
-								</div>
-								<div class="oc-item"><a href="#"><img src="images/clients/10.png" alt="Clients"></a>
-								</div>
-
-							</div>
-
-						</div>
-
 					</div>
 
 					<div id="section-contact" class="section page-section">
@@ -586,6 +646,57 @@
 	<!-- Footer Scripts
 	============================================= -->
 	<script src="js/functions.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+	<!-- Cursor Animation-->
+	<script>
+
+		var cursor = $(".cursor"),
+			follower = $(".cursor-follower"),
+
+			posX = 0,
+			posY = 0,
+			mouseX = 0,
+			mouseY = 0;
+
+		TweenMax.to({}, 0.016, {
+			repeat: -1,
+			onRepeat: function () {
+				posX += (mouseX - posX) / 9;
+				posY += (mouseY - posY) / 9;
+
+				TweenMax.set(follower, {
+					css: {
+						left: posX - 37,
+						top: posY - 37
+					}
+				});
+				TweenMax.set(cursor, {
+					css: {
+						left: mouseX - 3,
+						top: mouseY - 3
+					}
+				});
+			}
+		});
+
+		$(document).on("mousemove", function (e) {
+			mouseX = e.pageX;
+			mouseY = e.pageY;
+		});
+
+		$(".cursor-hover").on("mouseenter", function () {
+			cursor.addClass('active');
+			follower.addClass('active');
+		});
+
+		$(".cursor-hover").on("mouseleave", function () {
+			cursor.removeClass('active');
+			follower.removeClass('active');
+		});
+
+	</script>
 
 </body>
 

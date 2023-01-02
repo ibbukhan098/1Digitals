@@ -92,8 +92,8 @@
 
       .block-misc-cursor .cursor-follower {
         position: absolute;
-        width: 20px;
-        height: 20px;
+        width: 48px;
+				height: 48px;
         background-color: #608d9f;
         opacity: .2;
         border-radius: 100%;
@@ -161,18 +161,18 @@
             <nav class="primary-menu row" data-easing="fadeInRight">
               <ul class="one-page-menu menu-container" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
                 <p class="menu-text w-100">Menu</p>
-                <li class="menu-item">
-                  <a href="index.html" class="menu-link" data-href="#wrapper">
+                <li class="menu-item current">
+                  <a href="index.html" class="menu-link">
                     <div>Home</div>
                   </a>
                 </li>
-                <li class="menu-item current">
-                  <a href="aboutUs.html" class="menu-link" data-href="#section-about">
+                <li class="menu-item">
+                  <a href="aboutUs.html" class="menu-link">
                     <div>About</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="#" class="menu-link" data-href="#section-services">
+                  <a href="#" class="menu-link">
                     <div>Services</div>
                   </a>
                   <ul class="sub-menu-container" style="">
@@ -194,12 +194,12 @@
                   </ul>
                 </li>
                 <li class="menu-item">
-                  <a href="#" class="menu-link" data-href="#section-contact">
+                  <a href="#" class="menu-link">
                     <div>Contact</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="#" class="menu-link" data-href="#section-careers">
+                  <a href="#" class="menu-link">
                     <div>Careers</div>
                   </a>
                 </li>
@@ -654,8 +654,8 @@
 
         TweenMax.set(follower, {
           css: {
-            left: posX - 24,
-            top: posY - 24
+            left: posX - 37,
+            top: posY - 37
           }
         });
         TweenMax.set(cursor, {

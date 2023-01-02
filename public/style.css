@@ -399,6 +399,11 @@ span.middot {
 	float: none !important;
 }
 
+.bg-blue{
+	background-color: #284191;
+	color: #fff;
+}
+
 .bg-color,
 .bg-color #header-wrap { background-color: #F89939 !important; }
 
@@ -2868,6 +2873,12 @@ img.lazy:not([src]) {
 	font-weight: 700;
 	line-height: 1.2;
 	font-family: 'Playfair Display', serif;
+}
+
+.about-head{
+	color: #fff;
+	font-weight: 400;
+	font-size: 64px;
 }
 
 .slider-wrap::after {
@@ -5999,6 +6010,10 @@ body:not(.has-plugin-html5video) .video-wrap video {
 .slider-caption-bottom-right {
 	left: auto;
 	right: 50px;
+}
+
+.about-bg{
+	background-color: #284191;
 }
 
 
