@@ -404,6 +404,18 @@ span.middot {
 	color: #fff;
 }
 
+.bg-light-blue{
+	background: linear-gradient(0deg, #305AE0, #305AE0);
+}
+
+.bg-purple{
+	background: linear-gradient(90deg, #1F0159 0%, #24035E 17%, #330B6F 39%, #4C178A 63%, #6E28B0 90%, #7C2FBF 100%), linear-gradient(0deg, #5C5296, #5C5296)
+}
+
+.bg-dark-purple{
+	background: linear-gradient(0deg, #29007C, #29007C), linear-gradient(0deg, #284191, #284191), #E5E5E5;
+}
+
 .bg-color,
 .bg-color #header-wrap { background-color: #F89939 !important; }
 
@@ -7524,6 +7536,28 @@ body:not(.device-touch) .portfolio {
 
 #portfolio-ajax-title h2 { font-size: 1.75rem; }
 
+.arrow-div{
+	border-radius: 50%;
+    color: #fff;
+    background: #F89939;
+    padding: 20px 24px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-div>.fa-arrow-up{
+	transform: rotate(45deg);
+}
+
+.job-openings:hover{
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.job-openings:hover .arrow-div{
+	display: flex;
+}
+
 
 /* Portfolio Single - Meta
 -----------------------------------------------------------------*/
@@ -12013,9 +12047,48 @@ body:not(.device-touch) .clients-grid .grid-item a {
 	margin: 0 0 0 3px;
 }
 
+/* Let's Talk Section */
+.section-talk .stories{
+	font-size: 18px;
+}
+
+.section-talk .reach-out{
+	font-size: 22px;
+}
+
+.talk-btn{
+	border:1px solid #F89939;
+}
+
+.talk-btn:hover{
+	background-color: #F89939;
+	color: #fff;
+}
+
 
 /* Pricing Boxes - Features
 -----------------------------------------------------------------*/
+.features-div{
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	border-radius: 10px;
+}
+.service-features{
+	min-height: 610px;
+}
+
+.features-btn-div{
+	background: #FBF7F3;
+	padding: 20px;
+}
+
+.features-btn{
+	color: #000;
+}
+
+.features-list{
+	font-size: 18px;
+	margin-left: 16px;
+}
 
 .pricing-features {
 	border-top: 1px solid rgba(0,0,0,0.075);
