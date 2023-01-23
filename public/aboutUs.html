@@ -39,83 +39,106 @@
 	<!-- Document Title
 	============================================= -->
 	<title>About Us | 1Digitals</title>
-	<style>
-		@media (min-width: 992px) {
-
-			body.block-misc-cursor,
-			html.block-misc-cursor,
-			.block-misc-cursor a {}
-
-			.block-misc-cursor {
-				--cursor-bg: #111;
-			}
-
-			/* Cursor Styling */
-			.block-misc-cursor .cursor {
-				position: absolute;
-				width: 8px;
-				height: 8px;
-				border-radius: 100%;
-				z-index: 1000;
-				transition: transform .5s ease, opacity .2s ease;
-				user-select: none;
-				pointer-events: none;
-				transform: scale(0.8);
-				background-color: #F89939;
-			}
-
-			.block-misc-cursor .cursor::before {
-				content: "";
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				display: block;
-				background-image: url('images/cursor.svg');
-				background-position: center center;
-				background-size: cover;
-				background-repeat: no-repeat;
-				border-radius: 100%;
-				opacity: 0;
-			}
-
-			.block-misc-cursor .cursor.active {
-				opacity: 1;
-				transform: scale(12);
-			}
-
-			.block-misc-cursor .cursor.active::before {
-				opacity: 1;
-			}
-
-			.block-misc-cursor .cursor-follower {
-				position: absolute;
-				width: 48px;
-				height: 48px;
-				background-color: #608d9f;
-				opacity: .2;
-				border-radius: 100%;
-				z-index: 1000;
-				transition: transform .6s ease, opacity .4s ease;
-				user-select: none;
-				pointer-events: none;
-				transform: translate(14px, 14px);
-			}
-
-			.block-misc-cursor .cursor-follower.active {
-				opacity: 0.3;
-				transform: scale(0);
-
-			}
-
-			.block-misc-cursor .dark .cursor,
-			.block-misc-cursor .dark .cursor-follower {
-				--cursor-bg: #FFF;
-			}
-
-		}
-	</style>
+    <style>
+        @media (min-width: 992px) {
+    
+          body.block-misc-cursor,
+          html.block-misc-cursor,
+          .block-misc-cursor a {
+            
+          }
+    
+          .block-misc-cursor {
+            --cursor-bg: #111;
+          }
+    
+          /* Cursor Styling */
+          .block-misc-cursor .cursor {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            border-radius: 100%;
+            z-index: 1000;
+            transition: transform .5s ease, opacity .2s ease;
+            user-select: none;
+            display: none;
+            pointer-events: none;
+            transform: scale(0.8);
+            background-color: #F89939;
+          }
+          
+    
+          .block-misc-cursor .cursor::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+            background-image: url('images/cursor.svg');
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 100%;
+            opacity: 0;
+          }
+    
+          .block-misc-cursor .cursor.active {
+            opacity: 1;
+            transform: scale(12);
+          }
+    
+          .block-misc-cursor .cursor.active::before {
+            opacity: 1;
+          }
+    
+          .block-misc-cursor .cursor-follower {
+            border: 1px solid #608d9f8f;
+            position: absolute;
+            width: 40px;
+            /* box-shadow: 0 0 10px #00000026; */
+            height: 40px;
+            /* background-color: #608d9f; */
+            opacity: 1;
+            border-radius: 100%;
+            z-index: 1000;
+            transition: transform .6s ease, opacity .4s ease;
+            user-select: none;
+            pointer-events: none;
+            transform: translate(14px, 14px);
+          }
+          .block-misc-cursor .cursor-follower::before{
+            content: '';
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            border-radius: 100%;
+            z-index: 1000;
+            transition: transform .5s ease, opacity .2s ease;
+            user-select: none;
+            /* display: none; */
+            pointer-events: none;
+            left: 50%;
+            top: 50%;
+            transform: scale(0.8);
+            background-color: #F89939;
+            translate: -50% -50%;
+          }
+    
+          .block-misc-cursor .cursor-follower.active {
+            opacity: 0.3;
+            transform: scale(0);
+    
+          }
+    
+          .block-misc-cursor .dark .cursor,
+          .block-misc-cursor .dark .cursor-follower {
+            --cursor-bg: #FFF;
+          }
+    
+        }
+      </style>
 </head>
 
 <body class="stretched overlay-menu block-misc-cursor">
@@ -127,109 +150,115 @@
 
 		<!-- Header
 		============================================= -->
-		<header id="header" class="transparent-header dark header-size-custom" data-sticky-shrink="false"
-			data-sticky-class="not-dark" data-sticky-offset="full" data-sticky-offset-negative="250">
-			<div id="header-wrap">
-				<div class="container">
-					<div class="header-row">
+    <header id="header" class="transparent-header dark header-size-custom" data-sticky-shrink="false"
+      data-sticky-class="not-dark" data-sticky-offset="full" data-sticky-offset-negative="70">
+      <div id="header-wrap">
+        <div class="container">
+          <div class="header-row">
 
-						<!-- Logo
-						  ============================================= -->
-						<div id="logo">
-							<a href="index.html" class="standard-logo" data-dark-logo="images/logo.png"><img
-									src="images/logo.png" alt="Canvas Logo"></a>
-							<a href="index.html" class="retina-logo" data-dark-logo="images/logo.png"><img
-									src="images/logo.png" alt="Canvas Logo"></a>
-						</div><!-- #logo end -->
+            <!-- Logo
+						============================================= -->
+            <div id="logo">
+              <a href="index.html" class="standard-logo" data-dark-logo="images/logo.png"><img src="images/logo.png"
+                  alt="Canvas Logo"></a>
+              <a href="index.html" class="retina-logo" data-dark-logo="images/logo.png"><img src="images/logo.png"
+                  alt="Canvas Logo"></a>
+            </div><!-- #logo end -->
 
-						<div id="primary-menu-trigger">
-							<svg class="svg-trigger burger-menu" viewBox="0 0 100 100">
-								<path
-									d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20">
-								</path>
-								<path d="m 30,50 h 40"></path>
-								<path
-									d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20">
-								</path>
-							</svg>
-						</div>
+            <div id="custom-primary-menu-trigger" >
+              <svg class="svg-trigger burger-menu" viewBox="0 0 100 100">
+                <path
+                  d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20">
+                </path>
+                <path d="m 30,50 h 40"></path>
+                <path
+                  d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20">
+                </path>
+              </svg>
+            </div>
 
-						<!-- Primary Navigation
-						  ============================================= -->
-						<nav class="primary-menu row" data-easing="fadeInRight">
+            <!-- Primary Navigation
+						============================================= -->
+            <nav class="primary-menu row" data-easing="fadeInRight" data-state="closed" aria-expanded="false">
+              <div class="primary-row-overlay"></div>
+              <div class="container">
+                <ul class="one-page-menu menu-container" data-duration="500">
+                  <p class="menu-text w-100">Menu</p>
+                  <li class="menu-item">
+                    <a href="index.html" class="menu-link">
+                      <div>Home</div>
+                    </a>
+                  </li>
+                  <li class="menu-item current">
+                    <a href="aboutUs.html" class="menu-link">
+                      <div>About</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-link">
+                      <div>Services</div>
+                    </a>
+                    <ul class="sub-menu-container">
+                      <li class="menu-item" >
+                        <a class="menu-link" href="content-management-services.html">
+                          <div>Enterprise Content and Digital Asset Management</div>
+                        </a>
+                      </li>
+                      <li class="menu-item" >
+                        <a class="menu-link" href="e-commerce.html">
+                          <div>Enterprise eCommerce</div>
+                        </a>
+                      </li>
+                      <li class="menu-item" >
+                        <a class="menu-link" href="digital-marketing.html">
+                          <div>Enterprise Marketing</div>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item">
+                    <a href="contact-us.html" class="menu-link">
+                      <div>Contact</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="careers.html" class="menu-link">
+                      <div>Careers</div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
 
-							<ul class="one-page-menu menu-container" data-easing="easeInOutExpo" data-speed="1250"
-								data-offset="65">
-								<p class="menu-text w-100">Menu</p>
-								<li class="menu-item">
-									<a href="index.html" class="menu-link">
-										<div>Home</div>
-									</a>
-								</li>
-								<li class="menu-item current">
-									<a href="aboutUs.html" class="menu-link">
-										<div>About</div>
-									</a>
-								</li>
-								<li class="menu-item">
-									<a href="#" class="menu-link">
-										<div>Services</div>
-									</a>
-									<ul class="sub-menu-container" style="">
-										<li class="menu-item" style="">
-											<a class="menu-link" href="content-management-services.html">
-												<div>Content Management</div>
-											</a>
-										</li>
-										<li class="menu-item" style="">
-											<a class="menu-link" href="e-commerce.html">
-												<div>E-Commerce</div>
-											</a>
-										</li>
-										<li class="menu-item" style="">
-											<a class="menu-link" href="">
-												<div>Digital Marketing</div>
-											</a>
-										</li>
-									</ul>
-								</li>
-								<li class="menu-item">
-									<a href="contact-us.html" class="menu-link">
-										<div>Contact</div>
-									</a>
-								</li>
-								<li class="menu-item">
-									<a href="careers.html" class="menu-link">
-										<div>Careers</div>
-									</a>
-								</li>
-							</ul>
+              <div class="menu-socials">
+                <div class="container">
+                  <div class="row">
+                    <div class="col d-flex justify-content-start">
+                      <a href="#" class="social-icon si-small si-rounded si-facebook">
+                        <i class="fa fa-facebook"></i>
+                      </a>
+                      <a href="#" class="social-icon si-small si-rounded si-twitter">
+                        <i class="fa fa-twitter"></i>
+                      </a>
+                      <a href="#" class="social-icon si-small si-rounded si-gplus">
+                        <i class="fa fa-instagram"></i>
+                      </a>
+                    </div>
+                    <div class="col d-flex flex-column align-items-end get-in-touch">
+                      Get in touch <br />
+                      <a class="info-email" href="">info@1digitals.in</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-							<div class="row menu-socials">
-								<div class="col d-flex justify-content-start">
-									<a href="#" class="social-icon si-small si-rounded si-facebook">
-										<i class="fa fa-facebook"></i>
-									</a>
-									<a href="#" class="social-icon si-small si-rounded si-twitter">
-										<i class="fa fa-twitter"></i>
-									</a>
-									<a href="#" class="social-icon si-small si-rounded si-gplus">
-										<i class="fa fa-instagram"></i>
-									</a>
-								</div>
-								<div class="col d-flex flex-column align-items-end get-in-touch">
-									Get in touch <br />
-									<a class="info-email" href="">info@1digitals.in</a>
-								</div>
-							</div>
+            </nav><!-- #primary-menu end -->
 
-						</nav><!-- #primary-menu end -->
+          </div>
+        </div>
+      </div>
+      <div class="header-wrap-clone"></div>
+    </header><!-- #header end -->
 
-					</div>
-				</div>
-			</div>
-			<div class="header-wrap-clone"></div>
-		</header><!-- #header end -->
 
 		<!-- Slider
 		============================================= -->
@@ -256,15 +285,14 @@
 						<div class="row clearfix">
 							<div class="col-lg-6 px-4">
 								<div class="emphasis-title bottommargin-sm">
-									<h3 class="main-heading">About Our Company <span
-											class="text-orange">1Digitals</span></h3>
+									<!-- <h3 class="main-heading">About <span
+											class="text-orange">1Digitals</span></h3> -->
+									<h3 class="main-heading">Who <span
+										class="text-orange">Are We?</span></h3>											
 								</div>
-								<p style="color: #777;" class="lead">With many channels and many devices, brands today
-									create more content than ever before. Organizations face a lot of problems to
-									deliver rapidly adaptable experiences across web, mobile and any end-point in the
-									customer journey. Customers travel through their journeys quickly and organisations
-									need to keep up. Therefore, organisations need to be nimble as there is no time to
-									manually.</p>
+								<p style="color: #777;" class="lead">With our razor sharp focus, dedication, discipline and zeal for innovation, we deliver value for money. We have distinguished ourselves in our willingness to go an extra mile in showcasing our excellence.
+									<br><br>
+								</p>
 							</div>
 
 							<div class="col-lg-6 end px-4">
@@ -281,15 +309,16 @@
 							</div>
 							<div class="col-lg-6 px-4">
 								<div class="emphasis-title bottommargin-sm">
-									<h3 class="main-heading">Build Better for Best Economy is our <span
-											class="text-orange">Mission</span></h3>
+									<h3 class="main-heading" style="text-align: start;">Delivering <span
+										class="text-orange">Excellence</span></h3>
 								</div>
-								<p style="color: #777;" class="lead">With many channels and many devices, brands today
-									create more content than ever before. Organizations face a lot of problems to
-									deliver rapidly adaptable experiences across web, mobile and any end-point in the
-									customer journey. Customers travel through their journeys quickly and organisations
-									need to keep up. Therefore, organisations need to be nimble as there is no time to
-									manually.</p>
+								<p style="color: #777;text-align: start;" class="lead">
+									The power of a team is best harnessed when we work united to leverage our strengths.
+									Our founders aren’t your usual consultants as they come with solid pragmatic experience in delivery large-scale digital transformation initiatives.
+									<br>
+									<br>
+									Having witnessed many successful milestones, our talent pool comprises of seasoned professionals having rich expertise and experience in providing digital technology solutions, with previously having worked for Fortune 500 clients. We have developed specific strengths across multiple arenas in the IT industry credited to our extensive experience.
+								</p>
 							</div>
 						</div>
 					</div>
@@ -298,15 +327,11 @@
 						<div class="row clearfix">
 							<div class="col-lg-6 px-4">
 								<div class="emphasis-title bottommargin-sm">
-									<h3 class="main-heading">About Our Company <span class="text-orange">Story</span>
+									<h3 class="main-heading">Our <span class="text-orange">Customers</span>
 									</h3>
 								</div>
-								<p style="color: #777;" class="lead">With many channels and many devices, brands today
-									create more content than ever before. Organizations face a lot of problems to
-									deliver rapidly adaptable experiences across web, mobile and any end-point in the
-									customer journey. Customers travel through their journeys quickly and organisations
-									need to keep up. Therefore, organisations need to be nimble as there is no time to
-									manually.</p>
+								<p style="color: #777;" class="lead">Our customers are at the heart of everything we do, the focus of our vision, and one of our values. We celebrate transparency, support and cooperation and continue our relentless march forward. We work with global companies from small to large. You are welcome to capture a glimpse of the past and the current 1Digitals clients.
+								</p>
 							</div>
 
 							<div class="col-lg-6 end px-4">
@@ -315,7 +340,7 @@
 						</div>
 					</div>
 
-					<div id="section-about" class="page-section">
+					<!-- <div id="section-about" class="page-section">
 
 						<div class="container clearfix">
 							<h3 class="main-heading">Meet Our Amazing <span class="text-orange">Team</span>
@@ -449,12 +474,11 @@
 
 						</div>
 
-					</div>
+					</div> -->
 
 					<div class="section-address">
 						<div class="container">
-							<h3 class="main-heading">We are in 2 Countries <br /> <span class="text-orange">Visit
-									Us</span> </h3>
+							<h3 class="main-heading"><span class="text-orange">Connect</span> </h3>
 							<div class="row mt-4 col-mb-50">
 								<div class="col-lg-4 px-4" data-animate="fadeIn">
 									<div class="heading-block border-bottom-0" style="margin-bottom: 15px;">
@@ -488,90 +512,79 @@
 					</div>
 
 					<div id="section-contact" class="section page-section">
-						<div class="container clearfix">
+					<div class="container clearfix">
 
-							<div class="row">
+						<div class="row">
 
-								<div class="col-md-6 contactUs-div" data-animate="fadeInLeft">
-									<div class="heading heading-contact">
-										<h3 class="main-heading contactUs-text">To request furthur
-											information, <span class="text-orange">Contact us </span>
-											via social channels.</h3>
-										<p class="subheading">We just need a couples of hours. No more than two working
-											days
-											since receiving you issue tickets.</p>
-									</div>
+						<div class="col-md-6 contactUs-div" data-animate="fadeInLeft">
+							<div class="heading heading-contact">
+							<h3 class="main-heading contactUs-text">We’d <span class="text-orange">love</span> to hear from you</h3>
+							<p class="subheading">Contact us today to learn more about how we can help you achieve your business goals and listen to our success stories!</p>
+							</div>
+						</div>
+						<div class="col-md-6 form-widget" data-animate="fadeInRight">
+
+							<div class="form-result"></div>
+
+							<form class="row mb-0" id="template-contactform" name="template-contactform" action="include/form.php"
+							method="post">
+
+							<div class="form-process">
+								<div class="css3-spinner">
+								<div class="css3-spinner-scale-ripple">
+									<div></div>
+									<div></div>
+									<div></div>
 								</div>
-								<div class="col-md-6 form-widget" data-animate="fadeInRight">
-
-									<div class="form-result"></div>
-
-									<form class="row mb-0" id="template-contactform" name="template-contactform"
-										action="include/form.php" method="post">
-
-										<div class="form-process">
-											<div class="css3-spinner">
-												<div class="css3-spinner-scale-ripple">
-													<div></div>
-													<div></div>
-													<div></div>
-												</div>
-											</div>
-										</div>
-
-										<div class="col-md-6 mb-4">
-											<input type="text" id="template-contactform-name"
-												name="template-contactform-name" value=""
-												class="sm-form-control border-form-control required"
-												placeholder="Name*" />
-										</div>
-										<div class="col-md-6 mb-4">
-											<input type="email" id="template-contactform-email"
-												name="template-contactform-email" value=""
-												class="required email sm-form-control border-form-control"
-												placeholder="Email*" />
-										</div>
-
-										<div class="w-100"></div>
-
-										<div class="col-md-12 mb-4">
-											<input type="text" id="template-contactform-subject" name="subject" value=""
-												class="required sm-form-control border-form-control"
-												placeholder="Subject*" />
-										</div>
-
-										<div class="w-100"></div>
-
-										<div class="col-12 mb-4">
-											<textarea class="required sm-form-control border-form-control"
-												id="template-contactform-message" name="template-contactform-message"
-												rows="7" cols="30"
-												placeholder="Please describe what you need*"></textarea>
-										</div>
-
-										<div class="col-12 mb-4">
-											<button class="button button-border button-circle fw-medium ms-0"
-												type="submit" id="template-contactform-submit"
-												name="template-contactform-submit" value="submit">Send
-												Message</button>
-										</div>
-
-										<div class="w-100"></div>
-
-										<div class="col-12 d-none">
-											<input type="text" id="template-contactform-botcheck"
-												name="template-contactform-botcheck" value="" class="sm-form-control" />
-										</div>
-
-										<input type="hidden" name="prefix" value="template-contactform-">
-
-									</form>
-
 								</div>
-
 							</div>
 
+							<div class="col-md-6 mb-4">
+								<input type="text" id="template-contactform-name" name="template-contactform-name" value=""
+								class="sm-form-control border-form-control required" placeholder="Name*" />
+							</div>
+							<div class="col-md-6 mb-4">
+								<input type="email" id="template-contactform-email" name="template-contactform-email" value=""
+								class="required email sm-form-control border-form-control" placeholder="Email*" />
+							</div>
+
+							<div class="w-100"></div>
+
+							<div class="col-md-12 mb-4">
+								<input type="text" id="template-contactform-subject" name="subject" value=""
+								class="required sm-form-control border-form-control" placeholder="Subject*" />
+							</div>
+
+							<div class="w-100"></div>
+
+							<div class="col-12 mb-4">
+								<textarea class="required sm-form-control border-form-control" id="template-contactform-message"
+								name="template-contactform-message" rows="7" cols="30"
+								placeholder="Please describe what you need*"></textarea>
+							</div>
+
+							<div class="col-12 mb-4">
+								<button class="button button-border button-circle fw-medium ms-0" type="submit"
+								id="template-contactform-submit" name="template-contactform-submit" value="submit">Send
+								Message</button>
+							</div>
+
+							<div class="w-100"></div>
+
+							<div class="col-12 d-none">
+								<input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value=""
+								class="sm-form-control" />
+							</div>
+
+							<input type="hidden" name="prefix" value="template-contactform-">
+
+							</form>
+
 						</div>
+
+						</div>
+
+					</div>
 
 					</div>
 
@@ -646,6 +659,7 @@
 	<!-- Footer Scripts
 	============================================= -->
 	<script src="js/functions.js"></script>
+	 <script src="js/customs.js"></script>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 

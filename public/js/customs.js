@@ -137,7 +137,9 @@ if(btnList != null){
                             effectImg.classList.add('backInUp','animated');
                         },10)
                     }).then(()=>{
-                        effectImg.setAttribute('src',`images/services/${btn.getAttribute('data-ptype')}-portal.png`);
+                        setTimeout(()=>{
+                            effectImg.setAttribute('src',`images/services/${btn.getAttribute('data-ptype')}-portal.png`);
+                        },10)
                     })
                 }
             })
