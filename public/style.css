@@ -3577,7 +3577,7 @@ only screen and (                min-resolution: 2dppx) {
 	border-top: 1px solid #EEE;
 }
 
-#primary-menu-trigger,
+#custom-primary-menu-trigger,
 #page-menu-trigger {
 	display: -ms-flex;
 	display: flex;
@@ -3595,14 +3595,14 @@ only screen and (                min-resolution: 2dppx) {
 	transition: opacity .3s ease;
 }
 
-body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
+body:not(.top-search-open) .top-search-parent #custom-primary-menu-trigger {
 	opacity: 1;
 	-webkit-transition: opacity .2s .2s ease, top .4s ease;
 	-o-transition: opacity .2s .2s ease, top .4s ease;
 	transition: opacity .2s .2s ease, top .4s ease;
 }
 
-.top-search-open .top-search-parent #primary-menu-trigger {
+.top-search-open .top-search-parent #custom-primary-menu-trigger {
 	opacity: 0;
 }
 
@@ -3699,7 +3699,7 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
 
 .menu-item:hover > .menu-link,
 .menu-item.current > .menu-link {
-	color: #F89939;
+	color: #F89939 !important;
 }
 
 .menu-item.sub-menu > .menu-link > div { }
@@ -3880,7 +3880,7 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
 		border-top: 0;
 	}
 
-	#primary-menu-trigger,
+	#custom-primary-menu-trigger,
 	#page-menu-trigger {
 		display: none;
 		opacity: 0;
@@ -4653,7 +4653,7 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
 	/* Primary Menu - Overlay Menu
 	-----------------------------------------------------------------*/
 
-	.overlay-menu:not(.top-search-open) #primary-menu-trigger {
+	.overlay-menu:not(.top-search-open) #custom-primary-menu-trigger {
 		display: -ms-flexbox;
 		display: flex;
 		opacity: 1;
@@ -4676,7 +4676,7 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
 		color: #444;
 	}
 
-	.overlay-menu #primary-menu-trigger {
+	.overlay-menu #custom-primary-menu-trigger {
 		z-index: 599;
 	}
 
@@ -10897,7 +10897,8 @@ body:not(.device-touch) .social-icon i {
 }
 
 .menu-socials{
-	padding: 0 16px 0 60px;
+	/* padding: 0 16px 0 60px; */
+	/* padding-block-start: 80px; */
 }
 
 /* Social Icons - Sticky
@@ -12069,7 +12070,7 @@ body:not(.device-touch) .clients-grid .grid-item a {
 /* Pricing Boxes - Features
 -----------------------------------------------------------------*/
 .features-div{
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	box-shadow: rgb(0 0 0 / 12%) 0px 5px 15px;
 	border-radius: 10px;
 }
 .service-features{
@@ -13699,7 +13700,7 @@ h3.titular-title { font-size: 2rem; }
 }
 
 .feature-line{
-	width: 80px;
+	width: 45px;
 	opacity: 1;
 	margin-top: 16px;
 }
@@ -13710,7 +13711,7 @@ h3.titular-title { font-size: 2rem; }
 
 .feature-block > h4{
 	font-weight: 600;
-	font-size: 24px;
+	font-size: 21px;
 	color: rgb(68, 68, 68);
 }
 
