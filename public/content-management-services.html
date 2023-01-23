@@ -127,109 +127,114 @@
 
         <!-- Header
 		============================================= -->
-        <header id="header" class="transparent-header dark header-size-custom" data-sticky-shrink="false"
-            data-sticky-class="not-dark" data-sticky-offset="full" data-sticky-offset-negative="250">
-            <div id="header-wrap">
-                <div class="container">
-                    <div class="header-row">
+    <header id="header" class="transparent-header dark header-size-custom" data-sticky-shrink="false"
+      data-sticky-class="not-dark" data-sticky-offset="full" data-sticky-offset-negative="70">
+      <div id="header-wrap">
+        <div class="container">
+          <div class="header-row">
 
-                        <!-- Logo
-						  ============================================= -->
-                        <div id="logo">
-                            <a href="index.html" class="standard-logo" data-dark-logo="images/logo.png"><img
-                                    src="images/logo.png" alt="Canvas Logo"></a>
-                            <a href="index.html" class="retina-logo" data-dark-logo="images/logo.png"><img
-                                    src="images/logo.png" alt="Canvas Logo"></a>
-                        </div><!-- #logo end -->
+            <!-- Logo
+						============================================= -->
+            <div id="logo">
+              <a href="index.html" class="standard-logo" data-dark-logo="images/logo.png"><img src="images/logo.png"
+                  alt="Canvas Logo"></a>
+              <a href="index.html" class="retina-logo" data-dark-logo="images/logo.png"><img src="images/logo.png"
+                  alt="Canvas Logo"></a>
+            </div><!-- #logo end -->
 
-                        <div id="primary-menu-trigger">
-                            <svg class="svg-trigger burger-menu" viewBox="0 0 100 100">
-                                <path
-                                    d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20">
-                                </path>
-                                <path d="m 30,50 h 40"></path>
-                                <path
-                                    d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20">
-                                </path>
-                            </svg>
-                        </div>
-
-                        <!-- Primary Navigation
-						  ============================================= -->
-                        <nav class="primary-menu row" data-easing="fadeInRight">
-
-                            <ul class="one-page-menu menu-container" data-easing="easeInOutExpo" data-speed="1250"
-                                data-offset="65">
-                                <p class="menu-text w-100">Menu</p>
-                                <li class="menu-item">
-                                    <a href="index.html" class="menu-link">
-                                        <div>Home</div>
-                                    </a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="aboutUs.html" class="menu-link">
-                                        <div>About</div>
-                                    </a>
-                                </li>
-                                <li class="menu-item current">
-                                    <a href="#" class="menu-link">
-                                        <div>Services</div>
-                                    </a>
-                                    <ul class="sub-menu-container" style="">
-                                        <li class="menu-item" style="">
-                                            <a class="menu-link" href="content-management-services.html">
-                                                <div>Content Management</div>
-                                            </a>
-                                        </li>
-                                        <li class="menu-item" style="">
-                                            <a class="menu-link" href="e-commerce.html">
-                                                <div>E-Commerce</div>
-                                            </a>
-                                        </li>
-                                        <li class="menu-item" style="">
-                                            <a class="menu-link" href="">
-                                                <div>Digital Marketing</div>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="contact-us.html" class="menu-link">
-                                        <div>Contact</div>
-                                    </a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="careers.html" class="menu-link">
-                                        <div>Careers</div>
-                                    </a>
-                                </li>
-                            </ul>
-
-                            <div class="row menu-socials">
-                                <div class="col d-flex justify-content-start">
-                                    <a href="#" class="social-icon si-small si-rounded si-facebook">
-                                        <i class="fa fa-facebook"></i>
-                                    </a>
-                                    <a href="#" class="social-icon si-small si-rounded si-twitter">
-                                        <i class="fa fa-twitter"></i>
-                                    </a>
-                                    <a href="#" class="social-icon si-small si-rounded si-gplus">
-                                        <i class="fa fa-instagram"></i>
-                                    </a>
-                                </div>
-                                <div class="col d-flex flex-column align-items-end get-in-touch">
-                                    Get in touch <br />
-                                    <a class="info-email" href="">info@1digitals.in</a>
-                                </div>
-                            </div>
-
-                        </nav><!-- #primary-menu end -->
-
-                    </div>
-                </div>
+            <div id="custom-primary-menu-trigger" >
+              <svg class="svg-trigger burger-menu" viewBox="0 0 100 100">
+                <path
+                  d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20">
+                </path>
+                <path d="m 30,50 h 40"></path>
+                <path
+                  d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20">
+                </path>
+              </svg>
             </div>
-            <div class="header-wrap-clone"></div>
-        </header><!-- #header end -->
+
+            <!-- Primary Navigation
+						============================================= -->
+            <nav class="primary-menu row" data-easing="fadeInRight" data-state="closed" aria-expanded="false">
+              <div class="primary-row-overlay"></div>
+              <div class="container">
+                <ul class="one-page-menu menu-container" data-duration="500">
+                  <p class="menu-text w-100">Menu</p>
+                  <li class="menu-item ">
+                    <a href="index.html" class="menu-link">
+                      <div>Home</div>
+                    </a>
+                  </li>
+                  <li class="menu-item ">
+                    <a href="aboutUs.html" class="menu-link">
+                      <div>About</div>
+                    </a>
+                  </li>
+                  <li class="menu-item current">
+                    <a href="#" class="menu-link">
+                      <div>Services</div>
+                    </a>
+                    <ul class="sub-menu-container">
+                      <li class="menu-item current" >
+                        <a class="menu-link" href="content-management-services.html">
+                          <div>Enterprise Content and Digital Asset Management</div>
+                        </a>
+                      </li>
+                      <li class="menu-item" >
+                        <a class="menu-link" href="e-commerce.html">
+                          <div>Enterprise eCommerce</div>
+                        </a>
+                      </li>
+                      <li class="menu-item" >
+                        <a class="menu-link" href="digital-marketing.html">
+                          <div>Enterprise Marketing</div>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item">
+                    <a href="contact-us.html" class="menu-link">
+                      <div>Contact</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="careers.html" class="menu-link">
+                      <div>Careers</div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="menu-socials">
+                <div class="container">
+                  <div class="row">
+                    <div class="col d-flex justify-content-start">
+                      <a href="#" class="social-icon si-small si-rounded si-facebook">
+                        <i class="fa fa-facebook"></i>
+                      </a>
+                      <a href="#" class="social-icon si-small si-rounded si-twitter">
+                        <i class="fa fa-twitter"></i>
+                      </a>
+                      <a href="#" class="social-icon si-small si-rounded si-gplus">
+                        <i class="fa fa-instagram"></i>
+                      </a>
+                    </div>
+                    <div class="col d-flex flex-column align-items-end get-in-touch">
+                      Get in touch <br />
+                      <a class="info-email" href="">info@1digitals.in</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </nav><!-- #primary-menu end -->
+
+          </div>
+        </div>
+      </div>
+      <div class="header-wrap-clone"></div>
+    </header><!-- #header end -->
 
         <!-- Slider
 		============================================= -->
@@ -237,7 +242,7 @@
             <div class="container">
                 <div class="row pt-5 pb-6 mb-0">
                     <div class="col-lg-7 d-flex align-self-center flex-column pt-6" data-animate="slideInLeft">
-                        <h2 class="nott banner-head about-head">Enterprise Content and Asset Management</h2>
+                        <h2 class="nott banner-head about-head">Enterprise Content and Digital Asset Management</h2>
                     </div>
                     <div class="col-lg-5 d-flex align-self-center flex-column pb-4" data-animate="slideInRight">
                         <img src="images/services/aem/aem-banner-svg.svg" alt="Hero Image"
@@ -256,20 +261,15 @@
                         <div class="row clearfix">
                             <div class="col-lg-6 px-4">
                                 <div class="emphasis-title bottommargin-sm">
-                                    <h3 class="main-heading">To be Decided</h3>
+                                    <h3 class="main-heading">Effective. Engaging. Empowering</h3>
                                 </div>
-                                <p style="color: #777; font-size: 18px;" class="">With many channels and many devices,
-                                    brands today
-                                    create more content than ever before. Organizations face a lot of problems to
-                                    deliver rapidly adaptable experiences across the web, mobile, and any end-point in
-                                    the customer journey. Customers travel through their journeys quickly and
-                                    organizations need to keep up. Therefore, organizations need to be nimble as there
-                                    is no time to create content for every interaction manually
+                                <p style="color: #777; font-size: 18px;" class="">With multiple channels and more devices, brands today create much more content than ever before. Organizations face a lot of problems to deliver rapidly adaptable experiences across the web, mobile and any end-point in the customer journey. Customers travel through their journeys quickly and organizations need to keep up. Therefore, organizations need to be nimble as there is no time to create content for every interaction manually.
                                     <br>
                                     <br>
-                                    An Enterprise with matured Content & Digital Asset Management platform leveraging
-                                    which the organization can churn out great content will give a competitive edge.
-                                    Hence, content management platforms have become organization See More
+                                    An Enterprise with matured Content & Digital Asset Management platform leveraging which the organization can churn out great content will give a competitive edge. Hence, content management platforms have become mission-critical for every organization.
+                                    <br>
+                                    <br>
+                                    We offer End-to-End implementation of Adobe Experience Manager and Adobe Digital Asset Management solutions for managing and delivering connected digital experiences across all channels. We help organizations deliver digital experiences across online and physical touchpoints, Digital asset creation, management and delivery, Mobile-first Forms, and personalized correspondence.
                                 </p>
                             </div>
 
@@ -286,12 +286,7 @@
                                 <div class="emphasis-title bottommargin-sm">
                                     <h3 class="main-heading">Our Passion Is Your Success</h3>
                                 </div>
-                                <p style="color: #777; font-size: 18px;">Various Enterprises are at different levels of
-                                    maturity with respect to handling their content and asset management needs. Our
-                                    services are spread across these varying needs of organisation’s needs of managing
-                                    their content and assets in an effective manner. Our highly technical team of AEM
-                                    experts is here to provide you with top-class engagement and customized end to end
-                                    solutions.</p>
+                                <p style="color: #777; font-size: 18px;">Various Enterprises are at different levels of maturity with respect to handling their content and digital asset management needs. Our services are spread across these varying needs of organizations needs of managing their content and digital assets in an effective manner. Our highly technical team of AEM experts is here to provide you with top-class engagement and customized end-to-end solutions.</p>
                             </div>
                         </div>
                     </div>
@@ -307,16 +302,34 @@
                                     <h3 class="main-heading" style="font-size: 36px;">AEM & DAM Consulting and
                                         Development</h3>
                                 </div>
-                                <p style="color: #777; font-size: 18px;">Our AEM consulting and development experts will
-                                    assess, analyze, and streamline your content and digital asset processes and deliver
-                                    full-scale implementations leveraging our pre-packaged solutions.
-                                    <br>
-                                    <br>
-                                    Single platform for managing all your content & digital asset needs across various
-                                    brands/country sites. Seamlessly deliver content across multiple channels. Faster
-                                    time to market to keep up with consumer demands. Pre-tested components to shorten
-                                    the development cycle. Scale content without losing the personality of your brand
+                                <p style="color: #777; font-size: 18px;">
                                 </p>
+                                <ul>
+                                    <li>
+                                        Our AEM consulting and development experts will assess, analyze, and streamline your content and digital asset processes and deliver full-scale implementations leveraging our pre-packaged solutions
+                                    </li>
+                                    <br>
+                                    <li>
+                                        Single platform for managing all your content & digital asset needs across various brands/country sites
+                                    </li>
+                                    <br>
+                                    <li>
+                                        Seamlessly deliver content across multiple channels
+                                    </li>
+                                    <br>
+                                    <li>
+                                        Faster time to market to keep up with consumer demands
+                                    </li>
+                                    <br>
+                                    <li>
+                                        Pre-tested components to shorten the development cycle
+                                    </li>
+                                    <br>
+                                    <li>
+                                        Scale content without losing the personality of your brand
+                                    </li>
+
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -328,11 +341,10 @@
                                     <h3 class="main-heading" style="font-size: 36px;">Integration with eCommerce,
                                         Marketing & Other 3rd-Party Systems</h3>
                                 </div>
-                                <p style="color: #777; font-size: 18px;">We help create highly differentiated, seamless,
-                                    personalized customer experiences that build your brand in the digital commerce
-                                    space and boost ROI funnels by integrating AEM with Magento, SAP Commerce Cloud or
-                                    any other e-Commerce engines leveraging the Adobe Commerce Integration Framework
-                                    (CIF). We seamlessly integrate AEM with marketing automation. See More
+                                <p style="color: #777; font-size: 18px;">We help create highly differentiated, seamless, personalized customer experiences that build your brand in the digital commerce space and boost ROI funnels by integrating AEM with Magento, SAP Commerce Cloud or any other e-Commerce engines leveraging the Adobe Commerce Integration Framework (CIF).
+                                    <br>
+                                    <br>
+                                    We seamlessly integrate AEM with marketing automation systems including Marketo, Emarsys, and SAP Marketing Cloud as well as tools within Adobe Marketing Cloud including Scene7, Target, and Assets thereby enabling a superior and highly-engaging CRM ecosystem that delivers the right content to the right customer at the right time.
                                 </p>
                             </div>
                             <div class="col-lg-6 end px-4">
@@ -350,16 +362,32 @@
                             </div>
                             <div class="col-lg-6 px-4">
                                 <div class="emphasis-title bottommargin-sm">
+                                    <h3 class="main-heading" style="font-size: 36px;">AEM and DAM Migration & Upgrade   </h3>
+                                </div>
+                                <p style="color: #777; font-size: 18px;">Our AEM migration services include content, digital asset & application migration to AEM from other CMS including SharePoint, Sitecore, Drupal & Page3.
+                                    <br>
+                                    <br>
+                                    We help with defining the migration strategy and have built extensive experience in migrating from various other CMS platforms in addition to upgrading the existing AEM platform without any production downtime. We also have expertise in migrating AEM from on-premise to cloud and vice versa.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="section-integration-ecom" class="page-section bottommargin-lg">
+                        <div class="row clearfix">
+                            <div class="col-lg-6 px-4">
+                                <div class="emphasis-title bottommargin-sm">
                                     <h3 class="main-heading" style="font-size: 36px;">AEM & DAM Managed Services</h3>
                                 </div>
-                                <p style="color: #777; font-size: 18px;">Support and maintenance are just simple
-                                    housekeeping tasks. To optimize your AEM-powered platform, our expert maintenance
-                                    team maximizes efficiencies, proactively addresses privacy, security, and
-                                    operational challenges, and does all it takes to keep it running smoothly for the
-                                    best business outcomes. Our AEM support team works in close collaboration with your
-                                    IT team and provides SLA-driven support & managed services for both on-the-cloud and
-                                    on-premise solutions.
+                                <p style="color: #777; font-size: 18px;">Support and maintenance are just simple housekeeping tasks. To optimize your AEM-powered platform, our expert maintenance team maximizes efficiencies, proactively addresses privacy, security, and operational challenges, and does all it takes to keep it running smoothly for the best business outcomes. 
+                                    <br>
+                                    <br>
+                                    Our AEM support team works in close collaboration with your IT team and provides SLA-driven support & managed services for both on-the-cloud and on-premise solutions.
                                 </p>
+                            </div>
+                            <div class="col-lg-6 end px-4">
+                                <img src="images/services/aem/IntegrationAEM.png" alt="NextGen Framework"
+                                    data-animate="slideInRight">
                             </div>
                         </div>
                     </div>
@@ -369,13 +397,9 @@
                         <div class="row clearfix">
                             <div class="col-lg-12 px-4">
                                 <div class="emphasis-title bottommargin-sm">
-                                    <h3 class="main-heading">Faster, Flexible, and Empowering!!!</h3>
+                                    <h3 class="main-heading" style="text-align: center;">Faster, Flexible, and Empowering!!!</h3>
                                 </div>
-                                <p style="color: #777; font-size: 18px;">We are experts in crafting personalized
-                                    experiences for your audience with our AEM Solutions. Based on our experiences with
-                                    our clients and our analysis of industry needs, we have carefully crafted Basic,
-                                    Intermediate & Advanced custom AEM packages, which will help organizations modernize
-                                    and extend their content management system architecture.</p>
+                                <p style="color: #777; font-size: 18px; text-align: center;">We are experts in crafting personalized experiences for your audience with our AEM Solutions. Based on our experiences with our clients and our analysis of industry needs, we have carefully crafted Basic, Intermediate & Advanced custom AEM packages, which will help organizations modernize and extend their content management system architecture.</p>
                             </div>
                         </div>
                     </div>
@@ -490,99 +514,141 @@
                     </div>
 
                     <div class="section-talk center my-4">
-                        <p class="stories center">One of our major implementations can be found at the following location: <b>Success Stories</b></p>
-                        <p class="reach-out center"> <b>Reach out</b> to us to understand more about these offerings and to understand the 
+                        <p class="stories center">One of our major implementations can be found at the following location: <a href="https://business.adobe.com/customer-success-stories/kao-case-study" target="_blank"><b>Success Stories</b></a></p>
+                        <!-- <p class="reach-out center"> <b>Reach out</b> to us to understand more about these offerings and to understand the 
                             success stories we’ve delivered for our clients.</p>
-                        <a href="" class="talk-btn center py-2 px-4 rounded-pill">Let's Talk</a>
+                        <a href="" class="talk-btn center py-2 px-4 rounded-pill">Let's Talk</a> -->
+                    </div>
+
+                    <div id="section-glimpse" class="page-section bottommargin-lg">
+                        <div class="row clearfix">
+                            <div class="col-lg-12 px-4">
+                                <div class="emphasis-title bottommargin-sm">
+                                    <h3 class="main-heading" style="text-transform: capitalize;">A glimpse into our work:</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <p style="color: #777; font-size: 18px; ">Following are a few of our Success Stories related to AEM: </p>
+                                <ul class="list-ul">
+                                    <li class="main-li">
+                                        Implementation of multi-brand - multi-country sites for an industry-leading cosmetics company which includes 15+ brands with more than 60 sites in a single AEM instance
+                                        <ul>
+                                            <li>
+                                                Launched 10 sites in a span of 12 months
+                                            </li>
+                                            <li>
+                                                Automated content migration of more than 5 thousand pages spanning across 15 country/language sites
+                                            </li>
+                                            <li>
+                                                AEM Upgrades and Service pack installations
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="main-li">
+                                        Implementation of 11 e-Commerce sites constituting 5 countries and 4 languages with AEM serving as frontend system for Hybris commerce backend
+                                    </li>
+                                    <li class="main-li">
+                                        Integration with third-party systems such as Bazaarvoice, PriceSpider, MarseFlag, OneTrust, accessiBe, GTM & Google Analytics, Adobe Launch, SAP Marketing Cloud, HCI ((Hana Cloud Integration)
+                                    </li>
+                                    <li class="main-li">
+                                        Implementation of AEM DAM along with brand portal that manages more than twenty thousand enterprise scale assets
+                                    </li>
+
+                                    <li class="main-li">
+                                        Multi-tenant implementation of AEM sites on AEM as a cloud service
+                                    </li>
+                                    <li class="main-li">
+                                        Implementation of React-based headless AEM sites using AEM as a cloud service
+                                    </li>
+                                    <li class="main-li">
+                                        Integration of AEM with Hybris using commerce integration framework
+                                    </li>
+                                    
+                                    
+                                </ul>
+                            </div>
+                        </div>
                     </div>
 
 
                     <div id="section-contact" class="section page-section">
                         <div class="container clearfix">
-
-                            <div class="row">
-
-                                <div class="col-md-6 contactUs-div" data-animate="fadeInLeft">
-                                    <div class="heading heading-contact">
-                                        <h3 class="main-heading contactUs-text">To request furthur
-                                            information, <span class="text-orange">Contact us </span>
-                                            via social channels.</h3>
-                                        <p class="subheading">We just need a couples of hours. No more than two working
-                                            days
-                                            since receiving you issue tickets.</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 form-widget" data-animate="fadeInRight">
-
-                                    <div class="form-result"></div>
-
-                                    <form class="row mb-0" id="template-contactform" name="template-contactform"
-                                        action="include/form.php" method="post">
-
-                                        <div class="form-process">
-                                            <div class="css3-spinner">
-                                                <div class="css3-spinner-scale-ripple">
-                                                    <div></div>
-                                                    <div></div>
-                                                    <div></div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6 mb-4">
-                                            <input type="text" id="template-contactform-name"
-                                                name="template-contactform-name" value=""
-                                                class="sm-form-control border-form-control required"
-                                                placeholder="Name*" />
-                                        </div>
-                                        <div class="col-md-6 mb-4">
-                                            <input type="email" id="template-contactform-email"
-                                                name="template-contactform-email" value=""
-                                                class="required email sm-form-control border-form-control"
-                                                placeholder="Email*" />
-                                        </div>
-
-                                        <div class="w-100"></div>
-
-                                        <div class="col-md-12 mb-4">
-                                            <input type="text" id="template-contactform-subject" name="subject" value=""
-                                                class="required sm-form-control border-form-control"
-                                                placeholder="Subject*" />
-                                        </div>
-
-                                        <div class="w-100"></div>
-
-                                        <div class="col-12 mb-4">
-                                            <textarea class="required sm-form-control border-form-control"
-                                                id="template-contactform-message" name="template-contactform-message"
-                                                rows="7" cols="30"
-                                                placeholder="Please describe what you need*"></textarea>
-                                        </div>
-
-                                        <div class="col-12 mb-4">
-                                            <button class="button button-border button-circle fw-medium ms-0"
-                                                type="submit" id="template-contactform-submit"
-                                                name="template-contactform-submit" value="submit">Send
-                                                Message</button>
-                                        </div>
-
-                                        <div class="w-100"></div>
-
-                                        <div class="col-12 d-none">
-                                            <input type="text" id="template-contactform-botcheck"
-                                                name="template-contactform-botcheck" value="" class="sm-form-control" />
-                                        </div>
-
-                                        <input type="hidden" name="prefix" value="template-contactform-">
-
-                                    </form>
-
-                                </div>
-
+              
+                          <div class="row">
+              
+                            <div class="col-md-6 contactUs-div" data-animate="fadeInLeft">
+                              <div class="heading heading-contact">
+                                <h3 class="main-heading contactUs-text">We’d <span class="text-orange">love</span> to hear from you</h3>
+                                <p class="subheading">Contact us today to learn more about how we can help you achieve your business goals and listen to our success stories!</p>
+                              </div>
                             </div>
-
+                            <div class="col-md-6 form-widget" data-animate="fadeInRight">
+              
+                              <div class="form-result"></div>
+              
+                              <form class="row mb-0" id="template-contactform" name="template-contactform" action="include/form.php"
+                                method="post">
+              
+                                <div class="form-process">
+                                  <div class="css3-spinner">
+                                    <div class="css3-spinner-scale-ripple">
+                                      <div></div>
+                                      <div></div>
+                                      <div></div>
+                                    </div>
+                                  </div>
+                                </div>
+              
+                                <div class="col-md-6 mb-4">
+                                  <input type="text" id="template-contactform-name" name="template-contactform-name" value=""
+                                    class="sm-form-control border-form-control required" placeholder="Name*" />
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                  <input type="email" id="template-contactform-email" name="template-contactform-email" value=""
+                                    class="required email sm-form-control border-form-control" placeholder="Email*" />
+                                </div>
+              
+                                <div class="w-100"></div>
+              
+                                <div class="col-md-12 mb-4">
+                                  <input type="text" id="template-contactform-subject" name="subject" value=""
+                                    class="required sm-form-control border-form-control" placeholder="Subject*" />
+                                </div>
+              
+                                <div class="w-100"></div>
+              
+                                <div class="col-12 mb-4">
+                                  <textarea class="required sm-form-control border-form-control" id="template-contactform-message"
+                                    name="template-contactform-message" rows="7" cols="30"
+                                    placeholder="Please describe what you need*"></textarea>
+                                </div>
+              
+                                <div class="col-12 mb-4">
+                                  <button class="button button-border button-circle fw-medium ms-0" type="submit"
+                                    id="template-contactform-submit" name="template-contactform-submit" value="submit">Send
+                                    Message</button>
+                                </div>
+              
+                                <div class="w-100"></div>
+              
+                                <div class="col-12 d-none">
+                                  <input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value=""
+                                    class="sm-form-control" />
+                                </div>
+              
+                                <input type="hidden" name="prefix" value="template-contactform-">
+              
+                              </form>
+              
+                            </div>
+              
+                          </div>
+              
                         </div>
-
+              
                     </div>
 
                 </div>
@@ -656,6 +722,7 @@
     <!-- Footer Scripts
 	============================================= -->
     <script src="js/functions.js"></script>
+    <script src="js/customs.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 

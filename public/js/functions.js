@@ -709,8 +709,7 @@ window.scwEvents = window.scwEvents || {};
 			windowScrT	= $window.scrollTop();
 
 			if( $body.hasClass('device-xl') || $body.hasClass('device-lg') ) {
-				if( windowScrT > headerOffset ) {
-
+				if( windowScrT > (headerOffset - 400) ) {
 					if( !$body.hasClass('side-header') ) {
 						$header.filter(':not(.no-sticky)').addClass('sticky-header');
 						// if( !$headerWrap.hasClass('force-not-dark') ) { $headerWrap.removeClass('not-dark'); }
@@ -2083,6 +2082,7 @@ window.scwEvents = window.scwEvents || {};
 				headerOffset = $header.offset().top;
 				$headerWrap.addClass('position-absolute');
 				headerWrapOffset = $headerWrap.offset().top;
+				console.log(headerWrapOffset);
 				$headerWrap.removeClass('position-absolute');
 			}
 

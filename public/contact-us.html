@@ -128,207 +128,199 @@
         <!-- Header
 		============================================= -->
         <header id="header" class="transparent-header dark header-size-custom" data-sticky-shrink="false"
-            data-sticky-class="not-dark" data-sticky-offset="full" data-sticky-offset-negative="5000">
-            <div id="header-wrap">
+        data-sticky-class="not-dark" data-sticky-offset="full" data-sticky-offset-negative="70">
+        <div id="header-wrap">
+          <div class="container">
+            <div class="header-row">
+  
+              <!-- Logo
+                          ============================================= -->
+              <div id="logo">
+                <a href="index.html" class="standard-logo" data-dark-logo="images/logo.png"><img src="images/logo.png"
+                    alt="Canvas Logo"></a>
+                <a href="index.html" class="retina-logo" data-dark-logo="images/logo.png"><img src="images/logo.png"
+                    alt="Canvas Logo"></a>
+              </div><!-- #logo end -->
+  
+              <div id="custom-primary-menu-trigger" >
+                <svg class="svg-trigger burger-menu" viewBox="0 0 100 100">
+                  <path
+                    d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20">
+                  </path>
+                  <path d="m 30,50 h 40"></path>
+                  <path
+                    d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20">
+                  </path>
+                </svg>
+              </div>
+  
+              <!-- Primary Navigation
+                          ============================================= -->
+              <nav class="primary-menu row" data-easing="fadeInRight" data-state="closed" aria-expanded="false">
+                <div class="primary-row-overlay"></div>
                 <div class="container">
-                    <div class="header-row">
-
-                        <!-- Logo
-						  ============================================= -->
-                        <div id="logo">
-                            <a href="index.html" class="standard-logo" data-dark-logo="images/logo.png"><img
-                                    src="images/logo.png" alt="Canvas Logo"></a>
-                            <a href="index.html" class="retina-logo" data-dark-logo="images/logo.png"><img
-                                    src="images/logo.png" alt="Canvas Logo"></a>
-                        </div><!-- #logo end -->
-
-                        <div id="primary-menu-trigger">
-                            <svg class="svg-trigger burger-menu" viewBox="0 0 100 100">
-                                <path
-                                    d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20">
-                                </path>
-                                <path d="m 30,50 h 40"></path>
-                                <path
-                                    d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20">
-                                </path>
-                            </svg>
-                        </div>
-
-                        <!-- Primary Navigation
-						  ============================================= -->
-                        <nav class="primary-menu row" data-easing="fadeInRight">
-
-                            <ul class="one-page-menu menu-container" data-easing="easeInOutExpo" data-speed="1250"
-                                data-offset="15">
-                                <p class="menu-text w-100">Menu</p>
-                                <li class="menu-item">
-                                    <a href="index.html" class="menu-link">
-                                        <div>Home</div>
-                                    </a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="aboutUs.html" class="menu-link">
-                                        <div>About</div>
-                                    </a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#" class="menu-link">
-                                        <div>Services</div>
-                                    </a>
-                                    <ul class="sub-menu-container" style="">
-                                        <li class="menu-item" style="">
-                                            <a class="menu-link" href="content-management-services.html">
-                                                <div>Content Management</div>
-                                            </a>
-                                        </li>
-                                        <li class="menu-item" style="">
-                                            <a class="menu-link" href="e-commerce.html">
-                                                <div>E-Commerce</div>
-                                            </a>
-                                        </li>
-                                        <li class="menu-item" style="">
-                                            <a class="menu-link" href="">
-                                                <div>Digital Marketing</div>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item current">
-                                    <a href="contact-us.html" class="menu-link">
-                                        <div>Contact</div>
-                                    </a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="careers.html" class="menu-link">
-                                        <div>Careers</div>
-                                    </a>
-                                </li>
-                            </ul>
-
-                            <div class="row menu-socials">
-                                <div class="col d-flex justify-content-start">
-                                    <a href="#" class="social-icon si-small si-rounded si-facebook">
-                                        <i class="fa fa-facebook"></i>
-                                    </a>
-                                    <a href="#" class="social-icon si-small si-rounded si-twitter">
-                                        <i class="fa fa-twitter"></i>
-                                    </a>
-                                    <a href="#" class="social-icon si-small si-rounded si-gplus">
-                                        <i class="fa fa-instagram"></i>
-                                    </a>
-                                </div>
-                                <div class="col d-flex flex-column align-items-end get-in-touch">
-                                    Get in touch <br />
-                                    <a class="info-email" href="">info@1digitals.in</a>
-                                </div>
-                            </div>
-
-                        </nav><!-- #primary-menu end -->
-
-                    </div>
+                  <ul class="one-page-menu menu-container" data-duration="500">
+                    <p class="menu-text w-100">Menu</p>
+                    <li class="menu-item ">
+                      <a href="index.html" class="menu-link">
+                        <div>Home</div>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="aboutUs.html" class="menu-link">
+                        <div>About</div>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#" class="menu-link">
+                        <div>Services</div>
+                      </a>
+                      <ul class="sub-menu-container">
+                        <li class="menu-item" >
+                          <a class="menu-link" href="content-management-services.html">
+                            <div>Enterprise Content and Digital Asset Management</div>
+                          </a>
+                        </li>
+                        <li class="menu-item" >
+                          <a class="menu-link" href="e-commerce.html">
+                            <div>Enterprise eCommerce</div>
+                          </a>
+                        </li>
+                        <li class="menu-item" >
+                          <a class="menu-link" href="digital-marketing.html">
+                            <div>Enterprise Marketing</div>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="menu-item current">
+                      <a href="contact-us.html" class="menu-link">
+                        <div>Contact</div>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="careers.html" class="menu-link">
+                        <div>Careers</div>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
+  
+                <div class="menu-socials">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col d-flex justify-content-start">
+                        <a href="#" class="social-icon si-small si-rounded si-facebook">
+                          <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-icon si-small si-rounded si-twitter">
+                          <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon si-small si-rounded si-gplus">
+                          <i class="fa fa-instagram"></i>
+                        </a>
+                      </div>
+                      <div class="col d-flex flex-column align-items-end get-in-touch">
+                        Get in touch <br />
+                        <a class="info-email" href="">info@1digitals.in</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+              </nav><!-- #primary-menu end -->
+  
             </div>
-            <div class="header-wrap-clone"></div>
-        </header><!-- #header end -->
+          </div>
+        </div>
+        <div class="header-wrap-clone"></div>
+      </header><!-- #header end -->
 
         <!-- Content
 		============================================= -->
         <section id="content">
             <div class="content-wrap" style="padding-top: 20px;">
                 <div class="container clearfix">
-                    <div id="section-contact" class="page-section">
+                    <div id="section-contact" class="section page-section">
                         <div class="container clearfix">
-
-                            <div class="row">
-                                <h3 class="main-heading contactUs-text pb-5">Hey! <span class="text-orange">Tell us all </span>
-                                    the things</h3>
-                                <div class="col-md-6 contactUs-div" data-animate="fadeInLeft">
-                                    <div class="heading heading-contact">
-                                        <h3 class="main-heading contactUs-text">To request furthur
-                                            information, <span class="text-orange">Contact us </span>
-                                            via social channels.</h3>
-                                        <p class="subheading">We just need a couples of hours. No more than two working
-                                            days
-                                            since receiving you issue tickets.</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 form-widget" data-animate="fadeInRight">
-
-                                    <div class="form-result"></div>
-
-                                    <form class="row mb-0" id="template-contactform" name="template-contactform"
-                                        action="include/form.php" method="post">
-
-                                        <div class="form-process">
-                                            <div class="css3-spinner">
-                                                <div class="css3-spinner-scale-ripple">
-                                                    <div></div>
-                                                    <div></div>
-                                                    <div></div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6 mb-4">
-                                            <input type="text" id="template-contactform-name"
-                                                name="template-contactform-name" value=""
-                                                class="sm-form-control border-form-control required"
-                                                placeholder="Name*" />
-                                        </div>
-                                        <div class="col-md-6 mb-4">
-                                            <input type="email" id="template-contactform-email"
-                                                name="template-contactform-email" value=""
-                                                class="required email sm-form-control border-form-control"
-                                                placeholder="Email*" />
-                                        </div>
-
-                                        <div class="w-100"></div>
-
-                                        <div class="col-md-12 mb-4">
-                                            <input type="text" id="template-contactform-subject" name="subject" value=""
-                                                class="required sm-form-control border-form-control"
-                                                placeholder="Subject*" />
-                                        </div>
-
-                                        <div class="w-100"></div>
-
-                                        <div class="col-12 mb-4">
-                                            <textarea class="required sm-form-control border-form-control"
-                                                id="template-contactform-message" name="template-contactform-message"
-                                                rows="7" cols="30"
-                                                placeholder="Please describe what you need*"></textarea>
-                                        </div>
-
-                                        <div class="col-12 mb-4">
-                                            <button class="button button-border button-circle fw-medium ms-0"
-                                                type="submit" id="template-contactform-submit"
-                                                name="template-contactform-submit" value="submit">Send
-                                                Message</button>
-                                        </div>
-
-                                        <div class="w-100"></div>
-
-                                        <div class="col-12 d-none">
-                                            <input type="text" id="template-contactform-botcheck"
-                                                name="template-contactform-botcheck" value="" class="sm-form-control" />
-                                        </div>
-
-                                        <input type="hidden" name="prefix" value="template-contactform-">
-
-                                    </form>
-
-                                </div>
-
+              
+                          <div class="row">
+              
+                            <div class="col-md-6 contactUs-div" data-animate="fadeInLeft">
+                              <div class="heading heading-contact">
+                                <h3 class="main-heading contactUs-text">We’d <span class="text-orange">love</span> to hear from you</h3>
+                                <p class="subheading">Contact us today to learn more about how we can help you achieve your business goals and listen to our success stories!</p>
+                              </div>
                             </div>
-
+                            <div class="col-md-6 form-widget" data-animate="fadeInRight">
+              
+                              <div class="form-result"></div>
+              
+                              <form class="row mb-0" id="template-contactform" name="template-contactform" action="include/form.php"
+                                method="post">
+              
+                                <div class="form-process">
+                                  <div class="css3-spinner">
+                                    <div class="css3-spinner-scale-ripple">
+                                      <div></div>
+                                      <div></div>
+                                      <div></div>
+                                    </div>
+                                  </div>
+                                </div>
+              
+                                <div class="col-md-6 mb-4">
+                                  <input type="text" id="template-contactform-name" name="template-contactform-name" value=""
+                                    class="sm-form-control border-form-control required" placeholder="Name*" />
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                  <input type="email" id="template-contactform-email" name="template-contactform-email" value=""
+                                    class="required email sm-form-control border-form-control" placeholder="Email*" />
+                                </div>
+              
+                                <div class="w-100"></div>
+              
+                                <div class="col-md-12 mb-4">
+                                  <input type="text" id="template-contactform-subject" name="subject" value=""
+                                    class="required sm-form-control border-form-control" placeholder="Subject*" />
+                                </div>
+              
+                                <div class="w-100"></div>
+              
+                                <div class="col-12 mb-4">
+                                  <textarea class="required sm-form-control border-form-control" id="template-contactform-message"
+                                    name="template-contactform-message" rows="7" cols="30"
+                                    placeholder="Please describe what you need*"></textarea>
+                                </div>
+              
+                                <div class="col-12 mb-4">
+                                  <button class="button button-border button-circle fw-medium ms-0" type="submit"
+                                    id="template-contactform-submit" name="template-contactform-submit" value="submit">Send
+                                    Message</button>
+                                </div>
+              
+                                <div class="w-100"></div>
+              
+                                <div class="col-12 d-none">
+                                  <input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value=""
+                                    class="sm-form-control" />
+                                </div>
+              
+                                <input type="hidden" name="prefix" value="template-contactform-">
+              
+                              </form>
+              
+                            </div>
+              
+                          </div>
+              
                         </div>
-
-                    </div>
+              
+                      </div>
 
                     <div class="section-address">
                         <div class="container">
-                            <h3 class="main-heading">We are in 2 Countries <br /> <span class="text-orange">Visit
-                                    Us</span> </h3>
+                            <h3 class="main-heading"><span class="text-orange">Connect</span> </h3>
                             <div class="row mt-4 col-mb-50">
                                 <div class="col-lg-4 px-4" data-animate="fadeIn">
                                     <div class="heading-block border-bottom-0" style="margin-bottom: 15px;">
@@ -431,6 +423,7 @@
     <!-- Footer Scripts
 	============================================= -->
     <script src="js/functions.js"></script>
+    <script src="js/customs.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 
