@@ -2082,7 +2082,6 @@ window.scwEvents = window.scwEvents || {};
 				headerOffset = $header.offset().top;
 				$headerWrap.addClass('position-absolute');
 				headerWrapOffset = $headerWrap.offset().top;
-				console.log(headerWrapOffset);
 				$headerWrap.removeClass('position-absolute');
 			}
 

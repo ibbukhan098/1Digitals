@@ -12088,9 +12088,13 @@ body:not(.device-touch) .clients-grid .grid-item a {
 
 .features-list{
 	font-size: 18px;
-	margin-left: 16px;
+	/* margin-left: 16px; */
 }
 
+
+.features-list li:not(:last-child){
+	margin-block-end: 7px;
+}
 .pricing-features {
 	border-top: 1px solid rgba(0,0,0,0.075);
 	border-bottom: 1px solid rgba(0,0,0,0.075);

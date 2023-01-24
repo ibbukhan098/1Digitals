@@ -113,9 +113,35 @@
 .list-ul li{
 	font-size: 16px;
 	/* text-indent: -16px; */
-	margin-inline-start: 10px;
+	/* margin-inline-start: 10px; */
+	padding-inline-start: 25px;
+	position: relative;
+	list-style-type: none;
 	/* list-style-position: inside; */
 }
+
+
+.list-ul li::before{
+	content: '';
+	position: absolute;
+	left: -0;
+	top: 2px;
+	/* translate: 0 -50%; */
+	background: url(../images/tick.png);
+	width: 20px;
+	height: 20px;
+	background-size:20px;
+	background-repeat: no-repeat;
+}
+
+.list-ul li ul li{
+	list-style-type: circle;
+	list-style-position: inside;
+}
+.list-ul li ul li::before{
+	display: none;
+}
+
 
 
 
@@ -181,8 +207,55 @@
 	width: 100%;
 }
 
+span.special-span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    font-size: 40px;
+    font-weight: 700;
+}
+
 @media only screen and (max-width:767px){
 	.list-btn{
 		flex: 0 0 auto;
 	}
+}
+
+@media only screen and (min-width:992px){
+	.menu-item.sub-menu{
+		position: relative;
+	}
+	.overlay-menu .sub-menu-container{
+		position: absolute !important;
+		right: -80% !important;
+		top: 0px !important;
+		left: auto !important;
+	}
+
+	body[data-pagetype="contact"] .dark .svg-trigger path{
+		stroke: #000 !important;
+	}
+}
+
+.showMore{
+	max-height: 200px;
+	overflow: hidden;
+	line-height: 24px;
+	position: relative;
+}
+
+.showmore-btn{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background: #fff;
+	border: none;
+	padding: 0px 0px 0px 15px;
+	color: #F89939;
+	line-height: 24px;
+}
+
+.showmore-btn span{
+	pointer-events: none;
 }

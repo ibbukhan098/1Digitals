@@ -1,11 +1,21 @@
+import ShowMore from "./showmore.js";
+
+
+document.addEventListener('DOMContentLoaded', ()=>{
+    ShowMore();
+})
+
+
+
+
 let primaryMenu = $('.primary-menu'),
     $body1 = $('body'),
     menuSpeed = primaryMenu.attr( 'data-trigger-speed' ) || 200,
-    meuContainer = $('.primary-menu .menu-container'),
+    menuContainer = $('.primary-menu .menu-container'),
     menuSocials = $('.primary-menu .menu-socials');
 menuSpeed = Number(menuSpeed);   
 let clicked = false;
-let navItems = [...meuContainer[0].children].filter((ele)=>{
+let navItems = [...menuContainer[0].children].filter((ele)=>{
     return ele.classList.contains('menu-item')
 })
 $('#custom-primary-menu-trigger').off( 'click' ).on( 'click', function() {
@@ -40,6 +50,22 @@ $('#custom-primary-menu-trigger').off( 'click' ).on( 'click', function() {
     clicked = false;
 });
 
+// let animDynamic = function(ele,animName,type){
+//     return new Promise (function(resolve,reject){
+//         if(type == 'remove'){
+//             ele.classList.remove(`${animName}`,'animated')
+//         }
+//         else{
+//             ele.classList.add(`${animName}`,'animated')
+//         }
+//         resolve()
+//     })
+// }
+
+let animTimer = async(ms) => {
+    return new Promise(res => setTimeout(res(),ms))
+}
+
 
 
 function openedNavPopup(){
@@ -49,15 +75,32 @@ function openedNavPopup(){
 
     let openedEle = document.querySelector('.primary-menu[data-state="opened"] .primary-row-overlay');
     if(openedEle != null){
-        openedEle.addEventListener('animationend',()=>{
-            meuContainer.css({
+        openedEle.addEventListener('animationend',async()=>{
+            menuContainer.css({
+                'opacity':'1'
+            });
+            menuSocials.css({
                 'opacity':'1'
             })
+
+            // for(let i=0;i<navItems.length;i++){
+            //     // setTimeout(()=>{
+            //         await animTimer(500)
+            //         navItems[i].classList.remove('backOutLeft','animated');
+            //         navItems[i].classList.add('backInRight','animated');
+            //     // },600)
+            // }
             
 
             navItems.forEach(async(ele,index)=>{
-                ele.classList.remove('backOutLeft','animated');
-                ele.classList.add('backInRight','animated');
+                // setTimeout(()=>{
+                    // await animTimer(5000)
+                    ele.classList.remove('backOutLeft','animated');
+                    ele.classList.add('backInRight','animated');
+                // },500)
+                // await animDynamic(ele,'backOutLeft','remove').then().then(()=>{
+                //     ele.classList.add('backInRight','animated')
+                // })
             })
         },{once:true})
     }
@@ -82,7 +125,10 @@ function closingNavPopup(){
             })
             navAnim.then((res)=>{
                 // debugger;
-                meuContainer.css({
+                menuSocials.css({
+                    'opacity':'0'
+                })
+                menuContainer.css({
                     'opacity':'0',
                     'animation-duration':'350ms !important'
                 });
@@ -114,6 +160,9 @@ if(btnList != null){
         // if(!(btn.classList.contains('active'))){
 
             btn.addEventListener('click',()=>{
+                if((btn.classList.contains('active'))){
+                    return;
+                }
                 let cls =[...btnList].filter((ele)=>{
                     return ele.classList.contains('active');
                 });
