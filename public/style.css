@@ -2757,7 +2757,7 @@ img.lazy:not([src]) {
 	position: relative;
 	width: 100%;
 	padding: 60px 0 40px 0;
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 
 .parallax {
@@ -13474,6 +13474,12 @@ input[type=checkbox]:not(:checked) + label.error { display: block !important; }
 	background: #F89939;
 }
 
+@media only screen and (max-width:767px){
+	.heading-contact::before{
+		display: none;
+	}
+}
+
 /* ----------------------------------------------------------------
 	Google Maps
 -----------------------------------------------------------------*/
@@ -13614,7 +13620,7 @@ h3.titular-title { font-size: 2rem; }
 /* Heading Block - with Subtitle
 -----------------------------------------------------------------*/
 
-.heading-block { margin-bottom: 50px; }
+.heading-block { margin-bottom: 10px; }
 
 .heading-block h1,
 .heading-block h2,
@@ -13623,7 +13629,7 @@ h3.titular-title { font-size: 2rem; }
 .emphasis-title h1,
 .emphasis-title h2 {
 	margin-bottom: 0;
-	font-weight: 700;
+	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	color: #333;
@@ -13631,7 +13637,7 @@ h3.titular-title { font-size: 2rem; }
 
 .emphasis-title h1,
 .emphasis-title h2 {
-	font-weight: 400;
+	/* font-weight: 400; */
 	letter-spacing: 0;
 	text-transform: none;
 }
@@ -13640,7 +13646,7 @@ h3.titular-title { font-size: 2rem; }
 
 .heading-block h2 { font-size: 30px; }
 
-.heading-block h3 { font-size: 1.75rem; }
+.heading-block h3 { font-size: 1.25rem; font-weight:600 ;}
 
 .heading-block h4 {
 	font-size: 1.25rem;
@@ -13737,7 +13743,7 @@ h3.titular-title { font-size: 2rem; }
 
 .emphasis-title h1,
 .emphasis-title h2 {
-	font-size: 64px;
+	font-size: 48px;
 	letter-spacing: -2px;
 }
 
@@ -16837,3 +16843,24 @@ label.checkbox { padding-left: 20px; }
 }
 
 
+
+
+
+
+/* colors */
+
+.desc-black{
+	color: #3c3c3c;
+}
+
+.innerpage-banner img{
+	z-index: 3; 
+	transform: translateY(45px);
+}
+.lh-24{
+	line-height: 24px !important;
+}
+
+.lead{
+	font-size: 18px;
+}
