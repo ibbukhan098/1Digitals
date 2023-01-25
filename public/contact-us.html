@@ -24,6 +24,7 @@
 	============================================= -->
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="responsive.css" type="text/css" />
 
     <link rel="stylesheet" href="css/dark.css" type="text/css" />
     <link rel="stylesheet" href="css/animate.css" type="text/css" />
@@ -38,7 +39,7 @@
 
     <!-- Document Title
 	============================================= -->
-    <title>About Us | 1Digitals</title>
+    <title>Contact Us | 1Digitals</title>
     <style>
         @media (min-width: 992px) {
     
@@ -262,118 +263,112 @@
         <!-- Content
 		============================================= -->
         <section id="content">
-            <div class="content-wrap" style="padding-top: 20px;">
+            <div class="content-wrap">
                 <div class="container clearfix">
                     <div id="section-contact" class="section page-section">
-                        <div class="container clearfix">
+                      <div class="row">
               
-                          <div class="row">
-              
-                            <div class="col-md-6 contactUs-div" data-animate="fadeInLeft">
-                              <div class="heading heading-contact">
-                                <h3 class="main-heading contactUs-text">We’d <span class="text-orange">love</span> to hear from you</h3>
-                                <p class="subheading">Contact us today to learn more about how we can help you achieve your business goals and listen to our success stories!</p>
+                        <div class="col-md-6 contactUs-div" data-animate="fadeInLeft">
+                          <div class="heading heading-contact">
+                            <h3 class="main-heading contactUs-text">We’d <span class="text-orange">love</span> to hear from you</h3>
+                            <p class="subheading">Contact us today to learn more about how we can help you achieve your business goals and listen to our success stories!</p>
+                          </div>
+                        </div>
+                        <div class="col-md-6 form-widget" data-animate="fadeInRight">
+          
+                          <div class="form-result"></div>
+          
+                          <form class="row mb-0" id="template-contactform" name="template-contactform" action="include/form.php"
+                            method="post">
+          
+                            <div class="form-process">
+                              <div class="css3-spinner">
+                                <div class="css3-spinner-scale-ripple">
+                                  <div></div>
+                                  <div></div>
+                                  <div></div>
+                                </div>
                               </div>
                             </div>
-                            <div class="col-md-6 form-widget" data-animate="fadeInRight">
-              
-                              <div class="form-result"></div>
-              
-                              <form class="row mb-0" id="template-contactform" name="template-contactform" action="include/form.php"
-                                method="post">
-              
-                                <div class="form-process">
-                                  <div class="css3-spinner">
-                                    <div class="css3-spinner-scale-ripple">
-                                      <div></div>
-                                      <div></div>
-                                      <div></div>
-                                    </div>
-                                  </div>
-                                </div>
-              
-                                <div class="col-md-6 mb-4">
-                                  <input type="text" id="template-contactform-name" name="template-contactform-name" value=""
-                                    class="sm-form-control border-form-control required" placeholder="Name*" />
-                                </div>
-                                <div class="col-md-6 mb-4">
-                                  <input type="email" id="template-contactform-email" name="template-contactform-email" value=""
-                                    class="required email sm-form-control border-form-control" placeholder="Email*" />
-                                </div>
-              
-                                <div class="w-100"></div>
-              
-                                <div class="col-md-12 mb-4">
-                                  <input type="text" id="template-contactform-subject" name="subject" value=""
-                                    class="required sm-form-control border-form-control" placeholder="Subject*" />
-                                </div>
-              
-                                <div class="w-100"></div>
-              
-                                <div class="col-12 mb-4">
-                                  <textarea class="required sm-form-control border-form-control" id="template-contactform-message"
-                                    name="template-contactform-message" rows="7" cols="30"
-                                    placeholder="Please describe what you need*"></textarea>
-                                </div>
-              
-                                <div class="col-12 mb-4">
-                                  <button class="button button-border button-circle fw-medium ms-0" type="submit"
-                                    id="template-contactform-submit" name="template-contactform-submit" value="submit">Send
-                                    Message</button>
-                                </div>
-              
-                                <div class="w-100"></div>
-              
-                                <div class="col-12 d-none">
-                                  <input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value=""
-                                    class="sm-form-control" />
-                                </div>
-              
-                                <input type="hidden" name="prefix" value="template-contactform-">
-              
-                              </form>
-              
+          
+                            <div class="col-md-6 mb-4">
+                              <input type="text" id="template-contactform-name" name="template-contactform-name" value=""
+                                class="sm-form-control border-form-control required" placeholder="Name*" />
                             </div>
-              
-                          </div>
-              
+                            <div class="col-md-6 mb-4">
+                              <input type="email" id="template-contactform-email" name="template-contactform-email" value=""
+                                class="required email sm-form-control border-form-control" placeholder="Email*" />
+                            </div>
+          
+                            <div class="w-100"></div>
+          
+                            <div class="col-md-12 mb-4">
+                              <input type="text" id="template-contactform-subject" name="subject" value=""
+                                class="required sm-form-control border-form-control" placeholder="Subject*" />
+                            </div>
+          
+                            <div class="w-100"></div>
+          
+                            <div class="col-12 mb-4">
+                              <textarea class="required sm-form-control border-form-control" id="template-contactform-message"
+                                name="template-contactform-message" rows="7" cols="30"
+                                placeholder="Please describe what you need*"></textarea>
+                            </div>
+          
+                            <div class="col-12 mb-4">
+                              <button class="button button-border button-circle fw-medium ms-0" type="submit"
+                                id="template-contactform-submit" name="template-contactform-submit" value="submit">Send
+                                Message</button>
+                            </div>
+          
+                            <div class="w-100"></div>
+          
+                            <div class="col-12 d-none">
+                              <input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value=""
+                                class="sm-form-control" />
+                            </div>
+          
+                            <input type="hidden" name="prefix" value="template-contactform-">
+          
+                          </form>
+          
                         </div>
-              
+          
                       </div>
+              
+                    </div>
 
                     <div class="section-address">
-                        <div class="container">
-                            <h3 class="main-heading"><span class="text-orange">Connect</span> </h3>
-                            <div class="row mt-4 col-mb-50">
-                                <div class="col-lg-4 px-4" data-animate="fadeIn">
-                                    <div class="heading-block border-bottom-0" style="margin-bottom: 15px;">
-                                        <h4>1DIGITALS Soft Solutions India Pvt Ltd.,</h4>
-                                    </div>
-                                    <p>Image Incubation Center,
-                                        STPI Complex, 2nd Floor,
-                                        Solitaire Building, Madhapur, Hyderabad-81.</p>
-                                    <p class="number">+91 9012345678</p>
-                                </div>
-                                <div class="col-lg-4 px-4" data-animate="fadeIn" data-delay="200">
-                                    <div class="heading-block border-bottom-0" style="margin-bottom: 15px;">
-                                        <h4>1DIGITALS Soft Solutions India Pvt Ltd.,</h4>
-                                    </div>
-                                    <p>Image Incubation Center,
-                                        STPI Complex, 2nd Floor,
-                                        Solitaire Building, Madhapur, Hyderabad-81.</p>
-                                    <p class="number">+91 9012345678</p>
-                                </div>
-                                <div class="col-lg-4 px-4" data-animate="fadeIn" data-delay="400">
-                                    <div class="heading-block border-bottom-0" style="margin-bottom: 15px;">
-                                        <h4>1DIGITALS Soft Solutions India Pvt Ltd.,</h4>
-                                    </div>
-                                    <p>Image Incubation Center,
-                                        STPI Complex, 2nd Floor,
-                                        Solitaire Building, Madhapur, Hyderabad-81.</p>
-                                    <p class="number">+91 9012345678</p>
-                                </div>
-                            </div>
+                      <h2 class="main-heading"><span class="text-orange">Connect</span> </h2>
+                      <div class="row mt-4 col-mb-50">
+                        <div class="col-lg-4  ps-lg-3 pe-lg-4" data-animate="fadeIn">
+                          <div class="heading-block border-bottom-0">
+                            <h4>1DIGITALS Soft Solutions India Pvt Ltd.,</h4>
+                          </div>
+                          <p class="mb-1">Image Incubation Center,
+                            STPI Complex, 2nd Floor,
+                            Solitaire Building, Madhapur, Hyderabad-81.</p>
+                          <p class="number">+91 9012345678</p>
                         </div>
+                        <div class="col-lg-4  px-lg-4" data-animate="fadeIn" data-delay="200">
+                          <div class="heading-block border-bottom-0">
+                            <h4>1DIGITALS Soft Solutions India Pvt Ltd.,</h4>
+                          </div>
+                          <p class="mb-1">Image Incubation Center,
+                            STPI Complex, 2nd Floor,
+                            Solitaire Building, Madhapur, Hyderabad-81.</p>
+                          <p class="number">+91 9012345678</p>
+                        </div>
+                        <div class="col-lg-4  px-lg-4" data-animate="fadeIn" data-delay="400">
+                          <div class="heading-block border-bottom-0">
+                            <h4>1DIGITALS Soft Solutions India Pvt Ltd.,</h4>
+                          </div>
+                          <p class="mb-1">Image Incubation Center,
+                            STPI Complex, 2nd Floor,
+                            Solitaire Building, Madhapur, Hyderabad-81.</p>
+                          <p class="number">+91 9012345678</p>
+                        </div>
+                      </div>
                     </div>
                 </div>
             </div>

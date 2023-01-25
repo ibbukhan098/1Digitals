@@ -134,4 +134,10 @@
     .aboutpage-body #section-contact .container{
         padding:0px !important ;
     }
+    body[data-pagetype="contact"] .section{
+        padding: 0px;
+    }
+    body[data-pagetype="contact"] .section-address{
+        margin: 4px 0px 30px;
+    }
 }
