@@ -140,4 +140,8 @@
     body[data-pagetype="contact"] .section-address{
         margin: 4px 0px 30px;
     }
+    body[data-pagetype="contact"] #header-wrap{
+        box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+        background: transparent !important;
+    }
 }
