@@ -1,0 +1,106 @@
+
+
+@media only screen and (max-width:991px){
+    body{
+        font-size: 14px !important;
+        line-height: 1.3 !important;
+    }
+    /* Header Changes */
+    #header-wrap{
+        padding-block: 10px;
+    }
+    #logo img{
+        height: 55px;
+    }
+
+    .menu-text,.get-in-touch{
+        color: #fff !important;
+    }
+
+    .social-icon:not(:last-child){
+        margin-inline-end: 10px !important;
+    }
+
+    .primary-menu-open .svg-trigger path:nth-child(1), .primary-menu-open .svg-trigger path:nth-child(3),.primary-menu-open .svg-trigger path:nth-child(2)  {
+        stroke: #fff !important;
+    }
+    .primary-menu-open .primary-menu ul.one-page-menu{
+        padding-inline: 12px !important;
+        padding-block-start: 10px !important;
+        margin-block-end: 60px !important;
+    }
+    .menu-socials{
+        bottom: 0px !important;
+    }
+    .menu-socials .col{
+        padding: 0px !important;
+    }
+    .menu-socials .social-icon{
+        width: 26px;
+        height: 26px;
+    }
+    .menu-socials .social-icon i{
+        font-size: 16px !important;
+    }
+    .sub-menu-container .menu-item > .menu-link{
+        font-size: 12px !important;
+        line-height: 1.2;
+    }
+    .menu-link{
+        padding:5px 0px !important;
+        color: #fff !important;
+    }
+    .primary-menu[data-state="closing"]{
+        animation: none !important;
+    }
+
+
+    /* HomePage */
+
+    #slider{
+        min-height: 60vh !important;
+    }
+    .banner-head{
+        font-size: 34px !important;
+        line-height: 1.4 !important;
+    }
+    .mobile-section{
+        padding:40px 0px 0px !important;
+    }
+    .main-heading{
+        font-size: 24px !important;
+        line-height: 1.4 !important;
+    }
+
+    #section-services{
+        padding-top: 20px !important;
+    }
+
+    .media-box{
+        padding: 15px 15px;
+        box-shadow: 0px 4px 60px rgb(0 0 0 / 15%);
+        border-radius: 10px;
+        margin-inline: 12px;
+    }
+
+    .media-box{
+        margin-block-end: 15px !important;
+    }
+    .fbox-media img{
+        padding-left: 15px;
+    }
+    .fbox-buttons{
+        padding: 0px;
+    }
+    .media-box .fbox-button{
+        transform: translate3d(0%, 0, 0);
+        visibility: visible;
+    }
+    .fbox-content h3{
+        font-size: 20px;
+        line-height: 1.3;
+    }
+    .one-page-arrow{
+        bottom: 30px;
+    }
+}

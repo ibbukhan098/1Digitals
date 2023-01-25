@@ -5,7 +5,12 @@
 	Overwriting Default Theme Styles for Better Handling Updates
 -----------------------------------------------------------------*/
 
-
+body{
+	font-size: 18px;
+	line-height: 27px;
+	color: 
+	#747474;
+}
 .primary-menu{
 	background: transparent !important;
 	overflow: hidden;
@@ -48,7 +53,7 @@
 	animation: elementClosed .85s cubic-bezier(0.4, 0, 0.2, 1) 1 forwards;
 }
 .primary-menu[data-state="opened"] .primary-row-overlay{
-	animation:elementOpened .55s cubic-bezier(0, 0, 0.2, 1) 1 forwards;
+	animation:elementOpened .65s cubic-bezier(0, 0, 0.2, 1) 1 forwards;
 }
 
 
@@ -56,7 +61,7 @@
 	0%{
 		clip-path: circle(0% at top right);
 	}
-	25%{
+	/* 25%{
 		clip-path: circle(38% at top right);
 	}
 	50%{
@@ -64,7 +69,7 @@
 	}
 	75%{
 		clip-path: circle(100% at top right);
-	}
+	} */
 	100%{
 		clip-path: circle(150% at top right);
 	}
@@ -74,12 +79,12 @@
 	0%{
 		clip-path: circle(150% at bottom left);
 	}
-	50%{
+	/* 50%{
 		clip-path: circle(75% at bottom left);
 	}
 	75%{
 		clip-path: circle(20% at bottom left);
-	}
+	} */
 	100%{
 		clip-path: circle(0% at bottom left);
 	}
@@ -228,7 +233,7 @@ span.special-span {
 	}
 	.overlay-menu .sub-menu-container{
 		position: absolute !important;
-		right: -80% !important;
+		right: -180px !important;
 		top: 0px !important;
 		left: auto !important;
 	}
@@ -258,4 +263,74 @@ span.special-span {
 
 .showmore-btn span{
 	pointer-events: none;
+}
+
+.overlay-menu .sub-menu-container{
+	margin: 0 !important;
+	padding: 10px 10px !important;
+	/* width: auto !important; */
+}
+
+.divid{
+	position: absolute;
+	background: #F89939;
+	transition: all .5s ease-in-out !important;
+	display: none;
+}
+.top-divider,.bottom-divider{
+	width: 0%;
+	height: 2px;
+}
+.left-divider,.right-divider{
+	width: 2px;
+	height: 0%;
+}
+.top-divider{
+	top: 0px;
+	left: 0;
+}
+.bottom-divider{
+	bottom: 0;
+	right: 0;
+}
+.left-divider{
+	left: 0;
+	bottom: 0;
+}
+.right-divider{
+	right: 0;
+	top: 0;
+}
+
+.menu-item.sub-menu:hover .top-divider,.menu-item.sub-menu:hover .bottom-divider{
+	width: 100%;
+	transition: all .5s ease-in-out !important;
+}
+
+
+
+/* home page css */
+
+#section-chooseUs{
+	padding-top: 40px;
+}
+
+#section-chooseUs .feature-block{
+	margin-block-end: 12px;
+}
+#section-chooseUs .feature-block h4{
+	margin-block-end: 15px;
+	color: #000;
+}
+#section-chooseUs .feature-block p{
+	margin-block-end: 5px;
+	line-height: 1.5;
+}
+
+#section-works{
+	padding-top: 10px;
+}
+
+#section-services .fbox-button:hover{
+	color: #fff;
 }

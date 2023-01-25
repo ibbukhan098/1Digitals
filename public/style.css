@@ -207,7 +207,7 @@ h3,
 h4,
 h5,
 h6 {
-	color: #444;
+	color: #000;
 	font-weight: 600;
 	line-height: 1.5;
 	margin: 0 0 30px 0;
@@ -9827,7 +9827,11 @@ body:not(.device-touch) .button.button-full strong {
 	color: #fff;
 	padding: 10px 20px;
 	height: auto;
-	display: none;
+	visibility: hidden;
+	opacity: 1;
+	transform: translate3d(100%, 0, 0);
+	transition: transform .5s ease-in-out !important;
+	/* display: none; */
 }
 
 .fbox-button>.fa{
@@ -9839,7 +9843,7 @@ body:not(.device-touch) .button.button-full strong {
 	font-weight: 600;
 	font-family: 'Poppins', sans-serif;
 	margin-bottom: 0;
-	color: #333;
+	color: #424C5C;
 	text-align: left;
 	font-weight: 600;
 	font-size: 32px;
@@ -9848,7 +9852,7 @@ body:not(.device-touch) .button.button-full strong {
 .fbox-content p {
 	margin-top: 0.5rem;
 	margin-bottom: 0px;
-	color: #999;
+	color: #747474;
 }
 
 .fbox-content .before-heading {
@@ -10333,7 +10337,9 @@ body:not(.device-touch) .button.button-full strong {
 }
 
 .media-box:hover .fbox-button{
-	display: block;
+	visibility: visible;
+	opacity: 1;
+	transform: translate3d(0%, 0, 0);
 }
 
 /* ----------------------------------------------------------------
@@ -10768,7 +10774,7 @@ body:not(.device-touch) .social-icon {
 
 
 .social-icon {
-	margin: 0 30px 5px 0;
+	/* margin: 0 30px 5px 0; */
 	width: 40px;
 	height: 40px;
 	font-size: 1.25rem;
@@ -10781,6 +10787,10 @@ body:not(.device-touch) .social-icon {
 	display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.social-icon:not(:last-child){
+	margin-inline-end: 10px;
 }
 
 .d-flex > .social-icon,
