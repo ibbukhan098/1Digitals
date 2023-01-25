@@ -134,7 +134,7 @@
     .aboutpage-body #section-contact .container{
         padding:0px !important ;
     }
-    body[data-pagetype="contact"] .section{
+    body[data-pagetype="contact"] .section,body[data-pagetype="careers"] .section{
         padding: 0px;
     }
     body[data-pagetype="contact"] .section-address{
@@ -143,5 +143,45 @@
     body[data-pagetype="contact"] #header-wrap{
         box-shadow: 0 0 10px rgb(0 0 0 / 10%);
         background: transparent !important;
+    }
+
+    /* careers page changes */
+
+    .job-openings{
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        margin-block-end: 15px;
+    }
+    #section-jobs{
+        margin-inline: 15px !important;
+    }
+    .arrow-div{
+        width: 40px;
+        height: 40px;
+        line-height: 30px;
+        border-radius: 50%;
+        padding: 0;
+    }
+    .talk-btn{
+        padding-inline: 5px;
+        font-size: 12px;
+    }
+    
+    .job-openings .arrow-div{
+        display: flex;
+    }
+
+    .main-sub-heading{
+        font-size: 20px !important;
+    }
+    .section-talk .reach-out{
+        font-size: 18px !important;
+        line-height: 1.4 !important;
+    }
+    .list-ul li{
+        font-size: 14px !important;
+        line-height: 1.4;
+    }
+    #section-employer{
+        margin-block-start: 35px;
     }
 }
