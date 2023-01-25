@@ -12,6 +12,11 @@
     #logo img{
         height: 55px;
     }
+    .flex-control-nav{
+        top: 50%;
+        translate: -50%;
+        gap: 8px;
+    }
 
     .menu-text,.get-in-touch{
         color: #fff !important;
