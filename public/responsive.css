@@ -287,5 +287,8 @@
     .section-sapcommerce,.section-specificpartner{
         padding: 40px 0px;
     }
+    .btn-list{
+        justify-content: flex-start !important;
+    }
 }
 
