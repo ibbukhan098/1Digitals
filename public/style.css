@@ -12080,8 +12080,8 @@ body:not(.device-touch) .clients-grid .grid-item a {
 /* Pricing Boxes - Features
 -----------------------------------------------------------------*/
 .features-div{
-	box-shadow: rgb(0 0 0 / 12%) 0px 5px 15px;
-	border-radius: 10px;
+	/* box-shadow: rgb(0 0 0 / 12%) 0px 5px 15px;
+	border-radius: 10px; */
 }
 .service-features{
 	min-height: 610px;

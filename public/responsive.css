@@ -1,6 +1,13 @@
 
 
 @media only screen and (max-width:991px){
+    .mx-w-85{
+        max-width: 100% !important;
+    }
+    span.special-span{
+        font-size: 20px !important;
+        font-weight: 600;
+    }
     body{
         font-size: 14px !important;
         line-height: 1.3 !important;
@@ -75,9 +82,13 @@
     .mobile-section{
         padding:40px 0px 0px !important;
     }
-    .main-heading,.emphasis-title h2{
+    h2.main-heading,.emphasis-title h2{
         font-size: 24px !important;
         line-height: 1.4 !important;
+    }
+    h3{
+        font-size: 20px !important;
+        line-height: 1.3 !important;
     }
 
     #section-services{
@@ -134,7 +145,11 @@
     .aboutpage-body #section-contact .container{
         padding:0px !important ;
     }
-    body[data-pagetype="contact"] .section,body[data-pagetype="careers"] .section{
+    body[data-pagetype="contact"] .section,
+    body[data-pagetype="careers"] .section,
+    body[data-pagetype="cmsh"] .section, 
+    body[data-pagetype="ecommerce"] .section,
+    body[data-pagetype="dms"] .section{
         padding: 0px;
     }
     body[data-pagetype="contact"] .section-address{
@@ -184,4 +199,93 @@
     #section-employer{
         margin-block-start: 35px;
     }
+
+    body[data-pagetype="cmsh"] #section-features .service-features{
+        /* height: auto !important; */
+        min-height: auto;
+        margin-bottom: 70px;
+    }
+    .sub-p-heading{
+        font-size: 18px !important;
+        line-height: 1.4 !important;
+    }
+    
+    /* Success Story CSS */
+    .success-stats{
+        flex-wrap: wrap;
+    }
+    .success-stats div{
+        flex: 0 0 calc(50% - 10px) !important;
+        font-size: 24px;
+    }
+
+    .success-stats div:nth-child(1){
+        margin-block-end: 20px;
+    }
+    .success-stats div span{
+        font-size: 16px !important;
+        margin-block-start: 10px !important;
+    }
+    .section-story-div{
+        padding: 40px 0px !important;
+    }
+    .story-div{
+        padding: 15px !important;
+    }
+    .story-logo-div h2{
+        font-size: 18px !important;
+        flex: 0 0 calc(100% - calc(75px + 10px)) !important;
+    }
+    .story-logo-div img{
+        max-width: 100px !important;
+        max-height: 75px !important;
+    }
+    .story-div p{
+        line-height: 1.4 !important;
+        font-size: 16px !important;
+    }
+    .story-div .hasborder-p{
+        font-size: 14px !important;
+    }
+    .story-stats li {
+        font-size: 16px !important;
+    }
+    .story-stats li span{
+        font-size: 14px !important;
+    }
+    .story-btn{
+        font-size: 12px !important;
+        width: 145px !important;
+        height: 35px !important;
+
+    }
+    /* Case Studies Inner pages */
+
+    .innerpage-story-banner .success-stats div{
+        font-size: 16px !important;
+    }
+    .innerpage-story-banner .success-stats div span{
+        font-size: 14px !important;
+    }
+    .number-with-line-div{
+        grid-column-gap: 0px !important;
+        grid-row-gap: 15px !important;
+    }
+    .number-with-line-box{
+        flex: 0 0 100% !important;
+    }
+    .number-with-line-box .line{
+        max-width: 35px !important;
+    }
+    .number-with-line-box .line-desc{
+        font-size: 14px !important;
+        margin-top: 8px !important;
+    }
+    .hasborder-p{
+        font-size: 14px !important;
+    }
+    .section-sapcommerce,.section-specificpartner{
+        padding: 40px 0px;
+    }
 }
+
