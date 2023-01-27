@@ -242,10 +242,14 @@ span.special-span {
 	}
 
 	body[data-pagetype="contact"] .dark .svg-trigger path,
-	body[data-pagetype="success-story"] .dark .svg-trigger path{
+	body[data-pagetype="success-story"] .dark .svg-trigger path,
+	body[data-pagetype="icareers"] .dark .svg-trigger path{
 		stroke: #000 !important;
 	}
-	
+	body[data-pagetype="icareers"] #header-wrap{
+		background: #fff !important;
+		box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+	}
 }
 
 .showMore{
@@ -712,4 +716,121 @@ footer{
 .fa-angle-up i {
 	font-size: 16px;
     font-weight: 400;
+}
+
+
+/* Indiavidual Careers Page CSS */
+
+.job-section{
+	/* padding: 40px; */
+}
+
+.job-back-btn{
+	color: #F89939;
+}
+.job-back-btn svg{
+	margin-inline-end: 2.5px;
+	transition: all .5s ease-in-out	;
+}
+.job-back-btn:hover{
+	color: #F89939;
+}
+.job-back-btn:hover svg{
+	transform: translateX(-5px);
+}
+
+.job-title-div{
+	display: flex;
+	background: #F8FBFF;
+	padding: 25px;
+	border-radius: 12px;
+	justify-content: space-between;
+}
+
+.job-left{
+	flex: 0 0 calc(100% - calc(175px + 25px));
+
+}
+
+.job-left h1{
+	color: #000;
+	font-size: 36px;
+	font-weight: 600;
+	line-height: 54px;
+}
+
+.job-left p{
+	font-size: 16px;
+	line-height: 28px;
+	color: #000;
+}
+
+.job-left p b{
+	font-weight: 500;
+}
+.posted-div{
+	display: flex;
+	color: #000;
+}
+
+.posted-div span b{
+	font-weight: 500;
+	margin-inline-end: 5px;
+}
+
+.posted-div span:not(:last-child){
+	display: inline-flex;
+	margin-inline-end: 15px;
+	padding-inline-end: 15px;
+	/* border-right: 1px solid #000; */
+	position: relative;
+}
+.posted-div span:not(:last-child)::before{
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 2px;
+	height: calc(100% - 10px);
+	background: #F89939;
+	translate: 0 -50%;
+}
+.apply-now-btn{
+	
+	width: 175px;
+	height: 55px;
+	border-radius: 60px;
+	background: #F89939;
+	color: #fff;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+.apply-now-btn:hover{
+	color: #fff;
+}
+
+
+.hasborderleft{
+	position: relative;
+	padding-left: 20px;
+}
+.hasborderleft::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	width: 2px;
+	height: 100%;
+	background: #F89939;
+	top: 0;
+}
+
+body[data-pagetype="icareers"] .list-ul li{
+	font-size: 16px;
+}
+body[data-pagetype="icareers"] .list-ul li:not(:last-child){
+	margin-block-end: 5px;
+}
+.new-section-heading{
+	font-size: 24px;
 }
