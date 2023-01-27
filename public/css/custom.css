@@ -392,16 +392,16 @@ body[data-pagetype="cmsh"] #section-features .features-btn-div{
 
 
 .success-story-banner{
-	background: url(../images/success-stories/success-banner-bg.jfif);
+	background: url(../images/case-study/banner.jfif);
 	background-repeat: no-repeat !important;
-	background-position: center center !important;
+	background-position: center top !important;
 	background-size: cover !important;
 	position: relative;
 }
 .success-story-banner::before{
 	content: '';
 	position: absolute;
-	background: rgba(255,255,255,255.9);
+	background: rgba(255,255,255,.9);
 	width: 100%;
 	height: 100%;
 	left: 0;
@@ -410,6 +410,19 @@ body[data-pagetype="cmsh"] #section-features .features-btn-div{
 
 .innerpage-story-banner{
 	background: url(../images/success-stories/inner-story-banner.jfif);
+	background-position: center center !important;
+}
+.hindustan-story-banner{
+	background-image: url(../images/case-study/hindustan-bg.jfif);
+}
+.fourhomes-story-banner{
+	background-image: url(../images/case-study/4homes-bg.jfif);
+}
+.shoppers-stop-story-banner{
+	background-image: url(../images/case-study/shoppers-stop-bg.jfif);
+}
+.macnica-story-banner{
+	background-image: url(../images/case-study/macnica-bg.jfif);
 }
 .innerpage-story-banner::before{
 	background: rgba(0,0,0,0.8);
@@ -441,11 +454,23 @@ body[data-pagetype="cmsh"] #section-features .features-btn-div{
 	text-transform: uppercase;
 }
 .section-story-div{
-	background: url(../images/success-stories/section-bg.jfif);
+	/* background: url(../images/success-stories/section-bg.jfif); */
 	background-position: center center !important;
 	background-size:cover !important ;
 	background-repeat: no-repeat;
 	padding:65px 0px;
+}
+.section-story-1{
+	background-image: url(../images/case-study/hindustan-bg.jfif);
+}
+.section-story-2{
+	background-image: url(../images/case-study/4homes-bg.jfif);
+}
+.section-story-3{
+	background-image: url(../images/case-study/shoppers-stop-bg.jfif);
+}
+.section-story-4{
+	background-image: url(../images/case-study/macnica-bg.jfif);
 }
 .story-div{
 	background: rgba(0, 0, 0, 0.8);
@@ -601,4 +626,90 @@ body[data-pagetype="cmsh"] #section-features .features-btn-div{
 	height: 100%;
 	left: 0;
 	top: 0;
+}
+
+.img-mw-500 img{
+	max-width: 500px;
+	width: 100%;
+}
+
+.careers-banner img{
+	max-width: 400px;
+	width: 100%;
+	margin: 0 auto !important;
+}
+
+footer{
+	color: #B8B8B8;
+}
+
+.footer-mini-heading{
+	font-weight: 600;
+}
+.footer-list li{
+	list-style-type: none;
+}
+.footer-list li a{
+	color: #B8B8B8;
+}
+.footer-list li a:hover{
+	color: #F89939;
+}
+.footer-list li:not(:last-child){
+	margin-block-end: 10px;
+}
+.footer-iso{
+	max-width: 70px;
+}
+
+.footer-lets-talk{
+	background: #fff;
+	align-items: center;
+	justify-content: center;
+	border-radius: 8px;
+}
+
+.footer-lets-talk div{
+	flex: 0 0 50%;
+	max-width: 50%;	
+	padding-inline: 25px;
+	/* text-align: center; */
+}
+
+
+.footer-lets-talk p{
+
+	font-size: 40px;
+	line-height: 44px;
+	font-weight: 400;
+	color: #000;
+
+}
+.footer-lets-talk img{
+	flex: 0 0 50%;
+	max-width: 50%;
+	border-radius: 0px 8px 8px 0px;
+}
+.footer-lets-talk a.footer-btn{
+	background: #000;
+	color: #fff;
+	width: 125px;
+	height: 38px;
+	font-size: 16px;
+	border-radius: 5px;
+	margin-block-start: 5px;
+	border: none !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#copyrights{
+	background:transparent;
+	border-top: 1px solid #B8B8B8;
+}
+
+.fa-angle-up i {
+	font-size: 16px;
+    font-weight: 400;
 }

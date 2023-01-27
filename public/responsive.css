@@ -290,5 +290,29 @@
     .btn-list{
         justify-content: flex-start !important;
     }
+
+    /* Footer CSS */
+
+    .footer-lets-talk{
+        margin-block-start: 15px;
+    }
+    .footer-lets-talk p{
+        font-size: 20px !important;
+        line-height: 1.3 !important;
+    }
+    .footer-lets-talk a.footer-btn{
+        width: 100px !important;
+        height: 30px !important;
+        font-size: 14px !important;
+    }
+    .footer-lets-talk div{
+        padding-inline: 12.5px !important;
+    }
+    #footer .footer-widgets-wrap{
+        padding: 35px 0px;
+    }
+    #copyrights{
+        padding: 20px 0px;
+    }
 }
 

@@ -4732,14 +4732,14 @@ body:not(.top-search-open) .top-search-parent #custom-primary-menu-trigger {
 		display: -ms-flexbox !important;
 		display: flex !important;
 		flex-direction: column;
-		max-width: 250px;
+		max-width: 300px;
 		padding: 0 !important;
 		margin: 0 120px;
 		border: 0 !important;
 	}
 
 	.overlay-menu .menu-container > .menu-item > .menu-link {
-		font-size: 40px;
+		font-size: 30px;
 	}
 
 	.overlay-menu .menu-item {
@@ -4747,7 +4747,7 @@ body:not(.top-search-open) .top-search-parent #custom-primary-menu-trigger {
 	}
 
 	.overlay-menu .menu-link {
-		padding: 20px 0;
+		padding: 15px 0;
 	}
 
 	.overlay-menu .sub-menu-container,
@@ -10873,7 +10873,7 @@ body:not(.device-touch) .social-icon i {
 }
 
 .social-icon:hover{
-	background-color: #2A2A2A;
+	background-color: #F89939;
 }
 
 .social-icon i:last-child { color: #2A2A2A; }
@@ -10900,6 +10900,11 @@ body:not(.device-touch) .social-icon i {
 .menu-socials .social-icon {
     background: #C7C7C7;
     border-color: #C7C7C7;
+}
+
+.menu-socials .social-icon:hover{
+	background: #F89939;
+	border: #F89939;
 }
 
 .get-in-touch{
