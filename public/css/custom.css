@@ -270,6 +270,11 @@ span.special-span {
 	line-height: 24px;
 }
 
+.showmore-btn:not(.active){
+	box-shadow: rgb(255 255 255) -30px -3px 30px;
+    filter: drop-shadow(rgb(255 255 255) -5px 5px 5px);
+}
+
 .showmore-btn span{
 	pointer-events: none;
 }
