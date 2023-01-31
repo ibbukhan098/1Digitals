@@ -839,3 +839,7 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
 .new-section-heading{
 	font-size: 24px;
 }
+
+.footer-widgets-wrap svg{
+	max-width: 70px;
+}

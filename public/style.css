@@ -175,7 +175,8 @@ dl, dt, dd, ol, ul, li {
 body {
 	line-height: 1.5;
 	color: #555;
-	font-family: 'Poppins', sans-serif;
+	/* font-family: 'Poppins', sans-serif; */
+	font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -211,7 +212,8 @@ h6 {
 	font-weight: 600;
 	line-height: 1.5;
 	margin: 0 0 30px 0;
-	font-family: 'Poppins', sans-serif;
+	/* font-family: 'Poppins', sans-serif; */
+	font-family: 'Roboto', sans-serif;
 }
 
 h5,
@@ -441,7 +443,8 @@ span.middot {
 
 .font-body { font-family: 'Lato', sans-serif; }
 
-.font-primary { font-family: 'Poppins', sans-serif; }
+.font-primary { /* font-family: 'Poppins', sans-serif; */
+	font-family: 'Roboto', sans-serif; }
 
 .font-secondary { font-family: 'PT Serif', serif; }
 
@@ -3450,7 +3453,8 @@ html[xmlns] .slider-wrap {
 #logo a {
 	width: 100%;
 	color: #000;
-	font-family: 'Poppins', sans-serif;
+	/* font-family: 'Poppins', sans-serif; */
+	font-family: 'Roboto', sans-serif;
 	font-size: 36px;
 }
 
@@ -3670,7 +3674,8 @@ body:not(.top-search-open) .top-search-parent #custom-primary-menu-trigger {
 	font-weight: 500;
 	font-size: 0.8125rem;
 	letter-spacing: 1px;
-	font-family: 'Poppins', sans-serif;
+	/* font-family: 'Poppins', sans-serif; */
+	font-family: 'Roboto', sans-serif;
 }
 
 .menu-link span {
@@ -3724,7 +3729,8 @@ body:not(.top-search-open) .top-search-parent #custom-primary-menu-trigger {
 	font-weight: 400;
 	color: #666;
 	letter-spacing: 0;
-	font-family: 'Poppins', sans-serif;
+	/* font-family: 'Poppins', sans-serif; */
+	font-family: 'Roboto', sans-serif;
 }
 
 .sub-menu-container .menu-item:hover > .menu-link {
@@ -4173,7 +4179,8 @@ body:not(.top-search-open) .top-search-parent #custom-primary-menu-trigger {
 	.mega-menu-style-2 .mega-menu-title > .menu-link {
 		font-size: 0.8125rem;
 		font-weight: 700;
-		font-family: 'Poppins', sans-serif;
+		/* font-family: 'Poppins', sans-serif; */
+	font-family: 'Roboto', sans-serif;
 		letter-spacing: 1px;
 		text-transform: uppercase !important;
 		margin-bottom: 15px;
@@ -4918,7 +4925,8 @@ body:not(.top-search-open) .top-search-parent #custom-primary-menu-trigger {
 	color: #333;
 	font-weight: 700;
 	margin-top: 0 !important;
-	font-family: 'Poppins', sans-serif;
+	/* font-family: 'Poppins', sans-serif; */
+	font-family: 'Roboto', sans-serif;
 	letter-spacing: 2px;
 }
 
@@ -7856,7 +7864,8 @@ body:not(.device-touch) .portfolio {
 	padding: 30px 0;
 	text-align: center;
 	color: #444;
-	font-family: 'Poppins', sans-serif;
+	/* font-family: 'Poppins', sans-serif; */
+	font-family: 'Roboto', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size: 1.5rem;
@@ -8033,7 +8042,8 @@ body:not(.device-touch) .entry-link {
 	font-weight: bold;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	font-family: 'Poppins', sans-serif;
+	/* font-family: 'Poppins', sans-serif; */
+	font-family: 'Roboto', sans-serif;
 }
 
 @media (min-width: 992px) {
@@ -9101,7 +9111,8 @@ body:not(.device-touch) .button {
 	font-size: 1.25rem;
 	height: auto;
 	line-height: 1;
-	font-family: 'Poppins', sans-serif;
+	/* font-family: 'Poppins', sans-serif; */
+	font-family: 'Roboto', sans-serif;
 }
 
 .button.button-desc span {
@@ -9841,7 +9852,8 @@ body:not(.device-touch) .button.button-full strong {
 .fbox-content h3 {
 	font-size: 1rem;
 	font-weight: 600;
-	font-family: 'Poppins', sans-serif;
+	/* font-family: 'Poppins', sans-serif; */
+	font-family: 'Roboto', sans-serif;
 	margin-bottom: 0;
 	color: #424C5C;
 	text-align: left;
@@ -11315,7 +11327,8 @@ body:not(.device-touch) .social-icon i {
 .tab-nav-lg li a {
 	display: inline-block;
 	color: #444;
-	font-family: 'Poppins', sans-serif;
+	/* font-family: 'Poppins', sans-serif; */
+	font-family: 'Roboto', sans-serif;
 	font-size: 13px;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -12250,7 +12263,8 @@ body:not(.device-touch) .clients-grid .grid-item a {
 .counter {
 	font-size: 42px;
 	font-weight: 600;
-	font-family: 'Poppins', sans-serif;
+	/* font-family: 'Poppins', sans-serif; */
+	font-family: 'Roboto', sans-serif;
 }
 
 .counter.counter-small { font-size: 28px; }
@@ -13407,7 +13421,8 @@ label {
 	display: inline-block;
 	font-size: 13px;
 	font-weight: 700;
-	font-family: 'Poppins', sans-serif;
+	/* font-family: 'Poppins', sans-serif; */
+	font-family: 'Roboto', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	color: #555;
@@ -14760,7 +14775,8 @@ body:not(.device-touch) .tagcloud a {
 .widget-filter-links li a {
 	display: block;
 	color: #444;
-	font-family: 'Poppins', sans-serif;
+	/* font-family: 'Poppins', sans-serif; */
+	font-family: 'Roboto', sans-serif;
 	font-weight: 500;
 }
 
@@ -14815,7 +14831,8 @@ body:not(.device-touch) .tagcloud a {
 	font-size: 13px;
 	font-weight: 700;
 	letter-spacing: 2px;
-	font-family: 'Poppins', sans-serif;
+	/* font-family: 'Poppins', sans-serif; */
+	font-family: 'Roboto', sans-serif;
 }
 
 .nav-tree li i {
@@ -14869,7 +14886,8 @@ body:not(.device-touch) .tagcloud a {
 	line-height: 1;
 	font-size: 80px;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.15);
-	font-family: 'Poppins', sans-serif;
+	/* font-family: 'Poppins', sans-serif; */
+	font-family: 'Roboto', sans-serif;
 }
 
 .wedding-head .first-name,
