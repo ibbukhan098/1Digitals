@@ -369,6 +369,7 @@ span.special-span {
 
 .lr-section h2.main-heading{
 	font-size: 32px;
+	letter-spacing: -0.3px;
 }
 
 body[data-pagetype="cmsh"] #section-features .features-div{
@@ -401,7 +402,7 @@ body[data-pagetype="cmsh"] #section-features .features-btn-div{
 
 
 .success-story-banner{
-	background: url(../images/case-study/banner.jfif);
+	background: url(../images/case-study/banner-1.jfif);
 	background-repeat: no-repeat !important;
 	background-position: center top !important;
 	background-size: cover !important;
@@ -410,7 +411,7 @@ body[data-pagetype="cmsh"] #section-features .features-btn-div{
 .success-story-banner::before{
 	content: '';
 	position: absolute;
-	background: rgba(255,255,255,.9);
+	background: rgba(255,255,255,.8);
 	width: 100%;
 	height: 100%;
 	left: 0;
@@ -425,7 +426,7 @@ body[data-pagetype="cmsh"] #section-features .features-btn-div{
 	background-image: url(../images/case-study/hindustan-bg.jfif);
 }
 .fourhomes-story-banner{
-	background-image: url(../images/case-study/4homes-bg.jfif);
+	background-image: url(../images/case-study/fourhomes-bg.jfif);
 }
 .shoppers-stop-story-banner{
 	background-image: url(../images/case-study/shoppers-stop-bg.jfif);
@@ -467,19 +468,25 @@ body[data-pagetype="cmsh"] #section-features .features-btn-div{
 	background-position: center center !important;
 	background-size:cover !important ;
 	background-repeat: no-repeat;
-	padding:65px 0px;
+	padding:95px 0px;
 }
 .section-story-1{
 	background-image: url(../images/case-study/hindustan-bg.jfif);
 }
 .section-story-2{
-	background-image: url(../images/case-study/4homes-bg.jfif);
+	background-image: url(../images/case-study/fourhomes-bg.jfif);
 }
 .section-story-3{
 	background-image: url(../images/case-study/shoppers-stop-bg.jfif);
 }
 .section-story-4{
 	background-image: url(../images/case-study/macnica-bg.jfif);
+}
+.section-story-5{
+	background-image: url(../images/case-study/apetito-bg.jfif);
+}
+.section-story-6{
+	background-image: url(../images/case-study/wiltshire-farm-foods-bg.jfif);
 }
 .story-div{
 	background: rgba(0, 0, 0, 0.8);
@@ -594,6 +601,9 @@ body[data-pagetype="cmsh"] #section-features .features-btn-div{
 	justify-content: space-between;
 	flex: 0 0 calc(33% - 15px);
 }
+.number-with-line-box.two-col{
+	flex: 0 0 calc(50% - 14px);
+}
 .number-with-line-box .number-p{
 	color: #F89939;
 	font-size: 24px;
@@ -688,11 +698,25 @@ footer{
 
 .footer-lets-talk p{
 
-	font-size: 40px;
+	font-size: 32px;
 	line-height: 44px;
 	font-weight: 400;
 	color: #000;
 
+}
+
+@media only screen and (max-width:1199px) and (min-width:992px){
+	.footer-lets-talk p{
+		font-size: 24px;
+		line-height: 32px;
+	}
+	.footer-lets-talk div{
+		padding: 15px;
+	}
+	.footer-lets-talk a.footer-btn{
+		width: 100px !important;
+		font-size: 14px !important;
+	}
 }
 .footer-lets-talk img{
 	flex: 0 0 50%;
@@ -842,4 +866,43 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
 
 .footer-widgets-wrap svg{
 	max-width: 70px;
+}
+
+#oc-clients .owl-stage{
+	display: flex;
+	align-items: center;
+}
+#oc-clients img{
+	max-height: 100px;
+	object-fit: contain;
+}
+
+
+.innerpage-banner{
+	background-size: cover !important;
+	background-repeat: no-repeat !important;
+	background-position: center center !important;
+	min-height: 70vh;
+	display: flex !important;
+	align-items: center;
+}
+
+.innerpage-banner::before{
+	content: '';
+	position: absolute;
+	inset: 0 0 0 0;
+	background: rgba(0, 0, 0, 0.8);
+}
+
+
+.contactpage-section{
+	padding: 90px 0px;
+	background: #F8FBFF;
+}
+
+#template-contactform{
+	background: #fff;
+	padding: 30px 15px;
+	box-shadow: 0px 0px 48px rgba(0, 0, 0, 0.2);
+	border-radius: 12px;
 }
