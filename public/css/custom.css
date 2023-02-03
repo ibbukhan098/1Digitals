@@ -906,3 +906,53 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
 	box-shadow: 0px 0px 48px rgba(0, 0, 0, 0.2);
 	border-radius: 12px;
 }
+
+/* Testimonials Section */
+
+.testimonials-div{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.testimonials-div img{
+	flex: 0 0 250px;
+	max-width: 250px;
+	filter: drop-shadow(0px 0px 48px rgba(0, 0, 0, 0.2));
+	border-radius: 12px;
+	max-height: 250px;
+}
+
+.testimonials-content{
+	flex: 0 0 calc(100% - calc(250px + 25px));
+}
+.testimonials-content p{
+	font-size: 22px;
+	/* line-height: 32px !important; */
+	color: #000;
+}
+
+.reviewer-div{
+	font-size: 20px;
+	font-weight: 600;
+	color: #000;
+}
+.reviewer-div span{
+	font-size: 16px;
+	font-weight: 400;
+	display: block;
+}
+
+#section-testimonials .owl-carousel .owl-stage-outer{
+	box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+}
+
+.omni-channel-img-div{
+	text-align: center;
+}
+
+.omni-channel-img-div img{
+	max-width: 100%;
+	width: 800px;
+	height: 800px;
+}

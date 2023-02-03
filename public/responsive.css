@@ -357,5 +357,31 @@
         padding: 20px 0px !important;
         margin-inline: 0px !important;
     }
+
+    .testimonials-div{
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+    .testimonials-div img {
+        flex: 0 0 100% !important;
+        max-width: 200px !important;
+        max-height: 200px !important;
+    }
+    .testimonials-content p{
+        font-size: 18px !important;
+        margin-block-start: 16px;
+        margin-block-end: 16px !important;
+        /* text-align: center !important; */
+    }
+    .reviewer-div{
+        font-size: 18px !important;
+        /* text-align: center !important; */
+    }
+    .reviewer-div span{
+        font-size: 14px !important;
+    }
+    .omni-channel-img-div img{
+        max-height: 300px;
+    }
 }
 

@@ -852,13 +852,14 @@ window.scwEvents = window.scwEvents || {};
 		logo: function(){
 			let sLogo = defaultLogo.find('img'),
 				rLogo = retinaLogo.find('img');
+				// debugger;
 			if( ( $header.hasClass('dark') || $body.hasClass('dark') ) && !$headerWrap.hasClass('not-dark') ) {
 				if( defaultDarkLogo && ( sLogo.attr('src') != defaultDarkLogo ) ){
-					sLogo.attr('src', defaultDarkLogo);
+					// sLogo.attr('src', defaultDarkLogo);
 				}
 
 				if( retinaDarkLogo && ( rLogo.attr('src') != retinaDarkLogo ) ){
-					rLogo.attr('src', retinaDarkLogo);
+					// rLogo.attr('src', retinaDarkLogo);
 				}
 			} else {
 				if( defaultLogoImg && ( sLogo.attr('src') != defaultLogoImg ) ){
