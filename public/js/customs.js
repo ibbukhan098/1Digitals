@@ -3,6 +3,21 @@ import ShowMore from "./showmore.js";
 
 document.addEventListener('DOMContentLoaded', ()=>{
     ShowMore();
+
+    /* Owl NAvigation Icon changes */
+
+    /* Testimonials Section */
+
+    let testimonials = document.getElementById('section-testimonials');
+    // console.log(testimonials)
+    if(testimonials != null){
+        setTimeout(()=>{
+            let testowlleft = testimonials.querySelector('.owl-prev');
+            let testowlright = testimonials.querySelector('.owl-next');
+            testowlleft.innerHTML = `<i class="fa fa-angle-left"></i>`;
+            testowlright.innerHTML = `<i class="fa fa-angle-right"></i>`;
+        },10)
+    }  
 })
 
 
@@ -187,7 +202,7 @@ if(btnList != null){
                         },10)
                     }).then(()=>{
                         setTimeout(()=>{
-                            effectImg.setAttribute('src',`images/services/${btn.getAttribute('data-ptype')}-portal.png`);
+                            effectImg.setAttribute('src',`images/services/ecom/${btn.getAttribute('data-ptype')}-portal.svg`);
                         },10)
                     })
                 }
@@ -195,3 +210,27 @@ if(btnList != null){
         // }
     })
 }
+
+
+
+
+/* Sub Menu Desktop Hover Functionality */
+
+let submenuitem = document.querySelector('.desktop-submenu-parent'),
+    desktopsubmenu = document.querySelector('.submenu-desktop');
+
+submenuitem.addEventListener('mouseover',(event)=>{
+    desktopsubmenu.classList.add('active')
+})
+
+submenuitem.addEventListener('mouseout',(event)=>{
+    desktopsubmenu.classList.remove('active')
+})
+
+desktopsubmenu.addEventListener('mouseover',(event)=>{
+    desktopsubmenu.classList.add('active')
+})
+
+desktopsubmenu.addEventListener('mouseout',(event)=>{
+    desktopsubmenu.classList.remove('active')
+})

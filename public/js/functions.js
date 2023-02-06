@@ -712,6 +712,8 @@ window.scwEvents = window.scwEvents || {};
 				if( windowScrT > (250) ) {
 					if( !$body.hasClass('side-header') ) {
 						$header.filter(':not(.no-sticky)').addClass('sticky-header');
+
+						$('.standard-logo img').attr('src','images/logo.svg');
 						// if( !$headerWrap.hasClass('force-not-dark') ) { $headerWrap.removeClass('not-dark'); }
 						SEMICOLON.header.stickyMenuClass();
 
@@ -734,6 +736,7 @@ window.scwEvents = window.scwEvents || {};
 
 				} else {
 					SEMICOLON.header.removeStickyness();
+					$('.standard-logo img').attr('src','images/logo-vertical.svg');
 					if( headerSizeCustom ){
 						logo.find('img').css({ 'height': Number( defLogoH ) });
 						SEMICOLON.header.menuItemsSpacing( defMenuP );
@@ -863,7 +866,7 @@ window.scwEvents = window.scwEvents || {};
 				}
 			} else {
 				if( defaultLogoImg && ( sLogo.attr('src') != defaultLogoImg ) ){
-					sLogo.attr('src', defaultLogoImg);
+					// sLogo.attr('src', defaultLogoImg);
 				}
 
 				if( retinaLogoImg && ( rLogo.attr('src') != retinaLogoImg ) ){

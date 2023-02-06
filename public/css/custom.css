@@ -106,8 +106,8 @@ body{
 	margin-bottom: 10px !important;
 }
 .menu-socials{
-	position: absolute;
-    bottom: 30px;
+	/* position: absolute;
+    bottom: 30px; */
 }
 
 
@@ -235,10 +235,10 @@ span.special-span {
 		position: relative;
 	}
 	.overlay-menu .sub-menu-container{
-		position: absolute !important;
+		/* position: absolute !important;
 		right: -180px !important;
 		top: 0px !important;
-		left: auto !important;
+		left: auto !important; */
 	}
 
 	body[data-pagetype="contact"] .dark .svg-trigger path,
@@ -721,10 +721,10 @@ footer{
 .footer-lets-talk img{
 	flex: 0 0 50%;
 	max-width: 50%;
-	border-radius: 0px 8px 8px 0px;
+	border-radius:8px 0px 0px 8px;
 }
 .footer-lets-talk a.footer-btn{
-	background: #000;
+	background: #F89939;
 	color: #fff;
 	width: 125px;
 	height: 38px;
@@ -874,7 +874,7 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
 }
 #oc-clients img{
 	max-height: 100px;
-	object-fit: contain;
+	/* object-fit: contain; */
 }
 
 
@@ -902,7 +902,7 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
 
 #template-contactform{
 	background: #fff;
-	padding: 30px 15px;
+	padding: 20px 15px;
 	box-shadow: 0px 0px 48px rgba(0, 0, 0, 0.2);
 	border-radius: 12px;
 }
@@ -943,7 +943,7 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
 }
 
 #section-testimonials .owl-carousel .owl-stage-outer{
-	box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+	/* box-shadow: 0 0 10px rgb(0 0 0 / 10%); */
     border-radius: 10px;
 }
 
@@ -955,4 +955,123 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
 	max-width: 100%;
 	width: 800px;
 	height: 800px;
+}
+
+
+/* Header Navigation */
+
+@media only screen and (min-width:992px){
+	.primary-menu{
+		align-items: flex-start;
+	}
+	.primary-menu .container{
+		display: flex;
+		/* height: 100%; */
+		margin-block-start: 130px;
+	}
+	.overlay-menu .menu-container{
+		max-width: 350px;
+		/* padding-inline-end: 30px !important; */
+	}
+	.overlay-menu .menu-container > .menu-item > .menu-link{
+		font-size: 35px;
+		line-height: 40px;
+	}
+	.overlay-menu .sub-menu-container.submenu-desktop{
+		border-left: 1px solid rgba(170, 170, 170, 0.5) !important;
+		/* margin-inline-start: 30px !important; */
+		padding-inline-start: 30px !important;
+		padding-block-start: 0px !important; 
+	}
+
+	.overlay-menu .sub-menu-container.submenu-desktop .menu-link{
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+	.submenu-desktop.active{
+		visibility: visible;
+	}
+
+	.desktop-socials{
+		flex-direction: column;
+		/* justify-content: end; */
+	}
+	.menu-header-text{
+		text-transform: uppercase;
+		color: #2b2b2b;
+		opacity: 0.4;
+	}
+	.info-email:hover{
+		color: #F89939 !important;
+	}
+
+}
+
+.contactpage-social p:first-child{
+	font-size: 24px;
+	line-height: 29px;
+	font-weight: 550;
+	color: #2B2B2B;
+	opacity: 0.4;
+}
+
+.contactpage-social .social-icon{
+	background: #2b2b2b;
+	border-color: #2b2b2b;
+	transition: all .35s ease-in-out;
+}
+.contactpage-social .social-icon:hover{
+	transform: translateY(-5px);
+}
+.contactpage-social .social-icon i{
+	color: #fff;
+
+}
+
+.c-address{
+	display: flex;
+	justify-content: space-between;
+}
+
+.c-address > [class*="col-"]{
+	background: #FFFFFF;
+	box-shadow: 0px 0px 48px rgba(0, 0, 0, 0.1);
+	border-radius: 12px;
+	flex: 0 0 calc(calc(100% / 3) - 20px);
+	max-width: calc(calc(100% / 3) - 20px);
+	padding: 25px;
+}
+.add-heading{
+	display: flex;
+	align-items: center;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: normal !important;
+}
+.add-heading svg{
+	margin-inline-end: 10px;
+}
+
+#section-works,#section-integration{
+	background: #F9FCFF;
+	padding: 90px 0px;
+}
+
+
+.digital-section{
+	padding: 90px 0px 0px;
+}
+.digital-section.has-tb-pd{
+	padding: 90px 0px;
+}
+
+.special-heading span{
+    background: #F89939;
+    color: #fff !important;
+    padding: 0.5rem;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+	line-height: 1.85;
 }

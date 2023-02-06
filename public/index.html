@@ -186,7 +186,7 @@
               <div class="primary-row-overlay"></div>
               <div class="container">
                 <ul class="one-page-menu menu-container" data-duration="500">
-                  <p class="menu-text w-100">Menu</p>
+                  <p class="menu-text menu-header-text w-100">Menu</p>
                   <li class="menu-item current">
                     <a href="index.html" class="menu-link">
                       <div>Home</div>
@@ -197,11 +197,11 @@
                       <div>About</div>
                     </a>
                   </li>
-                  <li class="menu-item">
+                  <li class="menu-item desktop-submenu-parent">
                     <a href="#" class="menu-link">
                       <div>Services</div>
                     </a>
-                    <ul class="sub-menu-container">
+                    <ul class="sub-menu-container d-lg-none">
                       <span class="top-divider divid"></span>
                       <span class="right-divider divid"></span>
                       <span class="bottom-divider divid"></span>
@@ -239,12 +239,50 @@
                     </a>
                   </li>
                 </ul>
+
+                <ul class="sub-menu-container d-none d-lg-block submenu-desktop">
+                  <span class="top-divider divid"></span>
+                  <span class="right-divider divid"></span>
+                  <span class="bottom-divider divid"></span>
+                  <span class="left-divider divid"></span>
+                  <li class="menu-item" >
+                    <a class="menu-link" href="enterprise-content-and-digital-asset-management.html">
+                      <div>Enterprise Content and Digital Asset Management</div>
+                    </a>
+                  </li>
+                  <li class="menu-item" >
+                    <a class="menu-link" href="enterprise-ecommerce.html">
+                      <div>Enterprise eCommerce</div>
+                    </a>
+                  </li>
+                  <li class="menu-item" >
+                    <a class="menu-link" href="omni-channel-marketing-services.html">
+                      <div>Omni-channel Marketing Services</div>
+                    </a>
+                  </li>
+                </ul>
+
+                <div class="menu-socials d-none d-lg-flex desktop-socials">
+                  <p class="menu-text w-100 menu-header-text mb-2">Get in touch</p>
+                  <a class="info-email" href="mailto:info@1digitals.in">info@1digitals.in</a>
+                  <div class="d-flex mt-2">
+                    <a href="#" class="social-icon si-small si-rounded si-facebook">
+                      <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-icon si-small si-rounded si-twitter">
+                      <i class="fa fa-twitter"></i>
+                    </a>
+                  </div>
+                  <!-- <a href="#" class="social-icon si-small si-rounded si-gplus">
+                    <i class="fa fa-instagram"></i>
+                  </a> -->
+                </div>
               </div>
 
-              <div class="menu-socials">
+              <div class="menu-socials d-lg-none d-block">
                 <div class="container">
                   <div class="row">
-                    <div class="col d-flex justify-content-start align-items-center">
+                    <div class="col-lg-12 col-6 d-flex justify-content-start align-items-center">
                       <a href="#" class="social-icon si-small si-rounded si-facebook">
                         <i class="fa fa-linkedin"></i>
                       </a>
@@ -255,7 +293,7 @@
                         <i class="fa fa-instagram"></i>
                       </a> -->
                     </div>
-                    <div class="col d-flex flex-column align-items-end get-in-touch">
+                    <div class="col-lg-12 col-6 d-flex flex-column align-items-end get-in-touch">
                       Get in touch <br />
                       <a class="info-email" href="">info@1digitals.in</a>
                     </div>
@@ -392,7 +430,7 @@
 
         </div>
 
-        <div id="section-works" class="section page-section mobile-section mb-lg-4">
+        <div id="section-works" class="mobile-section">
           <div class="container clearfix">
             <div class="heading" data-animate="fadeInUp">
               <h2 class="main-heading">Our <span class="text-orange">Clients</span> Love Us</h2>
@@ -401,41 +439,42 @@
             <!-- Clients
 					============================================= -->
             <div id="oc-clients" class="owl-carousel topmargin image-carousel carousel-widget" data-animate="fadeInUp"
-              data-margin="40" data-loop="true" data-nav="false" data-autoplay="5000" data-pagi="false"
-              data-items-xs="2" data-items-sm="3" data-items-md="4" data-items-lg="4" data-items-xl="4">
+              data-margin="20" data-loop="true" data-nav="false" data-autoplay="5000" data-pagi="false"
+              data-items-xs="2" data-items-sm="3" data-items-md="5" data-items-lg="5" data-items-xl="5">
 
-              <div class="oc-item"><a href="#"><img src="images/clients/customers/accenture.png" alt="Accenture"></a></div>
-              <div class="oc-item"><a href="#"><img src="images/clients/customers/apetito.png" alt="Apetito"></a></div>
-              <div class="oc-item"><a href="#"><img src="images/clients/customers/ban.png" alt="Ban"></a></div>
-              <div class="oc-item"><a href="#"><img src="images/clients/customers/bharat-petroleum.png" alt="Bharat Petrolium"></a></div>
-              <div class="oc-item"><a href="#"><img src="images/clients/customers/biore.png" alt="Biore"></a></div>
-              <div class="oc-item"><a href="#"><img src="images/clients/customers/curel.png" alt="Curel"></a></div>
-              <div class="oc-item"><a href="#"><img src="images/clients/customers/deloitte.png" alt="Deloitte"></a></div>
-              <div class="oc-item"><a href="#"><img src="images/clients/customers/four-homes.png" alt="4Homes"></a></div>
-              <div class="oc-item"><a href="#"><img src="images/clients/customers/goldwell.png" alt="GoldWell"></a></div>
-              <div class="oc-item"><a href="#"><img src="images/clients/customers/guhl.png" alt="Guhl"></a></div>
-              <div class="oc-item"><a href="#"><img src="images/clients/customers/hindustan.png" alt="Hindustan"></a></div>
-              <div class="oc-item"><a href="#"><img src="images/clients/customers/jergens.png" alt="Jergens"></a></div>
-              <div class="oc-item"><a href="#"><img src="images/clients/customers/john-frieda.png" alt="John Frieda"></a></div>
-              <div class="oc-item"><a href="#"><img src="images/clients/customers/kao.png" alt="Kao"></a></div>
-              <div class="oc-item"><a href="#"><img src="images/clients/customers/kms.png" alt="KMS"></a></div>
-              <div class="oc-item"><a href="#"><img src="images/clients/customers/manica.png" alt="Manica"></a></div>
-              <div class="oc-item"><a href="#"><img src="images/clients/customers/molton-brown.png" alt="Molton Brown"></a></div>
-              <div class="oc-item"><a href="#"><img src="images/clients/customers/mydin.png" alt="Mydin"></a></div>
-              <div class="oc-item"><a href="#"><img src="images/clients/customers/mytrah.png" alt="Mytrah"></a></div>
-              <div class="oc-item"><a href="#"><img src="images/clients/customers/oribe.png" alt="Oribe"></a></div>
-              <div class="oc-item"><a href="#"><img src="images/clients/customers/sensai.png" alt="Sensai"></a></div>
-              <div class="oc-item"><a href="#"><img src="images/clients/customers/shoppers-stop.png" alt="Shoppers Stop"></a></div>
-              <div class="oc-item"><a href="#"><img src="images/clients/customers/tokyo-chemical-industry.png" alt="Tokyo Chemical Industry"></a></div>
-              <div class="oc-item"><a href="#"><img src="images/clients/customers/vedanta.png" alt="Vedanta"></a></div>
-              <div class="oc-item"><a href="#"><img src="images/clients/customers/wakati.png" alt="Wakati"></a></div>
+              <div class="oc-item"><a href="#"><img src="images/clients/our-clients/accenture.jpg" alt="Accenture"></a></div>
+              <div class="oc-item"><a href="#"><img src="images/clients/our-clients/apetito.jpg" alt="Apetito"></a></div>
+              <div class="oc-item"><a href="#"><img src="images/clients/our-clients/ban.jpg" alt="Ban"></a></div>
+              <div class="oc-item"><a href="#"><img src="images/clients/our-clients/bharat-petroleum.jpg" alt="Bharat Petrolium"></a></div>
+              <div class="oc-item"><a href="#"><img src="images/clients/our-clients/biore.jpg" alt="Biore"></a></div>
+              <div class="oc-item"><a href="#"><img src="images/clients/our-clients/curel.jpg" alt="Curel"></a></div>
+              <div class="oc-item"><a href="#"><img src="images/clients/our-clients/deloitte.jpg" alt="Deloitte"></a></div>
+              <div class="oc-item"><a href="#"><img src="images/clients/our-clients/four-homes.jpg" alt="4Homes"></a></div>
+              <div class="oc-item"><a href="#"><img src="images/clients/our-clients/goldwell.jpg" alt="GoldWell"></a></div>
+              <div class="oc-item"><a href="#"><img src="images/clients/our-clients/guhl.jpg" alt="Guhl"></a></div>
+              <div class="oc-item"><a href="#"><img src="images/clients/our-clients/hindustan.jpg" alt="Hindustan"></a></div>
+              <div class="oc-item"><a href="#"><img src="images/clients/our-clients/jergens.jpg" alt="Jergens"></a></div>
+              <div class="oc-item"><a href="#"><img src="images/clients/our-clients/john-frieda.jpg" alt="John Frieda"></a></div>
+              <div class="oc-item"><a href="#"><img src="images/clients/our-clients/kao.jpg" alt="Kao"></a></div>
+              <div class="oc-item"><a href="#"><img src="images/clients/our-clients/kms.jpg" alt="KMS"></a></div>
+              <div class="oc-item"><a href="#"><img src="images/clients/our-clients/macnica.jpg" alt="Macnica"></a></div>
+              <div class="oc-item"><a href="#"><img src="images/clients/our-clients/molton-brown.jpg" alt="Molton Brown"></a></div>
+              <div class="oc-item"><a href="#"><img src="images/clients/our-clients/mydin.jpg" alt="Mydin"></a></div>
+              <div class="oc-item"><a href="#"><img src="images/clients/our-clients/mytrah.jpg" alt="Mytrah"></a></div>
+              <div class="oc-item"><a href="#"><img src="images/clients/our-clients/oribe.jpg" alt="Oribe"></a></div>
+              <div class="oc-item"><a href="#"><img src="images/clients/our-clients/sensai.jpg" alt="Sensai"></a></div>
+              <div class="oc-item"><a href="#"><img src="images/clients/our-clients/shoppers-stop.jpg" alt="Shoppers Stop"></a></div>
+              <div class="oc-item"><a href="#"><img src="images/clients/our-clients/tokyo-chemical-industry.jpg" alt="Tokyo Chemical Industry"></a></div>
+              <div class="oc-item"><a href="#"><img src="images/clients/our-clients/vedanta.jpg" alt="Vedanta"></a></div>
+              <div class="oc-item"><a href="#"><img src="images/clients/our-clients/wakati.jpg" alt="Wakati"></a></div>
 
             </div>
+
           </div>
         </div>
 
-        <div id="section-chooseUs" class="section page-section mb-lg-4">
-          <div class="container clearfix">
+        <div id="section-chooseUs" class="section page-section mb-lg-5">
+          <div class="container clearfix pt-lg-4">
             <div class="heading" data-animate="fadeInUp">
               <h2 class="main-heading">Why <span class="text-orange">1Digitals?</span></h2>
             </div>
@@ -493,24 +532,37 @@
           </div>
         </div>
 
-        <div id="section-testimonials" class="mt-lg-5 mb-lg-5 mb-4">
+        <div id="section-testimonials" class="mt-lg-5 mb-lg-5 pb-lg-5 mb-4">
           <div class="container clearfix">
             <div class="heading" data-animate="fadeInUp">
               <h2 class="main-heading"><span class="text-orange">Testimonials</span></h2>
             </div>
 
             <div class="owl-carousel topmargin image-carousel carousel-widget" data-animate="fadeInUp"
-            data-margin="10" data-loop="true" data-nav="false" data-autoplay="5000" data-pagi="false"
+            data-margin="10" data-loop="true" data-nav="true" data-autoplay="5000" data-pagi="false"
             data-items-xs="1" data-items-sm="1" data-items-md="1" data-items-lg="1" data-items-xl="1">
               <div class="testimonials-div pt-lg-4 p-4 ">
                 <img src="images/testimonials/test1.png" alt="Testimonials">
                 <div class="testimonials-content">
                   <p class="mb-3 mb-lg-4">
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    We at Hindustan Zinc Limited(Vedanta
+                    Resources) recently went live with our
+                    eCommerce solution on SAP where
+                    1 Digital was our Implementation
+                    partner. This is Industry's first
+                    nonferrous metal platform with true
+                    real-time options. 1Digitals played a
+                    very critical role in delivering this with
+                    integration to SAP ERP and multiple
+                    external systems within stringent
+                    timelines. I acknowledge the
+                    competency, partnership approach of
+                    1 Digitals and bringing in best
+                    practices.
                   </p>
                   <div class="reviewer-div">
-                    Customer Name
-                    <span>Designation, Comapny Name</span>
+                    Chetan Trivedi
+                    <span>CIO, HZL, September 2020</span>
                   </div>
                 </div>
               </div>
@@ -519,11 +571,50 @@
                 <img src="images/testimonials/test1.png" alt="Testimonials">
                 <div class="testimonials-content">
                   <p class="mb-3 mb-lg-4">
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    We would like to express our
+                    appreciation to the Onedigitals team
+                    for their flawless delivery of SAP
+                    marketing cloud at 4homes with
+                    100% offshore delivery. We
+                    successfully went live few weeks ago
+                    and look forward to support from
+                    onedigitals team on this continuous
+                    improvement journey.
+                    What stood out in the whole journey
+                    was the technical understanding and
+                    sound domain knowledge the
+                    constants offered us.
                   </p>
                   <div class="reviewer-div">
-                    Customer Name
-                    <span>Designation, Comapny Name</span>
+                    Pramod Kumar
+                    <span>Head of IT & Supply chain,4homes UAE August 2021</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonials-div pt-lg-4 p-4 ">
+                <img src="images/testimonials/test1.png" alt="Testimonials">
+                <div class="testimonials-content">
+                  <p class="mb-3 mb-lg-4">
+                    We found 1 Digitals to be a very
+                    reliable business partner and
+                    1Digitals team is always engaged in
+                    discussing ways to solve our
+                    problems and requests with utmost
+                    respect. 1Digitals I is a brilliant
+                    business planner who excels at being
+                    able to drive our business in very
+                    professional manner. 1Digitals is also
+                    loyal, honest and always accessible
+                    and we are looking forward to
+                    embarking a new project soon with
+                    them again.
+                  </p>
+                  <div class="reviewer-div">
+                    Yuko Tsukamoto
+                    <span>Director - Communication Department
+                      Corporate Marketing Department
+                      Macnica Inc January 2023</span>
                   </div>
                 </div>
               </div>
@@ -531,7 +622,7 @@
           </div>
         </div>
 
-        <div id="section-partners" class="section page-section">
+        <div id="section-partners" class="section page-section mb-lg-5">
           <div class="container clearfix">
             <div class="heading" data-animate="fadeInUp">
               <h2 class="main-heading">Our <span class="text-orange">Partners</span></h2>
@@ -543,10 +634,10 @@
               data-delay="200" data-margin="80" data-loop="false" data-nav="false" data-autoplay="5000" data-pagi="false"
               data-items-xs="2" data-items-sm="3" data-items-md="4" data-items-lg="4" data-items-xl="4">
 
-              <div class="oc-item"><a href="#"><img src="images/clients/partners/accessibe-official.png" alt="Accessibe Official"></a></div>
-              <div class="oc-item"><a href="#"><img src="images/clients/partners/adobe-bronzesolution-partner.png" alt="Adobe Bronzesolution Partner"></a></div>
-              <div class="oc-item"><a href="#"><img src="images/clients/partners/amplience.png" alt="Amplience"></a></div>
-              <div class="oc-item"><a href="#"><img src="images/clients/partners/sap-gold-partner.png" alt="Sap Gold Partner"></a></div>
+              <div class="oc-item"><a href="#"><img src="images/clients/partners/sap-gold-partner.jpg" alt="Sap Gold Partner"></a></div>
+              <div class="oc-item"><a href="#"><img src="images/clients/partners/adobe-bronzesolution-partner.jpg" alt="Adobe Bronzesolution Partner"></a></div>  
+              <div class="oc-item"><a href="#"><img src="images/clients/partners/amplience.jpg" alt="Amplience"></a></div>
+              <div class="oc-item"><a href="#"><img src="images/clients/partners/accessibe-official.jpg" alt="Accessibe Official"></a></div>
               <!-- <div class="oc-item"><a href="#"><img src="images/clients/5.png" alt="Clients"></a></div>
               <div class="oc-item"><a href="#"><img src="images/clients/6.png" alt="Clients"></a></div>
               <div class="oc-item"><a href="#"><img src="images/clients/7.png" alt="Clients"></a></div>
@@ -650,11 +741,11 @@
 
             <div class="col-lg-4 col-md-6 col-7">
               <div class="d-flex footer-lets-talk"> 
+                <img src="images/success-stories/success-banner-bg.jfif" />
                   <div>
                     <p class="mb-0">Let's Talk</p>
                     <a href="contact-us.html" class="footer-btn">Click Here</a>
                   </div>
-                <img src="images/success-stories/success-banner-bg.jfif" />
               </div>
             </div>
           </div>
@@ -665,7 +756,7 @@
         <div id="copyrights" class="">
           <div class="row">
             <div class="col-12 text-center">
-              <span class="">© 2023 One Digitals Soft Solutions India Pvt Ltd All Rights Reserved</span>
+              <span class="">© 2023 OneDigitals Soft Solutions India Pvt Ltd All Rights Reserved</span>
             </div>
           </div>
         </div>

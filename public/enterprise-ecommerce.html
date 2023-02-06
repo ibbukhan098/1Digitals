@@ -149,120 +149,162 @@
 	============================================= -->
     <div id="wrapper" class="clearfix">
 
-        <!-- Header
+    <!-- Header
 		============================================= -->
     <header id="header" class="transparent-header dark header-size-custom" data-sticky-shrink="false"
-        data-sticky-class="not-dark" data-sticky-offset="full" data-sticky-offset-negative="70">
-        <div id="header-wrap">
-          <div class="container">
-            <div class="header-row">
-  
-              <!-- Logo
-                          ============================================= -->
-              <div id="logo">
-                <a href="index.html" class="standard-logo" data-dark-logo="images/logo.png"><img src="images/logo.png"
-                    alt="Canvas Logo"></a>
-                <a href="index.html" class="retina-logo" data-dark-logo="images/logo.png"><img src="images/logo.png"
-                    alt="Canvas Logo"></a>
-              </div><!-- #logo end -->
-  
-              <div id="custom-primary-menu-trigger" >
-                <svg class="svg-trigger burger-menu" viewBox="0 0 100 100">
-                  <path
-                    d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20">
-                  </path>
-                  <path d="m 30,50 h 40"></path>
-                  <path
-                    d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20">
-                  </path>
-                </svg>
-              </div>
-  
-              <!-- Primary Navigation
-                          ============================================= -->
-              <nav class="primary-menu row" data-easing="fadeInRight" data-state="closed" aria-expanded="false">
-                <div class="primary-row-overlay"></div>
-                <div class="container">
-                  <ul class="one-page-menu menu-container" data-duration="500">
-                    <p class="menu-text w-100">Menu</p>
-                    <li class="menu-item ">
-                      <a href="index.html" class="menu-link">
-                        <div>Home</div>
-                      </a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="aboutUs.html" class="menu-link">
-                        <div>About</div>
-                      </a>
-                    </li>
-                    <li class="menu-item current">
-                      <a href="#" class="menu-link">
-                        <div>Services</div>
-                      </a>
-                      <ul class="sub-menu-container">
-                        <li class="menu-item" >
-                          <a class="menu-link" href="enterprise-content-and-digital-asset-management.html">
-                            <div>Enterprise Content and Digital Asset Management</div>
-                          </a>
-                        </li>
-                        <li class="menu-item current" >
-                          <a class="menu-link" href="enterprise-ecommerce.html">
-                            <div>Enterprise eCommerce</div>
-                          </a>
-                        </li>
-                        <li class="menu-item" >
-                          <a class="menu-link" href="omni-channel-marketing-services.html">
-                            <div>Omni-channel Marketing Services</div>
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="menu-item">
-                      <a href="contact-us.html" class="menu-link">
-                        <div>Contact</div>
-                      </a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="careers.html" class="menu-link">
-                        <div>Careers</div>
-                      </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="success-story.html" class="menu-link">
-                          <div>Success Stories</div>
+      data-sticky-class="not-dark" data-sticky-offset="full" data-sticky-offset-negative="70">
+      <div id="header-wrap">
+        <div class="container">
+          <div class="header-row">
+
+            <!-- Logo
+						============================================= -->
+            <div id="logo">
+              <a href="index.html" class="standard-logo" data-dark-logo="images/logo.svg"><img src="images/logo-vertical.svg"
+                  alt="Canvas Logo"></a>
+              <a href="index.html" class="retina-logo" data-dark-logo="images/logo-vertical.svg"><img src="images/logo-vertical.svg"
+                  alt="Canvas Logo"></a>
+            </div><!-- #logo end -->
+
+            <div id="custom-primary-menu-trigger" >
+              <svg class="svg-trigger burger-menu" viewBox="0 0 100 100">
+                <path
+                  d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20">
+                </path>
+                <path d="m 30,50 h 40"></path>
+                <path
+                  d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20">
+                </path>
+              </svg>
+            </div>
+
+            <!-- Primary Navigation
+						============================================= -->
+            <nav class="primary-menu row" data-easing="fadeInRight" data-state="closed" aria-expanded="false">
+              <div class="primary-row-overlay"></div>
+              <div class="container">
+                <ul class="one-page-menu menu-container" data-duration="500">
+                  <p class="menu-text menu-header-text w-100">Menu</p>
+                  <li class="menu-item">
+                    <a href="index.html" class="menu-link">
+                      <div>Home</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="aboutUs.html" class="menu-link">
+                      <div>About</div>
+                    </a>
+                  </li>
+                  <li class="menu-item desktop-submenu-parent current">
+                    <a href="#" class="menu-link">
+                      <div>Services</div>
+                    </a>
+                    <ul class="sub-menu-container d-lg-none">
+                      <span class="top-divider divid"></span>
+                      <span class="right-divider divid"></span>
+                      <span class="bottom-divider divid"></span>
+                      <span class="left-divider divid"></span>
+                      <li class="menu-item " >
+                        <a class="menu-link" href="enterprise-content-and-digital-asset-management.html">
+                          <div>Enterprise Content and Digital Asset Management</div>
                         </a>
                       </li>
-                  </ul>
+                      <li class="menu-item current" >
+                        <a class="menu-link" href="enterprise-ecommerce.html">
+                          <div>Enterprise eCommerce</div>
+                        </a>
+                      </li>
+                      <li class="menu-item" >
+                        <a class="menu-link" href="omni-channel-marketing-services.html">
+                          <div>Omni-channel Marketing Services</div>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item">
+                    <a href="contact-us.html" class="menu-link">
+                      <div>Contact</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="careers.html" class="menu-link">
+                      <div>Careers</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="success-story.html" class="menu-link">
+                      <div>Success Stories</div>
+                    </a>
+                  </li>
+                </ul>
+
+                <ul class="sub-menu-container d-none d-lg-block submenu-desktop">
+                  <span class="top-divider divid"></span>
+                  <span class="right-divider divid"></span>
+                  <span class="bottom-divider divid"></span>
+                  <span class="left-divider divid"></span>
+                  <li class="menu-item" >
+                    <a class="menu-link" href="enterprise-content-and-digital-asset-management.html">
+                      <div>Enterprise Content and Digital Asset Management</div>
+                    </a>
+                  </li>
+                  <li class="menu-item current" >
+                    <a class="menu-link" href="enterprise-ecommerce.html">
+                      <div>Enterprise eCommerce</div>
+                    </a>
+                  </li>
+                  <li class="menu-item" >
+                    <a class="menu-link" href="omni-channel-marketing-services.html">
+                      <div>Omni-channel Marketing Services</div>
+                    </a>
+                  </li>
+                </ul>
+
+                <div class="menu-socials d-none d-lg-flex desktop-socials">
+                  <p class="menu-text w-100 menu-header-text mb-2">Get in touch</p>
+                  <a class="info-email" href="mailto:info@1digitals.in">info@1digitals.in</a>
+                  <div class="d-flex mt-2">
+                    <a href="#" class="social-icon si-small si-rounded si-facebook">
+                      <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-icon si-small si-rounded si-twitter">
+                      <i class="fa fa-twitter"></i>
+                    </a>
+                  </div>
+                  <!-- <a href="#" class="social-icon si-small si-rounded si-gplus">
+                    <i class="fa fa-instagram"></i>
+                  </a> -->
                 </div>
-  
-                <div class="menu-socials">
-                  <div class="container">
-                    <div class="row">
-                      <div class="col d-flex justify-content-start">
-                        <a href="#" class="social-icon si-small si-rounded si-facebook">
-                            <i class="fa fa-linkedin"></i>
-                        </a>
-                        <a href="#" class="social-icon si-small si-rounded si-twitter">
-                          <i class="fa fa-twitter"></i>
-                        </a>
-                        <!-- <a href="#" class="social-icon si-small si-rounded si-gplus">
-                          <i class="fa fa-instagram"></i>
-                        </a> -->
-                      </div>
-                      <div class="col d-flex flex-column align-items-end get-in-touch">
-                        Get in touch <br />
-                        <a class="info-email" href="">info@1digitals.in</a>
-                      </div>
+              </div>
+
+              <div class="menu-socials d-lg-none d-block">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-12 col-6 d-flex justify-content-start align-items-center">
+                      <a href="#" class="social-icon si-small si-rounded si-facebook">
+                        <i class="fa fa-linkedin"></i>
+                      </a>
+                      <a href="#" class="social-icon si-small si-rounded si-twitter">
+                        <i class="fa fa-twitter"></i>
+                      </a>
+                      <!-- <a href="#" class="social-icon si-small si-rounded si-gplus">
+                        <i class="fa fa-instagram"></i>
+                      </a> -->
+                    </div>
+                    <div class="col-lg-12 col-6 d-flex flex-column align-items-end get-in-touch">
+                      Get in touch <br />
+                      <a class="info-email" href="">info@1digitals.in</a>
                     </div>
                   </div>
                 </div>
-  
-              </nav><!-- #primary-menu end -->
-  
-            </div>
+              </div>
+
+            </nav><!-- #primary-menu end -->
+
           </div>
         </div>
-        <div class="header-wrap-clone"></div>
+      </div>
+      <div class="header-wrap-clone"></div>
     </header><!-- #header end -->
 
         <!-- Slider
@@ -283,9 +325,9 @@
         <!-- Content
 		============================================= -->
         <section id="content">
-            <div class="content-wrap">
+            <div class="content-wrap pt-0">
                 <div class="container clearfix">
-                    <div id="section-aboutcompany" class="page-section mb-lg-5 lr-section">
+                    <div id="section-aboutcompany" class="page-section digital-section lr-section">
                         <div class="row clearfix">
                             <div class="emphasis-title mb-3">
                                 <h2 class="main-heading">Building Your Customer Experiences…
@@ -320,11 +362,15 @@
                         </div>
                     </div>
 
-                    <div id="section-passion" class="page-section mb-lg-5 lr-section mb-4 mt-lg-6">
+                    <div id="section-passion" class="page-section  lr-section digital-section">
                         <div class="row clearfix">
                             <div class="col-lg-12">
                                 <div class="emphasis-title mb-3">
-                                    <h2 class="main-heading center">Our Goal Is Your Exponential Business Growth!</h2>
+                                    <h2 class="main-heading center special-heading mt-3">
+                                      <span>
+                                        Our Goal Is Your Exponential Business Growth!
+                                      </span>
+                                    </h2>
                                 </div>
                                 <p class="center"><b>
                                     As a specialized CX Player, we believe in working with various
@@ -347,7 +393,7 @@
                         </div>
                     </div>
 
-                    <div id="section-aem-consulting" class="page-section mb-lg-5 lr-section">
+                    <div id="section-aem-consulting" class="page-section digital-section lr-section">
                         <div class="row clearfix">
                             <!-- <div class="emphasis-title bottommargin-sm">
                                 <h3 class="main-heading"   >Gain The Competitive Edge With Our
@@ -387,7 +433,7 @@
                         </div>
                     </div>
 
-                    <div id="section-integration-ecom" class="page-section mb-lg-5 lr-section">
+                    <div id="section-integration-ecom" class="page-section digital-section lr-section">
                         <div class="row clearfix mb-reverse-col">
                             <div class="col-lg-6   ">
                                 <div class="emphasis-title mb-3">
@@ -429,7 +475,7 @@
                         </div>
                     </div>
 
-                    <div id="section-aem-managed" class="page-section mb-lg-5 lr-section">
+                    <div id="section-aem-managed" class="page-section digital-section lr-section">
                         <div class="row clearfix">
                             <div class="col-lg-6 end  mb-lg-0 mb-4 ">
                                 <img src="images/services/ecom/ecommerce-re-platforming-upgrade.svg" alt="NextGen Framework"
@@ -465,7 +511,7 @@
                         </div>
                     </div>
 
-                    <div id="section-integration-ecom" class="page-section mb-lg-5 lr-section">
+                    <div id="section-integration-ecom" class="page-section digital-section has-tb-pd lr-section">
                         <div class="row clearfix mb-reverse-col">
                             <div class="col-lg-6  align-self-center ">
                                 <div class="emphasis-title mb-3">
@@ -501,204 +547,123 @@
                             </div>
                         </div>
                     </div>
-
-                    <div id="section-partners" class="section page-section mb-lg-5">
-                      <div class="container clearfix">
-                        <div class="heading" data-animate="fadeInUp">
-                          <h2 class="main-heading">CX <span class="text-orange">Integration</span></h2>
-                        </div>
-            
-                        <!-- Clients
-                      ============================================= -->
-                        <div id="oc-clients" class="owl-carousel topmargin image-carousel carousel-widget" data-animate="fadeInUp"
-                          data-delay="200" data-margin="80" data-loop="true" data-nav="false" data-autoplay="5000" data-pagi="false"
-                          data-items-xs="2" data-items-sm="3" data-items-md="4" data-items-lg="4" data-items-xl="4">
-            
-                          <div class="oc-item"><a href="#"><img src="images/cx-inegration/adobe-experience-manager.png" alt="Adobe Experience Manager"></a></div>
-                          <div class="oc-item"><a href="#"><img src="images/cx-inegration/amplience.png" alt="Amplience"></a></div>
-                          <div class="oc-item"><a href="#"><img src="images/cx-inegration/avalara.png" alt="Avalara"></a></div>
-                          <div class="oc-item"><a href="#"><img src="images/cx-inegration/bazaarvoice.png" alt="BazaarVoice"></a></div>
-                          <div class="oc-item"><a href="#"><img src="images/cx-inegration/biztalk.png" alt="BizTalk"></a></div>
-                          <div class="oc-item"><a href="#"><img src="images/cx-inegration/collect-plus.png" alt="Collect+"></a></div>
-                          <div class="oc-item"><a href="#"><img src="images/cx-inegration/cyber-source.png" alt="CyberSource"></a></div>
-                          <div class="oc-item"><a href="#"><img src="images/cx-inegration/givex.png" alt="givex"></a></div>
-                          <div class="oc-item"><a href="#"><img src="images/cx-inegration/google-analytics.png" alt="Google Analytics"></a></div>
-                          <div class="oc-item"><a href="#"><img src="images/cx-inegration/juspay.png" alt="JusPay"></a></div>
-                          <div class="oc-item"><a href="#"><img src="images/cx-inegration/oneview-commerce.png" alt="Oneview Commerce"></a></div>
-                          <div class="oc-item"><a href="#"><img src="images/cx-inegration/sap-crm.png" alt="SAP CRM"></a></div>
-                          <div class="oc-item"><a href="#"><img src="images/cx-inegration/sap-erp.png" alt="SAP ERP"></a></div>
-                          <div class="oc-item"><a href="#"><img src="images/cx-inegration/sap-hana.png" alt="SAP HANA"></a></div>
-                          <div class="oc-item"><a href="#"><img src="images/cx-inegration/world-pay.png" alt="WorldPay"></a></div>
-            
-                        </div>
-                      </div>
-                    </div>
-
-
-                    <div id="section-mission" class="page-section mb-lg-5">
-                        <div class="row clearfix">
-                            <div class="col-lg-12   ">
-                                <div class="emphasis-title mb-3">
-                                    <h2 class="main-heading">Accelerate Your Digital Business</h2>
-                                </div>
-                                <p class="mb-3 sub-p-heading"> <b>Do you want to power your business with the
-                                        latest technology?</b></p>
-                                <p class="showmore desc-black mb-lg-0 mb-4">1Digitals can help you do just that. We offer a
-                                    proven approach to quickly launch B2B2C commerce, using our 1D Accelerator
-                                    framework. This framework makes it easy for you to integrate the latest technology
-                                    into your business, so you can reach new heights and take your business to the next
-                                    level.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="section-implementations">
-                        <h3 class="center px-lg-6 px-0">We’ve successfully launched many brands across B2C, B2B, and B2B2C
-                            implementations</h3>
-                        
-                    </div>
-
-                    <div class="section-tabs">
-                        <div class="btn-list justify-content-center">
-                            <button class=" list-btn active" type="button" data-ptype="business">
-                                Business Portal Feature
-                            </button>
-                            <button class=" list-btn" type="button" data-ptype="deals">
-                                Dealer Portal Feature
-                            </button>
-                            <button class="list-btn" type="button" data-ptype="customer">
-                                After Market Customer Portal Feature
-                            </button>
-                        </div>
-                        <div class="click-effect">
-                            <img src="images/services/ecom/business-portal.svg" alt="Business Portal" />
-                        </div>
-                    </div>
-
-                    <!-- <div class="section-talk center my-4">
-                        <p class="stories center">One of our major implementations can be found at the following
-                            location: <a href="https://business.adobe.com/customer-success-stories/kao-case-study" target="_blank"><b>Success Stories</b></a></p>
-                        <p class="reach-out"> <b>Reach out</b> to us to understand more about these offerings and
-                            to understand the
-                            success stories we’ve delivered for our clients.</p>
-                        <a href="" class="talk-btn center py-2    rounded-pill">Let's Talk</a>
-                    </div> -->
-
-                    <div id="section-glimpse" class="page-section">
-                        <div class="row clearfix">
-                            <div class="col-lg-12">
-                                <div class="emphasis-title mb-3">
-                                    <h2 class="main-heading" style="text-transform: capitalize;">A glimpse into our work:</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <p>Following are a few of our success stories related to eCommerce:</p>
-                                <ul class="list-ul">
-                                    <li class="main-li">
-                                        Technical migration of Oracle ATG multi-country multi-currency eCommerce website onto SAP Commerce Cloud as a Headless Commerce solution along with End to End automation of processes right from new product creation into the catalog to fulfillment
-                                    </li>
-                                    <li class="main-li">
-                                        Technical migration of a brand website onto Adobe Commerce/Magento with a roadmap to enable it for eCommerce capabilities
-                                    </li>
-                                    <li class="main-li">
-                                        Integration with various payment gateways, wallets, gift cards, and tax systems such as Stripe, Cybersource, Adyen, PayPal, Juspay, Klarna, SEPA, Givex, Avalara, and Vertex
-                                    </li>
-                                    <li class="main-li">
-                                        Integration with various enterprise backend, and third-party systems like SAP ERP, S/4 Hana, MS Dynamics, PIM, SAP Marketing Cloud, and Emarsys. LME prices (London Metal Exchange)
-                                    </li>
-
-                                    <li class="main-li">
-                                        Leveraged existing SAP Commerce Cloud platform to launch multiple eCommerce sites of various brands belonging to the parent company
-                                    </li>
-                                    <li class="main-li">
-                                        Simultaneous launch of 11 eCommerce sites across 5 countries and 3 currencies
-                                    </li>
-                                    <li class="main-li">
-                                        Delivered multiple headless commerce solutions with AEM (Adobe Experience Manager - Sites), Amplience, and Angular as frontend
-                                    </li>
-                                    
-                                    
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- <div id="section-contact" class="section page-section pb-0">
-                        <div class="row">
-              
-                            <div class="col-md-6 contactUs-div" data-animate="fadeInLeft">
-                              <div class="heading heading-contact">
-                                <h2 class="main-heading contactUs-text">We’d <span class="text-orange">love</span> to hear from you</h2>
-                                <p class="subheading">Contact us today to learn more about how we can help you achieve your business goals and listen to our success stories!</p>
-                              </div>
-                            </div>
-                            <div class="col-md-6 form-widget" data-animate="fadeInRight">
-              
-                              <div class="form-result"></div>
-              
-                              <form class="row mb-0" id="template-contactform" name="template-contactform" action="include/form.php"
-                                method="post">
-              
-                                <div class="form-process">
-                                  <div class="css3-spinner">
-                                    <div class="css3-spinner-scale-ripple">
-                                      <div></div>
-                                      <div></div>
-                                      <div></div>
-                                    </div>
-                                  </div>
-                                </div>
-              
-                                <div class="col-md-6 mb-4">
-                                  <input type="text" id="template-contactform-name" name="template-contactform-name" value=""
-                                    class="sm-form-control border-form-control required" placeholder="Name*" />
-                                </div>
-                                <div class="col-md-6 mb-4">
-                                  <input type="email" id="template-contactform-email" name="template-contactform-email" value=""
-                                    class="required email sm-form-control border-form-control" placeholder="Email*" />
-                                </div>
-              
-                                <div class="w-100"></div>
-              
-                                <div class="col-md-12 mb-4">
-                                  <input type="text" id="template-contactform-subject" name="subject" value=""
-                                    class="required sm-form-control border-form-control" placeholder="Subject*" />
-                                </div>
-              
-                                <div class="w-100"></div>
-              
-                                <div class="col-12 mb-4">
-                                  <textarea class="required sm-form-control border-form-control" id="template-contactform-message"
-                                    name="template-contactform-message" rows="7" cols="30"
-                                    placeholder="Please describe what you need*"></textarea>
-                                </div>
-              
-                                <div class="col-12 mb-4 mb-lg-0">
-                                  <button class="button button-border button-circle fw-medium ms-0" type="submit"
-                                    id="template-contactform-submit" name="template-contactform-submit" value="submit">Send
-                                    Message</button>
-                                </div>
-              
-                                <div class="w-100"></div>
-              
-                                <div class="col-12 d-none">
-                                  <input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value=""
-                                    class="sm-form-control" />
-                                </div>
-              
-                                <input type="hidden" name="prefix" value="template-contactform-">
-              
-                              </form>
-              
-                            </div>
-              
-                          </div>
-              
-                      </div> -->
-
                 </div>
+                <div id="section-integration">
+                  <div class="container clearfix">
+                    <div class="heading" data-animate="fadeInUp">
+                      <h2 class="main-heading">CX <span class="text-orange">Integration</span></h2>
+                    </div>
+        
+                    <!-- Clients
+                  ============================================= -->
+                    <div id="oc-clients" class="owl-carousel topmargin image-carousel carousel-widget" data-animate="fadeInUp"
+                      data-delay="200" data-margin="20" data-loop="true" data-nav="false" data-autoplay="5000" data-pagi="false"
+                      data-items-xs="2" data-items-sm="3" data-items-md="5" data-items-lg="5" data-items-xl="5">
+        
+                      <div class="oc-item"><a href="#"><img src="images/cx-inegration/adobe-experience-manager.jpg" alt="Adobe Experience Manager"></a></div>
+                      <div class="oc-item"><a href="#"><img src="images/cx-inegration/amplience.jpg" alt="Amplience"></a></div>
+                      <div class="oc-item"><a href="#"><img src="images/cx-inegration/avalara.jpg" alt="Avalara"></a></div>
+                      <div class="oc-item"><a href="#"><img src="images/cx-inegration/bazaarvoice.jpg" alt="BazaarVoice"></a></div>
+                      <div class="oc-item"><a href="#"><img src="images/cx-inegration/biztalk.jpg" alt="BizTalk"></a></div>
+                      <div class="oc-item"><a href="#"><img src="images/cx-inegration/collect-plus.jpg" alt="Collect+"></a></div>
+                      <div class="oc-item"><a href="#"><img src="images/cx-inegration/cyber-source.jpg" alt="CyberSource"></a></div>
+                      <div class="oc-item"><a href="#"><img src="images/cx-inegration/givex.jpg" alt="givex"></a></div>
+                      <div class="oc-item"><a href="#"><img src="images/cx-inegration/google-analytics.jpg" alt="Google Analytics"></a></div>
+                      <div class="oc-item"><a href="#"><img src="images/cx-inegration/juspay.jpg" alt="JusPay"></a></div>
+                      <div class="oc-item"><a href="#"><img src="images/cx-inegration/oneview-commerce.jpg" alt="Oneview Commerce"></a></div>
+                      <div class="oc-item"><a href="#"><img src="images/cx-inegration/sap-crm.jpg" alt="SAP CRM"></a></div>
+                      <div class="oc-item"><a href="#"><img src="images/cx-inegration/sap-erp.jpg" alt="SAP ERP"></a></div>
+                      <div class="oc-item"><a href="#"><img src="images/cx-inegration/sap-hana.jpg" alt="SAP HANA"></a></div>
+                      <div class="oc-item"><a href="#"><img src="images/cx-inegration/world-pay.jpg" alt="WorldPay"></a></div>
+        
+                    </div>
+                  </div>
+                </div>
+              <div class="container clearfix">
+
+                <div id="section-mission" class="page-section digital-section">
+                  <div class="row clearfix">
+                      <div class="col-lg-12   ">
+                          <div class="emphasis-title mb-3">
+                              <h2 class="main-heading special-heading">
+                                <span>Accelerate Your Digital Business</span>
+                              </h2>
+                          </div>
+                          <p class="mb-3 sub-p-heading"> <b>Do you want to power your business with the
+                                  latest technology?</b></p>
+                          <p class="showmore desc-black mb-lg-0 mb-4">1Digitals can help you do just that. We offer a
+                              proven approach to quickly launch B2B2C commerce, using our 1D Accelerator
+                              framework. This framework makes it easy for you to integrate the latest technology
+                              into your business, so you can reach new heights and take your business to the next
+                              level.</p>
+                      </div>
+                  </div>
+              </div>
+
+                <div class="section-implementations">
+                  <h3 class="center px-lg-6 px-0">We’ve successfully launched many brands across B2C, B2B, and B2B2C
+                      implementations</h3>
+                  
+                </div>
+
+                <div class="section-tabs pb-0">
+                    <div class="btn-list justify-content-center">
+                        <button class=" list-btn active" type="button" data-ptype="business">
+                            Business Portal Feature
+                        </button>
+                        <button class=" list-btn" type="button" data-ptype="deals">
+                            Dealer Portal Feature
+                        </button>
+                        <button class="list-btn" type="button" data-ptype="customer">
+                            After Market Customer Portal Feature
+                        </button>
+                    </div>
+                    <div class="click-effect">
+                        <img src="images/services/ecom/business-portal.svg" alt="Business Portal" />
+                    </div>
+                </div>
+
+                <div id="section-glimpse" class="page-section digital-section">
+                    <div class="row clearfix">
+                        <div class="col-lg-12">
+                            <div class="emphasis-title mb-3">
+                                <h2 class="main-heading" style="text-transform: capitalize;">A glimpse into our work:</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <p>Following are a few of our success stories related to eCommerce:</p>
+                            <ul class="list-ul">
+                                <li class="main-li">
+                                    Technical migration of Oracle ATG multi-country multi-currency eCommerce website onto SAP Commerce Cloud as a Headless Commerce solution along with End to End automation of processes right from new product creation into the catalog to fulfillment
+                                </li>
+                                <li class="main-li">
+                                    Technical migration of a brand website onto Adobe Commerce/Magento with a roadmap to enable it for eCommerce capabilities
+                                </li>
+                                <li class="main-li">
+                                    Integration with various payment gateways, wallets, gift cards, and tax systems such as Stripe, Cybersource, Adyen, PayPal, Juspay, Klarna, SEPA, Givex, Avalara, and Vertex
+                                </li>
+                                <li class="main-li">
+                                    Integration with various enterprise backend, and third-party systems like SAP ERP, S/4 Hana, MS Dynamics, PIM, SAP Marketing Cloud, and Emarsys. LME prices (London Metal Exchange)
+                                </li>
+
+                                <li class="main-li">
+                                    Leveraged existing SAP Commerce Cloud platform to launch multiple eCommerce sites of various brands belonging to the parent company
+                                </li>
+                                <li class="main-li">
+                                    Simultaneous launch of 11 eCommerce sites across 5 countries and 3 currencies
+                                </li>
+                                <li class="main-li">
+                                    Delivered multiple headless commerce solutions with AEM (Adobe Experience Manager - Sites), Amplience, and Angular as frontend
+                                </li>
+                                
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+              </div>
             </div>
         </section><!-- #content end -->
 
@@ -762,7 +727,7 @@
               </ul>
             </div>
 
-            <div class="col-lg-2 col-md-6 col-4">
+            <div class="col-lg-2 col-md-6 col-5">
               <p class="footer-mini-heading m-0 mb-3">Social</p>
               <div class="d-flex mb-3">
                 <a href="#" class="social-icon si-small si-rounded si-facebook">
@@ -787,13 +752,13 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 col-8">
+            <div class="col-lg-4 col-md-6 col-7">
               <div class="d-flex footer-lets-talk"> 
+                <img src="images/success-stories/success-banner-bg.jfif" />
                   <div>
                     <p class="mb-0">Let's Talk</p>
                     <a href="contact-us.html" class="footer-btn">Click Here</a>
                   </div>
-                <img src="images/success-stories/success-banner-bg.jfif" />
               </div>
             </div>
           </div>
@@ -804,7 +769,7 @@
         <div id="copyrights" class="">
           <div class="row">
             <div class="col-12 text-center">
-              <span class="">© 2023 One Digitals Soft Solutions India Pvt Ltd All Rights Reserved</span>
+              <span class="">© 2023 OneDigitals Soft Solutions India Pvt Ltd All Rights Reserved</span>
             </div>
           </div>
         </div>

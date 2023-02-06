@@ -45,6 +45,7 @@
         margin-block-end: 60px !important;
     }
     .menu-socials{
+        position: absolute;
         bottom: 0px !important;
     }
     .menu-socials .col{
@@ -295,7 +296,17 @@
     /* Footer CSS */
 
     .footer-lets-talk{
-        margin-block-start: 15px;
+        margin-block-start: 0px;
+        flex-direction: column;
+    }
+    .footer-lets-talk img,.footer-lets-talk div{
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        border-radius: 8px 8px 0px 0px !important;
+    }
+    .footer-lets-talk div{
+        padding: 10px 10px !important;
+        text-align: center;
     }
     .footer-lets-talk p{
         font-size: 20px !important;
@@ -382,6 +393,39 @@
     }
     .omni-channel-img-div img{
         max-height: 300px;
+    }
+
+    .sub-menu-container .menu-item:not(:last-child) {
+        border-bottom: 1px solid #EEE;
+        border-top: none;
+        border-bottom-color: rgba(255,255,255,0.15);
+    }
+    .sub-menu-container .menu-item:last-child{
+        border-top: none;
+    }
+
+    .c-address{
+        flex-direction: column;
+    }
+    
+    .c-address > [class*="col-"]{
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        padding: 15px !important;
+    }
+    .c-address > [class*="col-"]:not(:last-child){
+
+        margin-block-end: 15px;
+    }
+    #section-works,#section-integration{
+        padding: 45px 0px !important;
+    }
+
+    .digital-section{
+        padding: 40px 0px 0px !important;
+    }
+    .digital-section.has-tb-pd{
+        padding: 40px 0px !important;
     }
 }
 
