@@ -32,6 +32,7 @@ body.primary-menu-open{
 }
 .primary-menu .menu-container,.primary-menu .menu-socials{
 	opacity: 0;
+	visibility: hidden;
 }
 
 

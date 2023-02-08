@@ -92,10 +92,12 @@ function openedNavPopup(){
     if(openedEle != null){
         openedEle.addEventListener('animationend',async()=>{
             menuContainer.css({
-                'opacity':'1'
+                'opacity':'1',
+                'visibility':'visible'
             });
             menuSocials.css({
-                'opacity':'1'
+                'opacity':'1',
+                'visibility':'visible'
             })
 
             // for(let i=0;i<navItems.length;i++){
@@ -141,10 +143,12 @@ function closingNavPopup(){
             navAnim.then((res)=>{
                 // debugger;
                 menuSocials.css({
-                    'opacity':'0'
+                    'opacity':'0',
+                    'visibility':'hidden'
                 })
                 menuContainer.css({
                     'opacity':'0',
+                    'visibility':'hidden',
                     'animation-duration':'350ms !important'
                 });
             })

@@ -297,16 +297,19 @@
 
     .footer-lets-talk{
         margin-block-start: 0px;
-        flex-direction: column;
+        /* flex-direction: column; */
     }
     .footer-lets-talk img,.footer-lets-talk div{
-        flex: 0 0 100% !important;
+        /* flex: 0 0 100% !important;
         max-width: 100% !important;
-        border-radius: 8px 8px 0px 0px !important;
+        border-radius: 8px 8px 0px 0px !important; */
     }
     .footer-lets-talk div{
         padding: 10px 10px !important;
-        text-align: center;
+        /* text-align: center; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .footer-lets-talk p{
         font-size: 20px !important;
@@ -439,6 +442,15 @@
     }
     .container {
         padding-inline: 20px;
+    }
+    .iso-div {
+        position: absolute;
+        left: 120px;
+        top: 50%;
+        translate: 0 calc(-50% + 10px);
+    }
+    .footer-widgets-wrap svg {
+        max-width: 60px !important;
     }
 }
 
