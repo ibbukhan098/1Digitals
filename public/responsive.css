@@ -312,7 +312,7 @@
         font-size: 20px !important;
         line-height: 1.3 !important;
     }
-    .footer-lets-talk a.footer-btn{
+    .footer-lets-talk .footer-btn{
         width: 100px !important;
         height: 30px !important;
         font-size: 14px !important;
@@ -367,6 +367,9 @@
     #template-contactform{
         padding: 20px 0px !important;
         margin-inline: 0px !important;
+    }
+    #template-contactform[data-formtype="popup"]{
+        padding: 0px !important;
     }
 
     .testimonials-div{
@@ -427,5 +430,16 @@
     .digital-section.has-tb-pd{
         padding: 40px 0px !important;
     }
+    .close-icon{
+        right: 1em !important;
+        top: 1em !important;
+    }
+    .contactform-popup .container{
+        max-width: 100% !important;
+    }
+    .container {
+        padding-inline: 20px;
+    }
 }
+
 

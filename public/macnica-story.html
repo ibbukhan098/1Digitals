@@ -35,6 +35,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<!-- Font Awesome Icons -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
 
 
 	<!-- Document Title
@@ -605,6 +606,75 @@
 			</div>
 		</section><!-- #content end -->
 
+		
+    <!-- Contact form Popup -->
+    <div class="contactform-popup" data-popup="closed">
+		<div class="container">
+			<form class="row mb-0 formContact" data-formtype="popup"  id="template-contactform" name="template-contactform" method="post">
+			  <div class="col-lg-7 col-12 p-3 p-lg-5">
+				<div class="row">
+				  <div class="col-12">
+					<h3 class="main-heading contactUs-text">Write Us</h3>
+				  </div>
+	  
+				  <div class="form-process">
+					<div class="css3-spinner">
+					  <div class="css3-spinner-scale-ripple">
+						<div></div>
+						<div></div>
+						<div></div>
+					  </div>
+					</div>
+				  </div>
+	  
+				  <div class="col-md-6 mb-4">
+					<input type="text" id="template-contactform-name" value=""
+					  class="sm-form-control border-form-control required fname" name="fname" required placeholder="Name*" />
+				  </div>
+				  <div class="col-md-6 mb-4">
+					<input type="email" id="template-contactform-email" name="email" required value=""
+					  class="required email sm-form-control border-form-control email" placeholder="Email*" />
+				  </div>
+	  
+				  <div class="w-100"></div>
+	  
+				  <div class="col-md-12 mb-4">
+					<input type="text" id="template-contactform-subject" name="subject" required value=""
+					  class="required sm-form-control border-form-control subject" placeholder="Subject*" />
+				  </div>
+	  
+				  <div class="w-100"></div>
+	  
+				  <div class="col-12 mb-4">
+					<textarea class="required  sm-form-control border-form-control message" id="template-contactform-message"
+					  name="message" required rows="7" cols="30"
+					  placeholder="Please describe what you need*"></textarea>
+				  </div>
+	  
+				  <div class="col-12 mb-lg-0">
+					<button class="button button-border button-circle fw-medium ms-0" type="submit"
+					  id="template-contactform-submit" name="template-contactform-submit" value="submit">Send
+					  Message</button>
+				  </div>
+	  
+				  <div class="w-100"></div>
+	  
+				  <div class="form-result statusForm mt-2">
+	  
+				  </div>
+	  
+				</div>
+			  </div>
+			  <div class="col-lg-5 p-0 contact-right-col d-lg-block d-none">
+				<!-- <img src="images/contact-form-popup-img.png" alt="Contact Form Popup" /> -->
+			   </div>
+			   <div class="close-icon">
+				<i class="fa fa-times"></i>
+			  </div>
+			</form>
+		</div>
+	  </div>
+
     <!-- Footer
 		============================================= -->
 		<footer id="footer" class="bg-black border-0">
@@ -695,7 +765,7 @@
 					  <img src="images/success-stories/success-banner-bg.jfif" />
 						<div>
 						  <p class="mb-0">Let's Talk</p>
-						  <a href="contact-us.html" class="footer-btn">Click Here</a>
+						  <button type="button" class="footer-btn">Click Here</button>
 						</div>
 					</div>
 				  </div>
@@ -707,7 +777,7 @@
 			  <div id="copyrights" class="">
 				<div class="row">
 				  <div class="col-12 text-center">
-					<span class="">© 2023 OneDigitals Soft Solutions India Pvt Ltd All Rights Reserved</span>
+					<span class="">© 2023 OneDigitals Soft Solution India Pvt Ltd All Rights Reserved</span>
 				  </div>
 				</div>
 			  </div>
@@ -733,6 +803,7 @@
 	 <script src="js/customs.js" type="module"></script>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+	<script src="js/contact.js"></script>
 
 	<!-- Cursor Animation-->
 	<script>

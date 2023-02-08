@@ -19,6 +19,10 @@ body{
 
 }
 
+body.primary-menu-open{
+	overflow-y: hidden;
+}
+
 .menu-container.animated{
 	max-width: 300px;
 }
@@ -626,7 +630,7 @@ body[data-pagetype="cmsh"] #section-features .features-btn-div{
 }
 
 .section-sapcommerce,.section-specificpartner{
-	background: url(../images/success-stories/sap-bg.jfif);
+	background: url(../images/success-stories/sap-bg.png);
 	background-position: center center !important;
 	background-size:cover !important ;
 	background-repeat: no-repeat;
@@ -635,7 +639,7 @@ body[data-pagetype="cmsh"] #section-features .features-btn-div{
 	color: #fff;
 }
 .section-specificpartner{
-	background-image: url(../images/success-stories/spartners-bg.jfif);
+	background-image: url(../images/success-stories/sap-bg.png);
 }
 .section-sapcommerce::before,.section-specificpartner::before{
 	content: '';
@@ -713,7 +717,7 @@ footer{
 	.footer-lets-talk div{
 		padding: 15px;
 	}
-	.footer-lets-talk a.footer-btn{
+	.footer-lets-talk .footer-btn{
 		width: 100px !important;
 		font-size: 14px !important;
 	}
@@ -723,7 +727,7 @@ footer{
 	max-width: 50%;
 	border-radius:8px 0px 0px 8px;
 }
-.footer-lets-talk a.footer-btn{
+.footer-lets-talk .footer-btn{
 	background: #F89939;
 	color: #fff;
 	width: 125px;
@@ -873,7 +877,7 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
 	align-items: center;
 }
 #oc-clients img{
-	max-height: 100px;
+	/* max-height: 100px; */
 	/* object-fit: contain; */
 }
 
@@ -906,7 +910,10 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
 	box-shadow: 0px 0px 48px rgba(0, 0, 0, 0.2);
 	border-radius: 12px;
 }
-
+#template-contactform[data-formtype="popup"]{
+	padding: 0px;
+	/* border-radius: 24px; */
+}
 /* Testimonials Section */
 
 .testimonials-div{
@@ -1062,10 +1069,10 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
 
 
 .digital-section{
-	padding: 90px 0px 0px;
+	padding: 120px 0px 0px;
 }
 .digital-section.has-tb-pd{
-	padding: 90px 0px;
+	padding: 120px 0px;
 }
 
 .special-heading span{
@@ -1116,4 +1123,100 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
 }
 .statusForm{
 	color: red;
+}
+
+.contact-right-col{
+	background-image: url(../images/contact-form-popup-img.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position: center center;
+	border-radius: 0 12px 12px 0px;
+	position: relative;
+	background-color: rgba(0, 0, 0, 0.9);
+}
+
+.contactform-popup{
+	position: fixed;
+	inset: 0;
+	z-index: 9999;
+	display: flex;
+	align-items: center;
+	visibility: hidden;
+	opacity: 0;
+}
+.contactform-popup::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.close-icon{
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	background: #000;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: all .35s ease-in-out;
+}
+.close-icon i{
+	color: #fff;
+	font-size: 16px;
+	line-height: 30px;
+	transition: all .35s ease-in-out;
+}
+.close-icon:hover{
+	background: rgba(0, 0, 0, 0.6);
+	box-shadow: 0 0 10px #fff;
+}
+.close-icon:hover i{
+	transform: scale(1.05,1.05);
+}
+
+.contactform-popup[data-popup="opened"],.contactform-popup[data-popup="closing"]{
+	visibility: visible;
+	opacity: 1;
+}
+
+.contactform-popup[data-popup="opened"] #template-contactform[data-formtype="popup"]{
+	animation: formAnim .5s ease-in-out 1 alternate;
+}
+
+.contactform-popup[data-popup="closing"] #template-contactform[data-formtype="popup"]{
+	animation: formAnimReverse .5s ease-in-out 1 alternate-reverse	;
+}
+
+@keyframes formAnim{
+	from{
+		transform: translateY(-100%);
+	}
+	to{
+		transform: translateY(0);
+	}
+}
+
+@keyframes formAnimReverse{
+	from{
+		transform: translateY(-150%);
+	}
+	to{
+		transform: translateY(0);
+	}
+}
+
+.overflow-y-hidden{
+	overflow-y: hidden;
+}
+
+.contactform-popup .container{
+	max-width: 70%;
 }

@@ -1,5 +1,7 @@
 import ShowMore from "./showmore.js";
 
+let $body = document.querySelector('body');
+
 
 document.addEventListener('DOMContentLoaded', ()=>{
     ShowMore();
@@ -77,9 +79,7 @@ $('#custom-primary-menu-trigger').off( 'click' ).on( 'click', function() {
 //     })
 // }
 
-let animTimer = async(ms) => {
-    return new Promise(res => setTimeout(res(),ms))
-}
+
 
 
 
@@ -233,4 +233,29 @@ desktopsubmenu.addEventListener('mouseover',(event)=>{
 
 desktopsubmenu.addEventListener('mouseout',(event)=>{
     desktopsubmenu.classList.remove('active')
+})
+
+
+/* Contact Form Popup */
+
+let footerbtn = document.querySelector('.footer-btn'),
+    contactformpopup = document.querySelector('.contactform-popup'),
+    closeicon = document.querySelector('.close-icon'),
+    popupform = document.querySelector('#template-contactform[data-formtype="popup"]')
+
+footerbtn.addEventListener('click',()=>{
+    $body.classList.add('overflow-y-hidden');
+    contactformpopup.setAttribute('data-popup','opened');
+    // contactformpopup.classList.add('active');
+})
+
+closeicon.addEventListener('click', ()=>{
+    // popupform.style.animation = 'formAnimReverse .5s ease-in-out 1 alternate-reverse';
+    contactformpopup.setAttribute('data-popup','closing');
+    let closingele = document.querySelector('.contactform-popup[data-popup="closing"] #template-contactform[data-formtype="popup"]');
+
+    closingele.addEventListener('animationend',() => {
+        contactformpopup.setAttribute('data-popup','closed')
+        $body.classList.remove('overflow-y-hidden');
+    },{once:true})
 })
