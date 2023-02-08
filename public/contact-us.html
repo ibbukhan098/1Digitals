@@ -35,6 +35,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 
 
     <!-- Document Title
@@ -261,13 +263,16 @@
                 </ul>
 
                 <div class="menu-socials d-none d-lg-flex desktop-socials">
-                  <p class="menu-text w-100 menu-header-text mb-2">Get in touch</p>
-                  <a class="info-email" href="mailto:info@1digitals.in">info@1digitals.in</a>
+                  <!-- <p class="menu-text w-100 menu-header-text mb-2">Get in touch</p> -->
+                  <a class="info-email" href="mailto:info@1digitals.in"><span class="text-underline">
+                    info@1digitals.in
+                  </span></a>
+                  <p class="desc-black mb-0 mt-2">268 Regus Center, Bath Road, Slough, England, SL1 4DX, United Kingdom.</p>
                   <div class="d-flex mt-2">
-                    <a href="#" class="social-icon si-small si-rounded si-facebook">
+                    <a href="https://www.linkedin.com/company/1digitals/" target="_blank" class="social-icon si-small si-rounded si-facebook">
                       <i class="fa fa-linkedin"></i>
                     </a>
-                    <a href="#" class="social-icon si-small si-rounded si-twitter">
+                    <a href="https://twitter.com/1Digitals_" target="_blank" class="social-icon si-small si-rounded si-twitter">
                       <i class="fa fa-twitter"></i>
                     </a>
                   </div>
@@ -281,10 +286,10 @@
                 <div class="container">
                   <div class="row">
                     <div class="col-lg-12 col-6 d-flex justify-content-start align-items-center">
-                      <a href="#" class="social-icon si-small si-rounded si-facebook">
+                      <a href="https://www.linkedin.com/company/1digitals/" target="_blank" class="social-icon si-small si-rounded si-facebook">
                         <i class="fa fa-linkedin"></i>
                       </a>
-                      <a href="#" class="social-icon si-small si-rounded si-twitter">
+                      <a href="https://twitter.com/1Digitals_" target="_blank" class="social-icon si-small si-rounded si-twitter">
                         <i class="fa fa-twitter"></i>
                       </a>
                       <!-- <a href="#" class="social-icon si-small si-rounded si-gplus">
@@ -338,10 +343,10 @@
                         <p class="mb-2">Quick TOUCH</p>
                         <a class="info-email desc-black" href="mailto:info@1digitals.in">info@1digitals.in</a>
                         <div class="d-flex mt-2 contactpage-social mb-4">
-                          <a href="#" class="social-icon si-small si-rounded si-facebook">
+                          <a href="https://www.linkedin.com/company/1digitals/" target="_blank" class="social-icon si-small si-rounded si-facebook">
                             <i class="fa fa-linkedin"></i>
                           </a>
-                          <a href="#" class="social-icon si-small si-rounded si-twitter">
+                          <a href="https://twitter.com/1Digitals_" target="_blank" class="social-icon si-small si-rounded si-twitter">
                             <i class="fa fa-twitter"></i>
                           </a>
                   </div>
@@ -354,8 +359,7 @@
   
                     <div class="form-result"></div>
   
-                    <form class="row mb-0" id="template-contactform" name="template-contactform" action="include/form.php"
-                      method="post">
+                    <form class="row mb-0 formContact"  id="template-contactform" name="template-contactform" method="post">
                       <div class="col-12">
                         <h3 class="main-heading contactUs-text">Write Us</h3>
                       </div>
@@ -371,30 +375,30 @@
                       </div>
   
                       <div class="col-md-6 mb-4">
-                        <input type="text" id="template-contactform-name" name="template-contactform-name" value=""
-                          class="sm-form-control border-form-control required" placeholder="Name*" />
+                        <input type="text" id="template-contactform-name" value=""
+                          class="sm-form-control border-form-control required fname" name="fname" required placeholder="Name*" />
                       </div>
                       <div class="col-md-6 mb-4">
-                        <input type="email" id="template-contactform-email" name="template-contactform-email" value=""
-                          class="required email sm-form-control border-form-control" placeholder="Email*" />
+                        <input type="email" id="template-contactform-email" name="email" required value=""
+                          class="required email sm-form-control border-form-control email" placeholder="Email*" />
                       </div>
   
                       <div class="w-100"></div>
   
                       <div class="col-md-12 mb-4">
-                        <input type="text" id="template-contactform-subject" name="subject" value=""
-                          class="required sm-form-control border-form-control" placeholder="Subject*" />
+                        <input type="text" id="template-contactform-subject" name="subject" required value=""
+                          class="required sm-form-control border-form-control subject" placeholder="Subject*" />
                       </div>
   
                       <div class="w-100"></div>
   
                       <div class="col-12 mb-4">
-                        <textarea class="required sm-form-control border-form-control" id="template-contactform-message"
-                          name="template-contactform-message" rows="7" cols="30"
+                        <textarea class="required  sm-form-control border-form-control message" id="template-contactform-message"
+                          name="message" required rows="7" cols="30"
                           placeholder="Please describe what you need*"></textarea>
                       </div>
   
-                      <div class="col-12 mb-lg-0">
+                      <div class="col-12 mb-lg-3">
                         <button class="button button-border button-circle fw-medium ms-0" type="submit"
                           id="template-contactform-submit" name="template-contactform-submit" value="submit">Send
                           Message</button>
@@ -402,9 +406,8 @@
   
                       <div class="w-100"></div>
   
-                      <div class="col-12 d-none">
-                        <input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value=""
-                          class="sm-form-control" />
+                      <div class="form-result statusForm mt-2">
+
                       </div>
   
                       <input type="hidden" name="prefix" value="template-contactform-">
@@ -547,10 +550,10 @@
             <div class="col-lg-2 col-md-6 col-5">
               <p class="footer-mini-heading m-0 mb-3">Social</p>
               <div class="d-flex mb-3">
-                <a href="#" class="social-icon si-small si-rounded si-facebook">
+                <a href="https://www.linkedin.com/company/1digitals/" target="_blank" class="social-icon si-small si-rounded si-facebook">
                   <i class="fa fa-linkedin"></i>
                 </a>
-                <a href="#" class="social-icon si-small si-rounded si-twitter">
+                <a href="https://twitter.com/1Digitals_" target="_blank" class="social-icon si-small si-rounded si-twitter">
                   <i class="fa fa-twitter"></i>
                 </a>
               </div>
@@ -602,9 +605,9 @@
 
     <!-- JavaScripts
 	============================================= -->
-    <script src="js/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/plugins.min.js"></script>
-    <script src="https://maps.google.com/maps/api/js?key=YOUR-API-KEY"></script>
+    <!-- <script src="https://maps.google.com/maps/api/js?key=YOUR-API-KEY"></script> -->
 
     <!-- Footer Scripts
 	============================================= -->
@@ -612,6 +615,7 @@
     <script src="js/customs.js" type="module"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="js/contact.js"></script>
 
     <!-- Cursor Animation-->
     <script>

@@ -13385,7 +13385,7 @@ blockquote.float-end {
 }
 
 .sm-form-control:focus {
-	border-color: #AAA;
+	border-color: red;
 	outline: 0;
 	-webkit-box-shadow: none;
 	box-shadow: none;
@@ -16890,7 +16890,7 @@ label.checkbox { padding-left: 20px; }
 
 
 
-body[data-pagetype="contact"] #header-wrap{
+/* body[data-pagetype="contact"] #header-wrap{
 	box-shadow: 0 0 10px rgb(0 0 0 / 10%);
 	background: #fff !important;
-}
+} */

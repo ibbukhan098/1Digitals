@@ -241,7 +241,7 @@ span.special-span {
 		left: auto !important; */
 	}
 
-	body[data-pagetype="contact"] .dark .svg-trigger path,
+
 	body[data-pagetype="success-story"] .dark .svg-trigger path,
 	body[data-pagetype="icareers"] .dark .svg-trigger path{
 		stroke: #000 !important;
@@ -447,7 +447,7 @@ body[data-pagetype="cmsh"] #section-features .features-btn-div{
 }
 .success-stats{
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 }
 .success-stats div{
 	flex: 0 0 calc(25% - 12.5px);
@@ -995,7 +995,8 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
 
 	.desktop-socials{
 		flex-direction: column;
-		/* justify-content: end; */
+		justify-content: end;
+		padding-block: 15px;
 	}
 	.menu-header-text{
 		text-transform: uppercase;
@@ -1074,4 +1075,45 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
     border-radius: 4px;
     box-shadow: 0 0 10px rgb(0 0 0 / 20%);
 	line-height: 1.85;
+}
+
+.text-underline{
+	position: relative;
+}
+.text-underline::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -4px;
+	width: 100%;
+	background: #F89939;
+	height: 1px;
+	transition: all .35s ease-in-out;
+}
+.text-underline:hover::before{
+	right: 0;
+	width: 0;
+	left: auto;
+}
+
+.max-h-430 img{
+	max-height: 440px;
+}
+
+.ecom-managed-section img{
+	max-height: 370px;
+}
+.ecom-re-platform-section img{
+	max-height: 280px;
+}
+
+.ecom-systems-section img{
+	max-height: 300px;
+}
+
+.ourcustomer-section img{
+	max-height: 320px;
+}
+.statusForm{
+	color: red;
 }
