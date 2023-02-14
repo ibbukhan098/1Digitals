@@ -375,14 +375,18 @@
         padding: 0px !important;
     }
 
+    #section-testimonials .topmargin{
+        margin-top: 0px !important;
+    }
+
     .testimonials-div{
         flex-direction: column;
         align-items: flex-start !important;
     }
     .testimonials-div img {
         flex: 0 0 100% !important;
-        max-width: 200px !important;
-        max-height: 200px !important;
+        max-width: 100px !important;
+        max-height: 100px !important;
     }
     .testimonials-content p{
         font-size: 18px !important;

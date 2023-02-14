@@ -920,18 +920,19 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
 .testimonials-div{
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
 }
 .testimonials-div img{
-	flex: 0 0 250px;
-	max-width: 250px;
-	filter: drop-shadow(0px 0px 48px rgba(0, 0, 0, 0.2));
+	flex: 0 0 200px;
+	max-width: 200px;
+	/* filter: drop-shadow(0px 0px 48px rgba(0, 0, 0, 0.2)); */
 	border-radius: 12px;
-	max-height: 250px;
+	max-height: 200px;
+	object-fit: contain;
 }
 
 .testimonials-content{
-	flex: 0 0 calc(100% - calc(250px + 25px));
+	flex: 0 0 calc(100% - calc(200px + 25px));
 }
 .testimonials-content p{
 	font-size: 22px;
@@ -1188,6 +1189,17 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
 	opacity: 1;
 }
 
+.contactform-popup #template-contactform{
+	/* pointer-events: none; */
+}
+
+/* .pointerevents-none{
+	pointer-events:none;
+}
+.pointerevents-all{
+	pointer-events: all;
+} */
+
 .contactform-popup[data-popup="opened"] #template-contactform[data-formtype="popup"]{
 	animation: formAnim .5s ease-in-out 1 alternate;
 }
@@ -1220,4 +1232,29 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
 
 .contactform-popup .container{
 	max-width: 70%;
+}
+
+
+
+
+.footer-list li a{
+	position: relative;
+	padding-left: 20px;
+	display: block;
+}
+.footer-list li a::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 5px;
+	background-image: url(../images/footer-vector.svg);
+	width: 8px;
+	height: 14px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 8px 14px;
+}
+
+.hover-underline:hover{
+	text-decoration: underline !important;
 }

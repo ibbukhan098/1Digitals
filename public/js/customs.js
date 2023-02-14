@@ -253,8 +253,9 @@ footerbtn.addEventListener('click',()=>{
     // contactformpopup.classList.add('active');
 })
 
-closeicon.addEventListener('click', ()=>{
-    // popupform.style.animation = 'formAnimReverse .5s ease-in-out 1 alternate-reverse';
+closeicon.addEventListener('click', closePopup)
+
+function closePopup(){
     contactformpopup.setAttribute('data-popup','closing');
     let closingele = document.querySelector('.contactform-popup[data-popup="closing"] #template-contactform[data-formtype="popup"]');
 
@@ -262,4 +263,15 @@ closeicon.addEventListener('click', ()=>{
         contactformpopup.setAttribute('data-popup','closed')
         $body.classList.remove('overflow-y-hidden');
     },{once:true})
+}
+
+
+
+/* Click elese where */
+
+let doc = document.querySelector('html');
+doc.addEventListener('click',(event)=>{
+    if(event.target.closest('#template-contactform') == null && !event.target.classList.contains('openpopup') && document.querySelector('.custom-popup').getAttribute('data-popup') == 'opened'){
+        closePopup()
+    }
 })
