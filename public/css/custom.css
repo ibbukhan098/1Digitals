@@ -675,9 +675,11 @@ footer{
 }
 .footer-list li a{
 	color: #B8B8B8;
+	transition: all .35s ease-in-out;
 }
 .footer-list li a:hover{
 	color: #F89939;
+	transform: translateX(3.5px);
 }
 .footer-list li:not(:last-child){
 	margin-block-end: 10px;
@@ -877,7 +879,9 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
 	display: flex;
 	align-items: center;
 }
-#oc-clients img{
+#oc-clients img, #oc-clients img{
+	max-width: 220px;
+    height: 125px;
 	/* max-height: 100px; */
 	/* object-fit: contain; */
 }
@@ -917,22 +921,30 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
 }
 /* Testimonials Section */
 
+#section-testimonials{
+	background:  #F9FCFF;
+}
+
 .testimonials-div{
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
 }
+.testimonials-div:hover{
+	border: 1.5px solid #fff;
+}
 .testimonials-div img{
-	flex: 0 0 200px;
-	max-width: 200px;
-	/* filter: drop-shadow(0px 0px 48px rgba(0, 0, 0, 0.2)); */
-	border-radius: 12px;
-	max-height: 200px;
-	object-fit: contain;
+	flex: 0 0 170px;
+    max-width: 170px;
+    /* filter: drop-shadow(0px 0px 48px rgba(0, 0, 0, 0.2)); */
+    border-radius: 12px;
+    max-height: 170px;
+    object-fit: contain;
+    opacity: 0.9;
 }
 
 .testimonials-content{
-	flex: 0 0 calc(100% - calc(200px + 25px));
+	flex: 0 0 calc(100% - calc(170px + 25px));
 }
 .testimonials-content p{
 	font-size: 22px;
@@ -1253,8 +1265,63 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 8px 14px;
+	transition: all .35s ease-in-out;
+}
+.footer-list li a:hover::before{
+	rotate: 180deg	;
 }
 
 .hover-underline:hover{
 	text-decoration: underline !important;
+}
+
+
+@media only screen and (min-width:1200px){
+	.homepagebannerslide .flex-control-nav{
+		right: calc(50% - calc(1176px / 2));
+	}
+}
+
+@media only screen and (min-width:992px) and (max-width:1199px){
+	.homepagebannerslide .flex-control-nav{
+		right: calc(50% - calc(960px / 2));
+	}
+}
+
+@media only screen and (min-width:768px) and (max-width:991px){
+	.homepagebannerslide .flex-control-nav{
+		right: calc(50% - calc(720px / 2));
+	}
+}
+
+@media only screen and (min-width:576px) and (max-width:767px){
+	.homepagebannerslide .flex-control-nav{
+		right: calc(50% - calc(540px / 2));
+	}
+}
+
+.homepagebannerslide .flex-control-nav{
+	top: 50%;
+}
+
+.homepagebannerslide :is(.flexslider, .slider-wrap, .slide){
+	height: 100vh;
+}
+
+.homepagebannerslide .slide .container >div {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	justify-content: center;
+}
+
+.homepagebannerslide .swiper-slide-bg::before{
+	content: '';
+	position: absolute;
+	inset: 0 0 0 0;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+}
+
+.homepagebannerslide h1{
+	max-width: calc(100% - 20px);
 }

@@ -261,7 +261,7 @@
         height: 35px !important;
 
     }
-    /* Success Stories Inner pages */
+    /* Case Studies Inner pages */
 
     .innerpage-story-banner .success-stats div{
         font-size: 16px !important;
@@ -389,7 +389,7 @@
         max-height: 100px !important;
     }
     .testimonials-content p{
-        font-size: 18px !important;
+        font-size: 16px !important;
         margin-block-start: 16px;
         margin-block-end: 16px !important;
         /* text-align: center !important; */
@@ -455,6 +455,10 @@
     }
     .footer-widgets-wrap svg {
         max-width: 60px !important;
+    }
+
+    .homepagebannerslide :is(.flexslider, .slider-wrap, .slide, .slide .container >div){
+        height: 60vh !important;
     }
 }
 
