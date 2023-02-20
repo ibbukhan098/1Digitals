@@ -1487,12 +1487,13 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
 	width: 100%;
 	top: 0;
 	left: 0;
+	opacity:.4;
   }
   
   .blob {
 	border-radius: 50%;
 	background: #8a4129;
-	opacity: .7;
+	/* opacity: .7; */
 	/* Other sample colors:
 	Orange: #e8630a
 	Pink: #EA3281
@@ -1511,14 +1512,14 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
   }
   .blob.top {
 	border-radius: 50%;
-	width: 100%;
+	width: 70%;
 	height: 3%;
 	top: -3%;
 	left: 0;
   }
   .blob.bottom {
 	border-radius: 50%;
-	width: 100%;
+	width: 70%;
 	height: 4%;
 	bottom: -3%;
 	left: 0;
@@ -1526,16 +1527,16 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
   .blob:nth-child(1) {
 	width: 200px;
 	height: 200px;
-	left: 35%;
+	left: 88%;
 	bottom: -15%;
   
 	animation: wobble 4s ease-in-out alternate infinite,
 	  blob-one ease-in-out 13s infinite;
   }
   .blob:nth-child(2) {
-	width: 330px;
-	height: 330px;
-	right: 24%;
+	width: 230px;
+	height: 230px;
+	right: 15%;
 	bottom: -65%;
   
 	animation: wobble 5s ease-in-out alternate infinite,
@@ -1554,7 +1555,7 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
 	width: 235px;
 	height: 235px;
 	bottom: -19%;
-	left: 30%;
+	left: 5%;
   
 	animation: wobble 7s ease-in-out alternate infinite,
 	  blob-four ease-in-out 12s infinite;
@@ -1563,7 +1564,7 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
 	width: 55px;
 	height: 55px;
 	bottom: -25%;
-	left: 34%;
+	left: 15%;
   
 	animation: wobble 9s ease-in-out alternate infinite,
 	  blob-five ease-in-out 32s infinite;
@@ -1572,16 +1573,16 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
 	width: 35px;
 	height: 35px;
 	bottom: -25%;
-	right: 34%;
+	right: 5%;
   
 	animation: wobble 10s ease-in-out alternate infinite,
 	  blob-six ease-in-out 12s infinite;
   }
   .blob:nth-child(7) {
-	width: 435px;
-	height: 435px;
+	width: 300px;
+	height: 300px;
 	bottom: -85%;
-	right: 40%;
+	right: 5%;
   
 	animation: wobble 11s ease-in-out alternate infinite,
 	  blob-seven ease-in-out 32s infinite;

@@ -330,9 +330,23 @@
                     <div class="slide" data-slide="1">
                       <!-- <div class="swiper-slide-bg" style="background-image: url('images/banner.png');"></div> -->
                       <div class="swiper-slide-bg" style="background-color:#1b1b1b">
-                        <div class="shape-blob"></div>
+                        <!-- <div class="shape-blob"></div>
                         <div class="shape-blob one"></div>
-                        <div class="shape-blob two"></div></div>
+                        <div class="shape-blob two"></div> -->
+
+                        <div class="lamp">
+                          <div class="lava">
+                            <div class="blob"></div>
+                            <div class="blob"></div>
+                            <div class="blob"></div>
+                            <div class="blob"></div>
+                            <div class="blob"></div>
+                            <div class="blob"></div>
+                            <div class="blob top"></div>
+                            <div class="blob bottom"></div>
+                          </div>
+                        </div>
+                      </div>
                       <div class="container">
                         <div>
                           <!-- <p class="fw-light font-primary d-none d-sm-block banner-sub">Design & Development</p> -->
@@ -354,6 +368,16 @@
                             <div class="blob bottom"></div>
                           </div>
                         </div>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                          <defs>
+                            <filter id="goo">
+                              <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                              <feBlend in="SourceGraphic" in2="goo" />
+                            </filter>
+                          </defs>
+                        </svg>
                       </div>
                       <div  class="container">
                         <div>
