@@ -934,8 +934,8 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
 	border: 1.5px solid #fff;
 }
 .testimonials-div img{
-	flex: 0 0 170px;
-    max-width: 170px;
+	flex: 0 0 140px;
+    max-width: 140px;
     /* filter: drop-shadow(0px 0px 48px rgba(0, 0, 0, 0.2)); */
     border-radius: 12px;
     max-height: 170px;
@@ -944,7 +944,7 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
 }
 
 .testimonials-content{
-	flex: 0 0 calc(100% - calc(170px + 25px));
+	flex: 0 0 calc(100% - calc(140px + 25px));
 }
 .testimonials-content p{
 	font-size: 22px;
@@ -1315,29 +1315,53 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
 	justify-content: center;
 }
 
-/* .homepagebannerslide .swiper-slide-bg::before{
+
+.slide[data-slide="1"] .swiper-slide-bg.has-before::before{
+	background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+}
+
+.slide[data-slide="2"] .swiper-slide-bg.has-before::before{
+	background: linear-gradient(to right, #2a0845, #6441A5);
+}
+
+.slide[data-slide="3"] .swiper-slide-bg.has-before::before{
+	background: linear-gradient(to right, #004e92, #000428);
+}
+
+.slide[data-slide="4"] .swiper-slide-bg.has-before::before{
+	background: linear-gradient(to right, rgba(0,0,0,0.5), #00042888);
+}
+
+.slide[data-slide="5"] .swiper-slide-bg.has-before::before{
+	background: linear-gradient(to right, rgba(0,0,0,0.5), #00042888);
+}
+
+.slide[data-slide="6"] .swiper-slide-bg.has-before::before{
+	background: linear-gradient(to right, rgba(0,0,0,0.5), #00042888);
+}
+
+/* .slide[data-slide="6"] img{
+	max-width: 300px !important;
+	margin-inline: auto 200px !important;	
+} */
+
+.homepagebannerslide .swiper-slide-bg.has-before::before{
 	content: '';
     position: absolute;
     inset: 0 0 0 0;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
-    right: calc(50% - calc(1200px / 2));
-    top: 50%;
+    /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)); */
+	/* background: rgba(0, 0, 0, 1); */
+	/* background: linear-gradient(to right, #4A00E0, #8E2DE2); */
+    top: 0%;
     height: 100%;
-    width: 50%;
-	max-width: 400px;
-	max-height: 400px;
-    background: #8A4129;
-	background-image: url(../images/banner/banner-right.png);
+    width: 100%;
 	background-size: cover;
 	background-position: center center;
-    border-radius: 50%;
-    opacity: 0.5;
-    translate: 0 -50%;
-	clip-path: circle(50% at #000);
-	animation: banner1 infinite 5s ease-in-out alternate-reverse;
+    opacity: 1;
+	z-index: -2;
 }
 
-.homepagebannerslide .swiper-slide-bg::after{
+/* .homepagebannerslide .swiper-slide-bg::after{
 	content: '';
 	position: absolute;
 	left: 0;
@@ -1674,3 +1698,37 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
 	}
   }
 
+
+  h1.about-head{
+	/* text-transform: capitalize !important; */
+  }
+
+  .succ-mail:hover{
+	color: #fff !important;
+  }
+
+  a.succ-mail{
+	color: #fff;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 0px;
+	line-height: 1;
+	/* text-shadow: #F89939; */
+  }
+
+
+  .has-2-col .container > div{
+	display: grid !important;
+	grid-template-columns: repeat(2,1fr);
+	align-items: center;
+	justify-content: space-between;
+  }
+  .has-2-col .container > div img{
+	max-width: 350px;
+	max-height: 350px !important;
+	margin-inline: auto;
+}
+  .has-2-col .container > div h1{
+	font-size: 65px;
+  }

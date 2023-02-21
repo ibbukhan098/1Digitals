@@ -492,6 +492,32 @@
     .homepagebannerslide :is(.flexslider, .slider-wrap, .slide, .slide .container >div){
         height: 60vh !important;
     }
+    .special-heading-span.special-heading, .special-heading-span.special-heading span{
+        background: transparent !important;
+        box-shadow: none !important;
+        color: #000 !important;
+        line-height: 1 !important;
+    }
+    a.succ-mail{
+        font-size: 14px !important;
+        color: #F89939 !important;
+        display: block !important;
+        margin-top: 5px;
+    }
+    .has-2-col .container > div{
+        grid-template-columns: repeat(1,1fr) !important;
+    }
+    .has-2-col .container > div h1{
+        text-align: center;
+        font-size: 40px !important;
+        line-height: 1.4 !important;
+        grid-row: 2;
+    }
+    .has-2-col .container > div img{
+        max-width: 90% !important;
+        margin: 0 0 40px !important;
+        grid-row: 1;
+    }
 }
 
 
