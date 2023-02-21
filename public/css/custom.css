@@ -1485,14 +1485,26 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	top: 0;
-	left: 0;
+	/* min-width: 150%; */
+	/* top: 0;
+	left: 0; */
+	inset: 0 0 0 0;
 	opacity:.4;
+  }
+
+  .lava::before{
+	/* content: ''; */
+	position: absolute;
+	width: 150%;
+	height: 100%;
+	inset: 0 0 0 0;
+	filter: url("#goo");
   }
   
   .blob {
 	border-radius: 50%;
-	background: #8a4129;
+	/* background: #8a4129; */
+	background: #F89939;
 	/* opacity: .7; */
 	/* Other sample colors:
 	Orange: #e8630a
@@ -1512,21 +1524,21 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
   }
   .blob.top {
 	border-radius: 50%;
-	width: 70%;
+	width: 50%;
 	height: 3%;
 	top: -3%;
 	left: 0;
   }
   .blob.bottom {
 	border-radius: 50%;
-	width: 70%;
+	width: 100%;
 	height: 4%;
 	bottom: -3%;
 	left: 0;
   }
   .blob:nth-child(1) {
-	width: 200px;
-	height: 200px;
+	width: 100px;
+	height: 100px;
 	left: 88%;
 	bottom: -15%;
   
@@ -1534,8 +1546,8 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
 	  blob-one ease-in-out 13s infinite;
   }
   .blob:nth-child(2) {
-	width: 230px;
-	height: 230px;
+	width: 130px;
+	height: 130px;
 	right: 15%;
 	bottom: -65%;
   
@@ -1543,8 +1555,8 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
 	  blob-two ease-in-out 22s infinite;
   }
   .blob:nth-child(3) {
-	width: 150px;
-	height: 150px;
+	width: 80px;
+	height: 80px;
 	bottom: -15%;
 	left: 34%;
   
@@ -1552,8 +1564,8 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
 	  blob-three ease-in-out 16s infinite;
   }
   .blob:nth-child(4) {
-	width: 235px;
-	height: 235px;
+	width: 85px;
+	height: 85px;
 	bottom: -19%;
 	left: 5%;
   
@@ -1579,8 +1591,8 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
 	  blob-six ease-in-out 12s infinite;
   }
   .blob:nth-child(7) {
-	width: 300px;
-	height: 300px;
+	width: 150px;
+	height: 150px;
 	bottom: -85%;
 	right: 5%;
   

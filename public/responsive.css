@@ -1,6 +1,38 @@
 
 
 @media only screen and (max-width:991px){
+    .lamp{
+        height: 60vh !important;
+    }
+    .blob:nth-child(7){
+        width: 75px !important;
+        height: 75px !important;
+    }
+    .blob:nth-child(6){
+        width: 25px !important;
+        height: 25px !important;
+    }
+    .blob:nth-child(5){
+        width: 45px !important;
+        height: 45px !important;
+    }
+    .blob:nth-child(4){
+        width: 55px !important;
+        height: 55px !important;
+    }
+    .blob:nth-child(3){
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    .blob:nth-child(2){
+        width: 65px !important;
+        height: 65px !important;
+    }
+    .blob:nth-child(1){
+        width: 50px !important;
+        height: 50px !important;
+    }
     .mx-w-85{
         max-width: 100% !important;
     }
