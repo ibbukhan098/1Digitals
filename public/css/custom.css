@@ -1539,7 +1539,7 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
   .blob:nth-child(1) {
 	width: 100px;
 	height: 100px;
-	left: 88%;
+	left: 84.5%;
 	bottom: -15%;
   
 	animation: wobble 4s ease-in-out alternate infinite,
@@ -1576,7 +1576,7 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
 	width: 55px;
 	height: 55px;
 	bottom: -25%;
-	left: 15%;
+	left: 6.5%;
   
 	animation: wobble 9s ease-in-out alternate infinite,
 	  blob-five ease-in-out 32s infinite;
@@ -1605,7 +1605,7 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
 	  transform: translatey(0);
 	}
 	50% {
-	  transform: translatey(-700%);
+	  transform: translatey(-1100%);
 	}
   }
   
@@ -1615,7 +1615,7 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
 	  transform: translatey(0);
 	}
 	50% {
-	  transform: translatey(-420%);
+	  transform: translatey(-920%);
 	}
   }
   
@@ -1625,7 +1625,7 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
 	  transform: translatey(0);
 	}
 	50% {
-	  transform: translatey(-305%);
+	  transform: translatey(-1105%);
 	}
   }
   @keyframes blob-four {
@@ -1634,7 +1634,7 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
 	  transform: translatey(0);
 	}
 	50% {
-	  transform: translatey(-605%);
+	  transform: translatey(-1005%);
 	}
   }
   @keyframes blob-five {
