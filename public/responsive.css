@@ -2,7 +2,7 @@
 
 @media only screen and (max-width:991px){
     .lamp{
-        height: 60vh !important;
+        height: 70vh !important;
     }
     .blob:nth-child(7){
         width: 75px !important;
@@ -106,7 +106,7 @@
     /* HomePage */
 
     #slider{
-        min-height: 60vh !important;
+        min-height: 70vh !important;
     }
     .banner-head{
         font-size: 34px !important;
@@ -490,7 +490,7 @@
     }
 
     .homepagebannerslide :is(.flexslider, .slider-wrap, .slide, .slide .container >div){
-        height: 60vh !important;
+        height: 70vh !important;
     }
     .special-heading-span.special-heading, .special-heading-span.special-heading span{
         background: transparent !important;
@@ -512,10 +512,13 @@
         font-size: 40px !important;
         line-height: 1.4 !important;
         grid-row: 2;
+        padding-bottom: 50px;
     }
     .has-2-col .container > div img{
-        max-width: 90% !important;
-        margin: 0 0 40px !important;
+        width: 250px;
+        height: 250px;
+        max-width: 70% !important;
+        margin: 0 auto 0px !important;
         grid-row: 1;
     }
 }

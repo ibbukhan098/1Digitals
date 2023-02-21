@@ -1708,10 +1708,10 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
   }
 
   a.succ-mail{
-	color: #fff;
+	color: #1b1b1b;
 	font-size: 20px;
 	text-transform: uppercase;
-	font-weight: 700;
+	font-weight: 900;
 	letter-spacing: 0px;
 	line-height: 1;
 	/* text-shadow: #F89939; */
