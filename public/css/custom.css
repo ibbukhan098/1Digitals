@@ -1302,6 +1302,7 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
 
 .homepagebannerslide .flex-control-nav{
 	top: 50%;
+	translate: 0 -50%;
 }
 
 .homepagebannerslide :is(.flexslider, .slider-wrap, .slide){
