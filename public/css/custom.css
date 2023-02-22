@@ -872,7 +872,7 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
 }
 
 .footer-widgets-wrap svg{
-	max-width: 70px;
+	max-width: 100px;
 }
 
 #oc-clients .owl-stage{
