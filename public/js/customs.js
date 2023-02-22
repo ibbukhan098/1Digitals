@@ -10,16 +10,19 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
     /* Testimonials Section */
 
-    let testimonials = document.getElementById('section-testimonials');
+    let testimonialsall = document.querySelectorAll('.owlhasnav');
     // console.log(testimonials)
-    if(testimonials != null){
-        setTimeout(()=>{
-            let testowlleft = testimonials.querySelector('.owl-prev');
-            let testowlright = testimonials.querySelector('.owl-next');
-            testowlleft.innerHTML = `<i class="fa fa-angle-left"></i>`;
-            testowlright.innerHTML = `<i class="fa fa-angle-right"></i>`;
-        },10)
-    }  
+    testimonialsall.forEach((testimonials,index)=>{
+        if(testimonials != null){
+            setTimeout(()=>{
+                let testowlleft = testimonials.querySelector('.owl-prev');
+                let testowlright = testimonials.querySelector('.owl-next');
+                testowlleft.innerHTML = `<i class="fa fa-angle-left"></i>`;
+                testowlright.innerHTML = `<i class="fa fa-angle-right"></i>`;
+            },10)
+        } 
+    })
+     
 })
 
 

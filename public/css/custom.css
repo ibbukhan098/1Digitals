@@ -1317,6 +1317,14 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
 }
 
 
+.slide[data-slide="0"] .swiper-slide-bg.has-before::before{
+	background: linear-gradient(to right, #000, #000, #000);
+}
+
+.slide[data-slide="0"][data-slideoption="0-1"] .swiper-slide-bg.has-before::before{
+	background: linear-gradient(to left, #2C5364, #203A43, #000000);
+}
+
 .slide[data-slide="1"] .swiper-slide-bg.has-before::before{
 	background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
 }
