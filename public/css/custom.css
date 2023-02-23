@@ -871,9 +871,9 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
 	font-size: 24px;
 }
 
-.footer-widgets-wrap svg{
+/* .footer-widgets-wrap svg{
 	max-width: 60px;
-}
+} */
 
 #oc-clients .owl-stage{
 	display: flex;
@@ -1755,6 +1755,17 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
   }
 
   .iso-div{
-	max-width: 100px;
+	max-width: 300px;
     text-align: center;
+	display: grid;
+	grid-template-columns: repeat(2,60px);
+	column-gap: 10px;
+  }
+  .iso-div img{
+	object-fit: contain;
+  }
+
+  .iso-div svg{
+	width: 65px;
+	height: 65px;
   }
