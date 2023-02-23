@@ -15451,7 +15451,7 @@ label.checkbox { padding-left: 20px; }
 
 .input-group-lg > .input-group-addon { line-height: 1; }
 
-@media (min-width: 1200px)
+@media (min-width: 1330px)
 {
 	.container-xl, .container-lg, .container-md, .container-sm, .container {
     max-width: 1200px;
