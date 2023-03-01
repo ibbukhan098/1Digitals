@@ -1801,3 +1801,8 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
   .text-capitalize{
 	text-transform: capitalize !important;
   }
+
+  .dif-font{
+	font-size: 100px;
+	line-height: calc(72px * 1.2);
+  }

@@ -521,6 +521,10 @@
         margin: 0 auto 0px !important;
         grid-row: 1;
     }
+    .banner-head .dif-font{
+        font-size: 50px !important;
+        line-height: calc(34px * 1.4) !important;
+      }
 }
 
 
