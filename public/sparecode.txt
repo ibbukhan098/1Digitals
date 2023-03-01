@@ -1,0 +1,151 @@
+<div class="slide" data-slide="1">
+                      <div class="swiper-slide-bg has-before">
+
+                        <div class="lamp">
+                          <div class="lava">
+                            <div class="blob"></div>
+                            <div class="blob"></div>
+                            <div class="blob"></div>
+                            <div class="blob"></div>
+                            <div class="blob"></div>
+                            <div class="blob"></div>
+                            <div class="blob top"></div>
+                            <div class="blob bottom"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="container">
+                        <div>
+                          <h1 class=" banner-head text-capitalize">
+                            Brand Consistency and seamless<br>
+                            <span class="text-orange">content management solutions</span> 
+                          </h1>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slide" data-slide="2">
+                      <div class="swiper-slide-bg has-before bg-blue" style="">
+                        <div class="lamp">
+                          <div class="lava">
+                            <div class="blob"></div>
+                            <div class="blob"></div>
+                            <div class="blob"></div>
+                            <div class="blob"></div>
+                            <div class="blob"></div>
+                            <div class="blob"></div>
+                            <div class="blob top"></div>
+                            <div class="blob bottom"></div>
+                          </div>
+                        </div>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                          <defs>
+                            <filter id="goo">
+                              <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                              <feBlend in="SourceGraphic" in2="goo" />
+                            </filter>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div  class="container">
+                        <div>
+                          <h1 class="text-capitalize banner-head ">Transform your customer experience today <br> <span class="text-orange">with 1Digitals</span></h1>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="slide" data-slide="3">
+                      <div class="swiper-slide-bg has-before">
+                        <div class="lamp">
+                          <div class="lava">
+                            <div class="blob"></div>
+                            <div class="blob"></div>
+                            <div class="blob"></div>
+                            <div class="blob"></div>
+                            <div class="blob"></div>
+                            <div class="blob"></div>
+                            <div class="blob top"></div>
+                            <div class="blob bottom"></div>
+                          </div>
+                        </div>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                          <defs>
+                            <filter id="goo">
+                              <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                              <feBlend in="SourceGraphic" in2="goo" />
+                            </filter>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div  class="container">
+                        <div>
+                          <h1 class="text-capitalize banner-head">Transform your customer experience today <br> <span class="text-orange">with 1Digitals</span></h1>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="slide" data-slide="4">
+                      <div class="swiper-slide-bg has-before" style="background-image: url(images/banner/b4.png);">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                          <defs>
+                            <filter id="goo">
+                              <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                              <feBlend in="SourceGraphic" in2="goo" />
+                            </filter>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div  class="container">
+                        <div>
+                          <!-- <img src="" alt="Banner 4" /> -->
+                          <h1 class="text-capitalize banner-head">Transform your customer experience today <br> <span class="text-orange">with 1Digitals</span></h1>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="slide has-2-col" data-slide="5">
+                      <div class="swiper-slide-bg has-before" style="background-image: url(images/banner/b4.png);">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                          <defs>
+                            <filter id="goo">
+                              <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                              <feBlend in="SourceGraphic" in2="goo" />
+                            </filter>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div  class="container">
+                        <div>
+                          <img src="images/banner/b4-svg.svg" alt="Banner 4" />
+                          <h1 class="text-capitalize banner-head">Transform your customer experience today <br> <span class="text-orange">with 1Digitals</span></h1>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="slide" data-slide="8">
+                      <div class="swiper-slide-bg has-before" style="background-image: url(images/banner/b8.png);">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                          <defs>
+                            <filter id="goo">
+                              <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                              <feBlend in="SourceGraphic" in2="goo" />
+                            </filter>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div  class="container">
+                        <div>
+                          <!-- <img src="" alt="Banner 4" /> -->
+                          <h1 class="text-capitalize banner-head">Transform your customer experience today <br> <span class="text-orange">with 1Digitals</span></h1>
+                        </div>
+                      </div>
+                    </div>
