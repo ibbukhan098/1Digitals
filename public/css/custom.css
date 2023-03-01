@@ -1776,6 +1776,18 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
 	display: grid;
 	grid-template-columns: repeat(2,60px);
 	column-gap: 10px;
+	padding-block-start: 35px;
+
+  }
+
+  @media only screen and (min-width:992px){
+	.iso-div{
+		position: relative;
+	}
+  }
+  .iso-div p{
+	position: absolute;
+	top: 0;
   }
   .iso-div img{
 	object-fit: contain;
@@ -1784,4 +1796,8 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
   .iso-div svg{
 	width: 65px;
 	height: 65px;
+  }
+
+  .text-capitalize{
+	text-transform: capitalize !important;
   }

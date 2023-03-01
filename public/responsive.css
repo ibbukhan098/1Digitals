@@ -482,8 +482,8 @@
     .iso-div {
         position: absolute;
         left: 120px;
-        top: 50%;
-        translate: 0 calc(-50% + 10px);
+        top: 0;
+        /* translate: 0 calc(-50% + 10px); */
     }
     .footer-widgets-wrap svg {
         max-width: 60px !important;
