@@ -882,6 +882,7 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
 #oc-clients img, #oc-clients img{
 	max-width: 220px;
     height: 125px;
+	margin-inline: auto;
 	/* max-height: 100px; */
 	/* object-fit: contain; */
 }
