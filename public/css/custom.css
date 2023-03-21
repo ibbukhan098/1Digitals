@@ -631,7 +631,7 @@ body[data-pagetype="cmsh"] #section-features .features-btn-div{
 }
 
 .section-sapcommerce,.section-specificpartner{
-	background: url(../images/success-stories/sap-bg.png);
+	background: url(../images/success-stories/sap-bg.jpg);
 	background-position: center center !important;
 	background-size:cover !important ;
 	background-repeat: no-repeat;
@@ -640,7 +640,7 @@ body[data-pagetype="cmsh"] #section-features .features-btn-div{
 	color: #fff;
 }
 .section-specificpartner{
-	background-image: url(../images/success-stories/sap-bg.png);
+	background-image: url(../images/success-stories/sap-bg.jpg);
 }
 .section-sapcommerce::before,.section-specificpartner::before{
 	content: '';
@@ -1141,7 +1141,7 @@ body[data-pagetype="icareers"] .list-ul li:not(:last-child){
 }
 
 .contact-right-col{
-	background-image: url(../images/contact-form-popup-img.png);
+	background-image: url(../images/contact-form-popup-img.jpg);
 	background-repeat: no-repeat;
 	background-size:cover;
 	background-position: center center;

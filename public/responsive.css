@@ -525,6 +525,9 @@
         font-size: 50px !important;
         line-height: calc(34px * 1.4) !important;
       }
+      .emphasis-title h1, .emphasis-title h2{
+        letter-spacing: normal !important;
+      }
 }
 
 
