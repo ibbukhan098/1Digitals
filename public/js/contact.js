@@ -17,10 +17,14 @@ $(document).ready(function () {
         else {
             Email.send({
                 Host: "smtp.elasticemail.com",
-                Username: "anereddyshanreddy@gmail.com",
-                Password: "E58DAA3A46B771930C78829C43EADCF04DFB",
-                To: "anereddyshanreddy@gmail.com",
-                From: 'anereddyshanreddy@gmail.com',
+                // Username: "anereddyshanreddy@gmail.com",
+                // Password: "E58DAA3A46B771930C78829C43EADCF04DFB",
+                // To: "anereddyshanreddy@gmail.com",
+                // From: 'anereddyshanreddy@gmail.com',
+                Username: "akanksha.c@1digitals.com",
+                Password: "D8D4168E7754F8E8E745F46E547895113837",
+                To: "akanksha.c@1digitals.com",
+                From: 'akanksha.c@1digitals.com',
                 Subject: `Query From ${fname}`,
                 Body: `<html>
                         <div>
