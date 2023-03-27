@@ -11910,8 +11910,8 @@ body:not(.device-touch) .clients-grid .grid-item a {
 .team-image img {
 	display: block;
 	width: 100%;
-	height: 180px;
-	object-fit: cover;
+	/* height: 180px;
+	object-fit: cover; */
 }
 .team{
 	border-radius: 10px;
