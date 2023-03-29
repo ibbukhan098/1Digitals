@@ -21,10 +21,12 @@ $(document).ready(function () {
                 // Password: "E58DAA3A46B771930C78829C43EADCF04DFB",
                 // To: "anereddyshanreddy@gmail.com",
                 // From: 'anereddyshanreddy@gmail.com',
-                Username: "akanksha.c@1digitals.com",
-                Password: "D8D4168E7754F8E8E745F46E547895113837",
-                To: "akanksha.c@1digitals.com",
-                From: 'akanksha.c@1digitals.com',
+                // Username: "akanksha.c@1digitals.com",
+                // Password: "D8D4168E7754F8E8E745F46E547895113837",
+                Username: "contactus@1digitals.com",
+                Password: "BE3F50FAC6B1B586F2C1A847B7562C583A96",
+                To: "contactus@1digitals.com",
+                From: 'contactus@1digitals.com',
                 Subject: `Query From ${fname}`,
                 Body: `<html>
                         <div>
