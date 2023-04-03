@@ -493,6 +493,9 @@ body[data-pagetype="cmsh"] #section-features .features-btn-div{
 .section-story-6{
 	background-image: url(../images/case-study/wiltshire-farm-foods-bg.jfif);
 }
+.section-story-7{
+	background-image: url(../images/case-study/tci-bg.jfif);
+}
 .story-div{
 	background: rgba(0, 0, 0, 0.8);
 	padding: 25px;
@@ -587,7 +590,7 @@ body[data-pagetype="cmsh"] #section-features .features-btn-div{
 }
 .innerpage-story-banner .success-stats div{
 	color: #fff;
-	font-size: 24px ;
+	font-size: 22px ;
 }
 .innerpage-story-banner .success-stats div span{
 	font-size: 16px 	;
