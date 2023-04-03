@@ -439,6 +439,15 @@ body[data-pagetype="cmsh"] #section-features .features-btn-div{
 .macnica-story-banner{
 	background-image: url(../images/case-study/macnica-bg.jfif);
 }
+.tci-story-banner{
+	background-image: url(../images/case-study/tci-bg.jfif);
+}
+.apetito-story-banner{
+	background-image: url(../images/case-study/apetito-bg.jfif);
+}
+.wiltshare-story-banner{
+	background-image: url(../images/case-study/wiltshire-farm-foods-bg.jfif);
+}
 .innerpage-story-banner::before{
 	background: rgba(0,0,0,0.8);
 }
